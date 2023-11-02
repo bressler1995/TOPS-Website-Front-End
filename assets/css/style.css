@@ -1,1 +1,7 @@
-body,html { overflow-x:hidden }
+body,html { 
+    overflow-x:hidden 
+}
+
+.top_bar {
+    background-color: #0D425F;
+}
