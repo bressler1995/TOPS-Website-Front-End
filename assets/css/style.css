@@ -3,7 +3,12 @@ body,html {
 }
 
 .top_bar {
+    display: block;
+    width: 100%;
     background-color: #0D425F;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    box-sizing: border-box;
 }
 
 .container {
