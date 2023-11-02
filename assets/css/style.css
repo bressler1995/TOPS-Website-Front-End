@@ -29,11 +29,11 @@ body,html {
 }
 
 .top_bar .social_icons .sicon_container {
-  display: flex;
-  flex-flow: row wrap;
+  /* display: flex; */
+  /* flex-flow: row wrap; */
   width: 100%;
   height: auto;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 }
 
 .top_bar .social_icons .sicon_container a {
