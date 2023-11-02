@@ -5,3 +5,37 @@ body,html {
 .top_bar {
     background-color: #0D425F;
 }
+
+.container {
+    max-width: 1600px !important;
+}
+
+.tops_container .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.tops_container .row div[class^="col"] {
+    padding: 0 !important;
+}
+
+@media (max-width: 767.9px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
