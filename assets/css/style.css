@@ -19,6 +19,23 @@ body,html {
     padding: 0 !important;
 }
 
+.top_bar .social_icons {
+    text-align: right;
+}
+
+.top_bar .social_icons a {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 7px;
+  background-color: #FFF;
+}
+
+.top_bar .social_icons a i {
+    color: #0D425F;
+    font-size: 14px;
+    line-height: 16px;
+}
+
 @media (max-width: 767.9px) {
     .container {
         padding-left: 30px;
