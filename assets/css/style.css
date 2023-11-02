@@ -68,6 +68,12 @@ body,html {
     transform: translate(-50%, -50%)
 }
 
+.nav_bar .tops_logo {
+    display: inline-block;
+    width: auto;
+    height: 65px;
+}
+
 @media (max-width: 767.9px) {
     .container {
         padding-left: 30px;
