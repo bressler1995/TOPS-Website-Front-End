@@ -82,7 +82,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     transform: translate(-50%, -50%)
 }
 
-.nav_bar .tops_logo {
+.tops_nav .navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.tops_nav .navbar .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.tops_nav .navbar .tops_logo {
     display: inline-block;
     width: auto;
     height: 65px;
