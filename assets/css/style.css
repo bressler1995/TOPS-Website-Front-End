@@ -98,6 +98,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     height: 65px;
 }
 
+.tops_nav .navbar.navbar-expand-md .navbar-nav .nav-item {
+  margin-right: 5px;
+}
+
 .tops_nav .navbar.navbar-expand-md .navbar-nav .nav-link {
   font-family: 'Nunito', sans-serif;
   font-size: 14px;
@@ -105,7 +109,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   text-transform: uppercase;
   color: #222;
   padding-top: 15px;
-  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
   /* semibold */
