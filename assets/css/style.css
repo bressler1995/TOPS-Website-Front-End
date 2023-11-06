@@ -115,10 +115,24 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 700;
 }
 
+.tops_hero {
+    height: 70vh;
+    background-color: #000;
+}
+
 @media (max-width: 767.9px) {
     .container {
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        background: rgb(238, 238, 238);
+        left: -30px;
+        top: 100%;
+        width: calc(100% + 60px);
+        z-index: 1000;
     }
 }
 
