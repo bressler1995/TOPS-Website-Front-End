@@ -20,8 +20,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     display: block;
     width: 100%;
     background-color: #0D425F;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     box-sizing: border-box;
 }
 
@@ -93,8 +93,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .tops_nav .navbar {
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .tops_nav .navbar .container-fluid {
