@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     }
 
     .tops_nav .navbar .navbar-nav .nav-link {
-        padding: 12px;
+        padding: 30px;
         padding-top: 15px;
         padding-bottom: 15px;
         font-size: 14px;
@@ -161,7 +161,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
     .tops_nav .navbar .navbar-nav .nav-item {
         margin: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .tops_nav .navbar .navbar-nav .nav-item:last-of-type {
