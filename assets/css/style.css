@@ -811,6 +811,33 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: #777;
 }
 
+.tops_events_section h2 {
+    display: block;
+    width: 100%;
+    font-size: 42px;
+    line-height: 46px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.tops_events_section p {
+	display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: #777;
+}
+
+.tops_events_section .tops_events_primary_content p {
+	margin-bottom: 12px;
+}
+
+.tops_events_section .tops_events_primary_content p:last-of-type {
+	margin-bottom: 0;
+}
+
 .tops_footer_cta {
     box-sizing: border-box;
     padding-top: 70px;
