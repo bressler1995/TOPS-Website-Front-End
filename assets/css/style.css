@@ -768,6 +768,49 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-bottom: 0;
 }
 
+.tops_infoicon .tops_infoicon_inner {
+	background-color: #FFF;
+	padding: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-radius: 5px;
+}
+
+.tops_infoicon .tops_infoicon_icon {
+	display: block;
+	position: relative;
+	width: 92px;
+	height: 92px;
+	background-color: #0D425F;
+	color: #FFF;
+	border-radius: 50%;
+}
+
+.tops_infoicon .tops_infoicon_icon i {
+	display: block;
+	position: absolute;
+	font-size: 32px;
+	line-height: 34px;
+	width: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.tops_infoicon h3 {
+	display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #222;
+}
+
+.tops_infoicon p {
+	color: #777;
+}
+
 .tops_footer_cta {
     box-sizing: border-box;
     padding-top: 70px;
