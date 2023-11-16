@@ -3,6 +3,20 @@ layout: default
 title: "Happy Jekylling!"
 ---
 
-## You're ready to go!
+{% capture first-section %}
 
-Start developing your Jekyll website.
+## First Section
+
+First section text
+
+{% endcapture %}
+
+{% capture second-section %}
+
+## Second Section
+
+Second section text
+
+{% endcapture %}
+
+{% include template.html %}
