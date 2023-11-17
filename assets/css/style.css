@@ -383,7 +383,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .tops_hero_badge {
 	display: inline-block;
 	width: 97%;
-	max-width: 250px;
+	max-width: 240px;
 }
 
 .tops_four_cta {
