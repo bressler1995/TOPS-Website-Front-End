@@ -383,7 +383,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .tops_hero_badge {
 	display: inline-block;
 	width: 97%;
-	max-width: 365px;
+	max-width: 250px;
 }
 
 .tops_four_cta {
@@ -398,7 +398,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	display: block;
 	width: 100%;
 	height: 100%;
-	padding: 20px;
+	padding: 15px;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	box-sizing: border-box;
@@ -416,15 +416,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_image_box .tops_image_box_imagecol {
 	display: block;
-	width: 85px;
 	box-sizing: border-box;
 }
 
 .tops_image_box .tops_image_box_imageinner {
-	display: block;
+	display: inline-block;
 	position: relative;
-	width: 85px;
-	height: 85px;
+	width: 90px;
+	height: 90px;
 	background-color: #FFF;
 	border-radius: 50%;
 }
@@ -441,8 +440,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_image_box .tops_image_box_contentcol {
 	display: block;
-	width: calc(100% - 85px);
-	padding-left: 15px;
 	box-sizing: border-box;
 }
 
@@ -530,10 +527,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .tops_image_box h3 {
 	display: block;
 	width: 100%;
-	font-size: 16px;
-	line-height: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
+	margin-top: 12px;
 }
 
 .tops_image_box p {
@@ -567,10 +563,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_posts_section .tops_posts_primary_content p:last-of-type {
 	margin-bottom: 0;
-}
-
-.tops_posts_section .tops_posts_post {
-	
 }
 
 .tops_posts_section .tops_posts_post .tops_posts_post_image {
@@ -1215,12 +1207,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		min-height: 520px;
 	}
 
-	.tops_four_cta .col-12 {
-		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	.tops_four_cta .col-6:nth-child(odd) {
+		border-right: 1px solid rgba(255, 255, 255, 0.3);
 	}
 	
-	.tops_four_cta .col-12:last-of-type {
-		border-right: none;
+	.tops_four_cta .col-6 {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 	}
 	
 	.tops_hero_badge {
@@ -1280,6 +1272,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		width: 100%;
 		height: 280px;
 	}
+
+	.tops_image_box .tops_image_box_imagecol {
+		width: 100%;
+	}
+
+	.tops_image_box .tops_image_box_contentcol {
+		width: 100%;
+		padding-top: 3px;
+	}
+
+	.tops_image_box h3 {
+		font-size: 15px;
+		line-height: 19px;
+	}
 	
 }
 
@@ -1303,6 +1309,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	
 	.tops_hero_badge {
 		margin-top: -30px;
+	}
+
+	.tops_image_box .tops_image_box_imagecol {
+		width: 90px;
+	}
+
+	.tops_image_box .tops_image_box_contentcol {
+		width: calc(100% - 90px);
+		padding-left: 15px;
+	}
+
+	.tops_image_box h3 {
+		font-size: 16px;
+		line-height: 20px;
 	}
 }
 
@@ -1345,11 +1365,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		min-height: 65vh;
 	}
 	
-	.tops_four_cta .col-12:nth-child(odd) {
+	.tops_four_cta .col-6:nth-child(odd) {
 		border-right: 1px solid rgba(255, 255, 255, 0.3);
 	}
 	
-	.tops_four_cta .col-12 {
+	.tops_four_cta .col-6 {
 		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 	}
 	
@@ -1482,14 +1502,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	}
 	
 	.tops_hero.home_hero {
-		min-height: 70vh;
+		min-height: 75vh;
 	}
 	
-	.tops_four_cta .col-12 {
+	.tops_four_cta .col-6 {
 		border-right: 1px solid rgba(255, 255, 255, 0.3);
 	}
 	
-	.tops_four_cta .col-12:last-of-type {
+	.tops_four_cta .col-6:last-of-type {
 		border-right: none;
 	}
 	
