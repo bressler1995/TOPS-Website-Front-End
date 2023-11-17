@@ -285,6 +285,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_footer .tops_footer_logo {
 	display: inline-block;
+	-webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
+.tops_footer .tops_footer_logo:hover, .tops_footer .tops_footer_logo:active, .tops_footer .tops_footer_logo:focus {
+	opacity: 0.7;
 }
 
 .tops_footer .tops_footer_logo img {
