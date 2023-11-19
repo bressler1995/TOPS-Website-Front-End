@@ -14,6 +14,19 @@ p, span, button, a, div, section {
     font-family: 'Nunito', sans-serif;
 }
 
+p a {
+	color: #D83E00;
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	-ms-transition: opacity 0.3s ease;
+	-o-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
+p a:hover, p a:active, p a:focus {
+	opacity: 0.65;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Roboto', sans-serif;
 }
@@ -56,6 +69,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     left: 0;
     width: 100%;
     height: 100%;
+	z-index: 1;
 }
 
 .tops_overlay_section.blue_overlay {
@@ -65,8 +79,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_overlay_section.blue_overlay .the_overlay {
     background-color: #0D425F;
-    opacity: 0.65;
-    z-index: 1;
 }
 
 .tops_overlay_section.black_overlay {
@@ -75,8 +87,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_overlay_section.black_overlay .the_overlay {
     background-color: #000;
-    opacity: 0.7;
-    z-index: 1;
 }
 
 .tops_overlay_section .container {
@@ -240,10 +250,42 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin-right: 15px;
 }
 
+.tops_list_icons li a {
+	display: inline-block;
+	padding: 0;
+	font-size: 16px;
+    line-height: 1.6em;
+    font-weight: 400;
+    color: #777;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.tops_list_icons li a:hover, .tops_list_icons li a:active, .tops_list_icons li a:focus {
+	color: #d83e00;
+}
+
 .tops_list_icons li i {
   margin-right: 7px;
   color: #1e8806;
 }
+
+.opacity-65 {
+	opacity: 0.65;
+}
+
+.opacity-70 {
+	opacity: 0.7;
+}
+
+.opacity-72 {
+	opacity: 0.72;
+}
+
 
 /* End Universal */
 
@@ -783,7 +825,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_blue_divider_section .tops_shape.tops_shape_bottom {
 	bottom: -1px;
-	webkit-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
@@ -1116,6 +1158,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-weight: 300;
 	text-decoration: none;
 	text-transform: capitalize;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .tops_footer .footer_submenu li a:hover, .tops_footer .footer_submenu li a:active, .tops_footer .footer_submenu li a:focus {
@@ -1406,7 +1453,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	}
 	
 	.tops_hero.home_hero {
-		min-height: 65vh;
+		min-height: 60vh;
 	}
 	
 	.tops_four_cta .col-6:nth-child(odd) {
