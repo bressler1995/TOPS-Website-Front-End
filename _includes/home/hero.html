@@ -1,0 +1,79 @@
+<div class="d-flex flex-column justify-content-center tops_hero home_hero tops_overlay_section black_overlay">
+    <div class="the_overlay opacity-72"></div>
+    <div class="container tops_container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-7">
+          <h1 class="text-center text-md-start text-white mb-2">{{ home-hero-title }}</h1>
+          <div class="tops_divider div_largest justify-content-center justify-content-md-start mb-3"><div class="div_inner"></div></div>
+          <p class="text-center text-md-start text-white-85 mb-0">{{ home-hero-description }}</p>
+        </div>
+        <div class="col-12 col-md-5 text-center text-md-end"><img class="tops_hero_badge" src="assets/img/tops_badge_big.png"></div>
+      </div>
+    </div>
+</div>
+<div class="tops_four_cta">
+    <div class="container-fluid p-0">
+      <div class="row m-0">
+
+        {% for fourctaitem in home-fourcta-titles-split %}
+            <div class="col-6 col-lg-3 p-0">
+                <a href="#" class="tops_image_box d-flex flex-row flex-wrap align-items-start">
+                  <div class="tops_image_box_imagecol text-center text-md-start">
+                      <div class="tops_image_box_imageinner"><i class="{{ home-fourcta-icons-split[forloop.index0] }}"></i></div>
+                  </div>
+                  <div class="tops_image_box_contentcol">
+                    <h3 class="text-center text-md-start text-white mb-1">{{ home-fourcta-titles-split[forloop.index0] }}</h3>
+                    <p class="text-center text-md-start text-white-85 mb-0">{{ home-fourcta-descs-split[forloop.index0] }}</p>
+                  </div>
+                </a>
+              </div>
+        {% endfor %}
+
+        <!-- <div class="col-6 col-lg-3 p-0">
+          <a href="#" class="tops_image_box d-flex flex-row flex-wrap align-items-start">
+            <div class="tops_image_box_imagecol text-center text-md-start">
+                <div class="tops_image_box_imageinner"><i class="fa-solid fa-chalkboard-user"></i></div>
+            </div>
+            <div class="tops_image_box_contentcol">
+              <h3 class="text-center text-md-start text-white mb-1">Enroll in Curriculum</h3>
+              <p class="text-center text-md-start text-white-85 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 p-0">
+          <a href="#" class="tops_image_box d-flex flex-row flex-wrap align-items-start">
+            <div class="tops_image_box_imagecol text-center text-md-start">
+                <div class="tops_image_box_imageinner"><i class="fa-brands fa-readme"></i></div>
+            </div>
+            <div class="tops_image_box_contentcol">
+              <h3 class="text-center text-md-start text-white mb-1">Sign Up For Newsletter</h3>
+              <p class="text-center text-md-start text-white-85 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 p-0">
+          <a href="#" class="tops_image_box d-flex flex-row flex-wrap align-items-start">
+            <div class="tops_image_box_imagecol text-center text-md-start">
+                <div class="tops_image_box_imageinner"><i class="fa-solid fa-calendar-days"></i></div>
+            </div>
+            <div class="tops_image_box_contentcol">
+              <h3 class="text-center text-md-start text-white mb-1">Explore TOPS Events</h3>
+              <p class="text-center text-md-start text-white-85 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 p-0">
+          <a href="#" class="tops_image_box d-flex flex-row flex-wrap align-items-start">
+            <div class="tops_image_box_imagecol text-center text-md-start">
+                <div class="tops_image_box_imageinner"><i class="fa-brands fa-github"></i></div>
+            </div>
+            <div class="tops_image_box_contentcol">
+              <h3 class="text-center text-md-start text-white mb-1">Enroll Our GitHub</h3>
+              <p class="text-center text-md-start text-white-85 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+          </a>
+        </div> -->
+
+      </div>
+    </div>
+  </div>
