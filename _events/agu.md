@@ -1,8 +1,9 @@
 ---
 layout: post
-eventdates: Dec 11 - 15, 2023
+daterange: Dec 11 - 15, 2023
 city: San Francisco, CA
 image: assets/img/events/agu.jpg
+acronyms: BPS,Planetary,Helio,Earth,Astro
 ---
 ## Consectetur adipiscing elit
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat vestibulum lectus mauris ultrices eros in. Dui accumsan sit amet nulla. Etiam non quam lacus suspendisse. Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Blandit turpis cursus in hac habitasse platea. Et netus et malesuada fames ac turpis. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Ultrices dui sapien eget mi proin sed libero enim. Ante in nibh mauris cursus mattis molestie a iaculis at.
