@@ -639,6 +639,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_posts_section .tops_posts_primary_content p {
 	margin-bottom: 12px;
+	text-align: center;
 }
 
 .tops_posts_section .tops_posts_primary_content p:last-of-type {
@@ -1337,6 +1338,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	.tops_half_section.half_section_right .tops_half_section_imageoutter {
 		padding-right: 20px;
 		padding-top: 20px;
+	}
+
+	.tops_posts_section .tops_posts_post:last-of-type {
+		padding-bottom: 0 !important;
 	}
 	
 	.tops_posts_section .tops_posts_post .tops_posts_post_image {
