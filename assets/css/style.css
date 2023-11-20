@@ -922,6 +922,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_events_section .tops_events_primary_content p {
 	margin-bottom: 12px;
+	text-align: center;
 }
 
 .tops_events_section .tops_events_primary_content p:last-of-type {
