@@ -14,17 +14,17 @@ Transform to Open Science
 {% capture home-hero-description %}
 NASA's Transform to Open Science (TOPS) initiative is designed to transform agencies, organizations, and communities to an inclusive culture of open science. TOPS's first priority is to develop the infrastructure to train scientists and researchers as part of our 5-year program. The open science curriculum will introduce those beginning their open science journey to important definitions, tools, and resources; and provide participants at all levels recommendations on best practices.
 {% endcapture %}
-
+<!---Four Column Orange CTA Titles-->
 {% assign home-fourcta-title-one = "Enroll in Curriculum" %}
 {% assign home-fourcta-title-two = "Sign Up For Newsletter" %}
 {% assign home-fourcta-title-three = "Explore TOPS Events" %}
 {% assign home-fourcta-title-four = "Enroll Our GitHub" %}
-
+<!---Four Column Orange CTA Descriptions-->
 {% assign home-fourcta-desc-one = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et." %}
 {% assign home-fourcta-desc-two = "In massa tempor nec feugiat nisl pretium fusce id. Scelerisque viverra mauris in aliquam. Quam id leo." %}
 {% assign home-fourcta-desc-three = "Facilisi cras fermentum odio eu feugiat pretium. Bibendum at varius vel pharetra. Quis lectus nulla." %}
 {% assign home-fourcta-desc-four = "Id semper risus in hendrerit gravida rutrum quisque non tellus. Semper eget duis at tellus at. Consequat." %}
-
+<!---Four Column Orange CTA Links-->
 {% assign home-fourcta-link-one = "#test1" %}
 {% assign home-fourcta-link-two = "#test2" %}
 {% assign home-fourcta-link-three = "#test3" %}
@@ -77,3 +77,4 @@ Learn More
 
 {% include home/hero.html %}
 {% include home/whatistops.html %}
+{% include home/posts.html %}
