@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "2023: Year of Open Science"
-image: assets/img/posts/post_1.png
+image: assets/img/posts/post_1.jpg
 ---
 ## Are you new to open science *today*?
 Dive right in by doing these activities!
