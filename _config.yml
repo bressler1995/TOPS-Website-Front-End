@@ -14,7 +14,9 @@ sass:
 
 # Collections
 collections:
-  - events
+  events:
+    output: true
+    permalink: /:collection/:name
   
 # Authors
 authors:
