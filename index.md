@@ -79,3 +79,5 @@ Learn More
 {% include home/whatistops.html %}
 {% include home/posts.html %}
 {% include home/strategies.html %}
+{% include home/OS101.html %}
+{% include home/events.html %}
