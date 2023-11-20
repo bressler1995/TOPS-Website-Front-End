@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Start Doing Open Science!"
-image: assets/img/post_4.png
+image: assets/img/posts/post_4.png
 ---
 ## Are you new to open science *today*?
 Dive right in by doing these activities!

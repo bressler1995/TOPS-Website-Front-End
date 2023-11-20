@@ -12,7 +12,7 @@
           </div>
       </div>
 	  <div class="row mt-5 mt-md-4">
-		 {% for post in site.posts limit:4  %}
+		 {% for post in site.posts limit:4 %}
 			<div class="col-12 col-md-6 col-lg-3 p-0 pb-4 p-md-3 tops_posts_post">
               <a href="{{ post.url | absolute_url }}" class="tops_posts_post_image"><img src="{{ site.baseurl }}/{{ post.image }}"></a>
               <div class="tops_posts_post_content">

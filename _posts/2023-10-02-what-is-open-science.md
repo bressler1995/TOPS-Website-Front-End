@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What is Open Science?"
-image: assets/img/post_3.png
+image: assets/img/posts/post_3.png
 ---
 ## Are you new to open science *today*?
 Dive right in by doing these activities!
