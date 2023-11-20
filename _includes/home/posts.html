@@ -17,7 +17,7 @@
               <a href="{{ post.url | absolute_url }}" class="tops_posts_post_image"><img src="{{ site.baseurl }}/{{ post.image }}"></a>
               <div class="tops_posts_post_content">
                   <h3 class="mb-2">{{ post.title }}</h3>
-                  <p class="mb-3">{{ post.content | markdownify | strip_html | truncate:65 }}</p>
+                  <p class="mb-3">{{ post.content | markdownify | strip_html | truncate:85 }}</p>
                   <a class="tops_posts_post_readmore" href="{{ post.url | absolute_url }}">Read More<i class="fa-solid fa-circle-arrow-right"></i></a>
               </div>
               <div class="tops_posts_post_meta d-flex flex-row flex-wrap align-items-center">
