@@ -1,8 +1,9 @@
 ---
 layout: post
+title:  "American Geophysical Union (AGU) Fall Meeting"
+image: assets/img/events/agu.jpg
 daterange: Dec 11 - 15, 2023
 city: San Francisco, CA
-image: assets/img/events/agu.jpg
 acronyms: BPS,Planetary,Helio,Earth,Astro
 ---
 ## Consectetur adipiscing elit
