@@ -850,6 +850,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_blue_divider_section .tops_blue_divider_primary_content p {
     margin-bottom: 12px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.85);
 }
 
 .tops_blue_divider_section .tops_blue_divider_primary_content p:last-of-type {
