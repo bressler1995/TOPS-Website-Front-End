@@ -5,7 +5,7 @@ image: assets/img/posts/post_1.jpg
 ---
 2023: A Year of Open Science!
 
-On 11 January 2023 the US White House — joined by 10 federal agencies, a coalition of more than 85 universities, and other organizations — declared 2023 to be a Year of Open Science. 
+On 11 January 2023 the US White House - joined by 10 federal agencies, a coalition of more than 85 universities, and other organizations — declared 2023 to be a Year of Open Science. 
 
 - White House [factsheet](https://www.whitehouse.gov/ostp/news-updates/2023/01/11/fact-sheet-biden-harris-administration-announces-new-actions-to-advance-open-and-equitable-research/)
 - NASA announces a Year of Open Science in [Nature](https://www.nature.com/articles/d41586-023-00019-y)
