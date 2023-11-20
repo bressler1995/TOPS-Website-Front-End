@@ -17,8 +17,8 @@ NASA's Transform to Open Science (TOPS) initiative is designed to transform agen
 <!---Four Column Orange CTA Titles-->
 {% assign home-fourcta-title-one = "Enroll in Curriculum" %}
 {% assign home-fourcta-title-two = "Sign Up For Newsletter" %}
-{% assign home-fourcta-title-three = "Explore TOPS Events" %}
-{% assign home-fourcta-title-four = "Enroll Our GitHub" %}
+{% assign home-fourcta-title-three = "Attend TOPS Events" %}
+{% assign home-fourcta-title-four = "Explore Our GitHub" %}
 <!---Four Column Orange CTA Descriptions-->
 {% assign home-fourcta-desc-one = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et." %}
 {% assign home-fourcta-desc-two = "In massa tempor nec feugiat nisl pretium fusce id. Scelerisque viverra mauris in aliquam. Quam id leo." %}
@@ -27,13 +27,13 @@ NASA's Transform to Open Science (TOPS) initiative is designed to transform agen
 <!---Four Column Orange CTA Links-->
 {% assign home-fourcta-link-one = "#test1" %}
 {% assign home-fourcta-link-two = "#test2" %}
-{% assign home-fourcta-link-three = "#test3" %}
-{% assign home-fourcta-link-four = "#test4" %}
+{% assign home-fourcta-link-three = "https://github.com/nasa/Transform-to-Open-Science/blob/main/docs/Area1_Engagement/Outreach/tops_conferences.md" %}
+{% assign home-fourcta-link-four = "https://github.com/nasa/Transform-to-Open-Science/" %}
 
 <!---What is TOPS-->
 <!---What is TOPS Title (Plain Text)-->
 {% capture home-whatistops-title %}
-What is TOPS Test?
+What is TOPS?
 {% endcapture %}
 <!---What is TOPS Description (Markdown)-->
 {% capture home-whatistops-description %}
@@ -78,3 +78,4 @@ Learn More
 {% include home/hero.html %}
 {% include home/whatistops.html %}
 {% include home/posts.html %}
+{% include home/strategies.html %}
