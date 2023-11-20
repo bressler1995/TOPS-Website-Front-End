@@ -639,6 +639,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_posts_section .tops_posts_primary_content p {
 	margin-bottom: 12px;
+	text-align: center;
 }
 
 .tops_posts_section .tops_posts_primary_content p:last-of-type {
@@ -1338,6 +1339,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		padding-right: 20px;
 		padding-top: 20px;
 	}
+
+	.tops_posts_section .tops_posts_post:last-of-type {
+		padding-bottom: 0 !important;
+	}
 	
 	.tops_posts_section .tops_posts_post .tops_posts_post_image {
 		padding-bottom: 60%;
@@ -1375,6 +1380,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	.tops_half_section .tops_doublebuttons .btn {
 		padding-left: 22px;
 		padding-right: 22px;
+	}
+
+	.tops_blue_divider_section .tops_infoicon:last-of-type {
+		padding-bottom: 0 !important;
 	}
 	
 }
