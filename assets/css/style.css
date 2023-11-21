@@ -646,6 +646,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin-bottom: 0;
 }
 
+.tops_posts_section .tops_posts_post .tops_posts_post_inner {
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+  min-height: 100%;
+  background-color: #FFF;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
 .tops_posts_section .tops_posts_post .tops_posts_post_image {
 	display: block;
 	position: relative;
@@ -695,6 +705,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	box-sizing: border-box;
+	flex-grow: 1;
 }
 
 .tops_posts_section .tops_posts_post .tops_posts_post_content h3 {

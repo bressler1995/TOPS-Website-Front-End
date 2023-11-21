@@ -9,6 +9,7 @@ url: "https://bressler1995.github.io"
 baseurl: "/TOPS-Website-Development"
 permalink: "/:title/"
 author: TOPS
+excerpt_separator: <!-- excerpt-end -->
 sass:
   sass_dir: ./_sass
 
