@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "2023: Year of Open Science"
+author: "TOPS"
 image: assets/img/posts/post_1.jpg
 ---
 2023: A Year of Open Science!

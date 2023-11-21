@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Start Doing Open Science!"
+author: "TOPS"
 image: assets/img/posts/post_4.png
 ---
 ## Are you new to open science *today*?

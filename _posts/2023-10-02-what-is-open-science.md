@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "What is Open Science?"
+author: "TOPS"
 image: assets/img/posts/post_3.png
 ---
 Open Science is the principle and practice of making research products and processes available to all, while respecting diverse cultures, maintaining security and privacy, and fostering collaborations, reproducibility, and equity.
