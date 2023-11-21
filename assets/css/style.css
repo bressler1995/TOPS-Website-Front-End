@@ -445,9 +445,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .tops_hero.sub_hero {
-    min-height: 300px;
-    padding-top: 70px;
+	padding-top: 70px;
     padding-bottom: 70px;
+}
+
+.tops_hero.sub_hero {
+	min-height: 400px;
 }
 
 .tops_hero_badge {
@@ -1072,6 +1075,151 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	text-transform: capitalize;
 }
 
+.tops_takeos101_anchors {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #D83E00;
+}
+
+.tops_takeos101_anchors a {
+	display: block;
+	position: relative;
+	width: 100%;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	line-height: 19px;
+	font-weight: 700;
+	color: #FFF;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+.tops_takeos101_anchors a:hover, .tops_takeos101_anchors a:active, .tops_takeos101_anchors a:focus {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.tops_takeos101_anchors a i {
+	display: inline-block;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.tops_workshops_section h2 {
+    display: block;
+    width: 100%;
+    font-size: 42px;
+    line-height: 46px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.tops_workshops_section p {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: #777;
+}
+
+.tops_workshops_section .tops_workshops_primary_content p {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.tops_workshops_section .tops_workshops_primary_content p:last-of-type {
+    margin-bottom: 0;
+}
+
+.tops_workshops_container {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #FFF;
+	border-radius: 5px;
+	overflow: hidden;
+	border: 1px solid #DDDDDD;
+}
+
+.tops_workshops_container .tops_workshops_tabs {
+	width: 100%;
+	background-color: #0D425F;
+}
+
+.tops_workshops_container .tops_workshops_tables {
+	display: block;
+	width: 100%;
+}
+
+.tops_workshops_container .tops_workshops_tables .workshop_table {
+	display: flex;
+	width: 100%;
+	height: auto;
+	flex-flow: column wrap;
+}
+
+.tops_workshops_container .tops_workshops_tables .workshop_table_filters {
+	display: block;
+	width: 100%;
+}
+
+.tops_workshops_container .tops_workshops_tables .workshop_table_table {
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+}
+
+.tops_workshops_container .tops_workshops_tables table {
+	display: table;
+    table-layout: fixed;
+    width: 100%;
+    min-width: 480px;
+}
+
+.tops_workshops_container .tops_workshops_tabs .workshop_tab:first-of-type {
+	border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tops_workshops_container .tops_workshops_tabs .workshop_tab {
+	display: flex;
+	flex-flow: row wrap;
+	border: none;
+	background-color: transparent;
+	color: #FFF;
+	box-sizing: border-box;
+	border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tops_workshops_container .tops_workshops_tabs .workshop_tab.active {
+	background-color: #D83E00;
+}
+
+.tops_workshops_container .tops_workshops_tabs .workshop_tab:not(.active):hover, .tops_workshops_container .tops_workshops_tabs .workshop_tab:not(.active):active, .tops_workshops_container .tops_workshops_tabs .workshop_tab:not(.active):focus {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.workshop_tab span {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.tops_workshops_container .tops_workshops_tabs .workshop_tab i {
+	display: inline-block;
+	font-size: 20px;
+	margin-right: 7px;
+}
+
 .tops_footer_cta {
     box-sizing: border-box;
     padding-top: 70px;
@@ -1226,11 +1374,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     transform: translate(-50%, -50%);
 }
 
+/* Content Area Formatting */
+.primary_content_md p b {
+	color: #222;
+}
+
 @media (max-width: 767.9px) {
     .container {
         padding-left: 30px;
         padding-right: 30px;
     }
+	
+	.tops_takeos101_anchors .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
 
     .navbar-collapse {
         position: absolute;
@@ -1299,12 +1457,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		line-height: 52px;
 	}
 	
+	.tops_hero.sub_hero h1 {
+		font-size: 40px;
+		line-height: 44px;
+	}
+	
 	.tops_hero.home_hero .row .col-md-7 {
 		padding-bottom: 45px;
 	}
 	
 	.tops_hero.home_hero {
 		min-height: 520px;
+	}
+	
+	.tops_hero_align_50_65 {
+		background-position: 50% 50%;
 	}
 
 	.tops_four_cta .col-6:nth-child(odd) {
@@ -1400,6 +1567,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		padding-bottom: 0 !important;
 	}
 	
+	.tops_takeos101_anchors .row .col-12 {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	.tops_takeos101_anchors .row .col-12:last-of-type {
+		border-bottom: none;
+	}
+	
+	.tops_workshops_container .tops_workshops_tabs .workshop_tab {
+		padding: 15px;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	
 }
 
 @media (min-width: 768px) {
@@ -1437,6 +1618,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		font-size: 16px;
 		line-height: 20px;
 	}
+	
+	.tops_hero.sub_hero h1 {
+		font-size: 44px;
+		line-height: 48px;
+	}
 
 }
 
@@ -1445,6 +1631,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         padding-left: 50px;
         padding-right: 50px;
     }
+	
+	.tops_takeos101_anchors .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
 	
 	.tops_footer_cta h2 {
 		font-size: 28px;
@@ -1477,6 +1668,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	
 	.tops_hero.home_hero {
 		min-height: 60vh;
+	}
+	
+	.tops_hero_align_50_65 {
+		background-position: 50% 50%;
 	}
 	
 	.tops_four_cta .col-6:nth-child(odd) {
@@ -1541,6 +1736,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	.tops_half_section .tops_doublebuttons .btn {
 		padding-left: 18px;
 		padding-right: 18px;
+	}
+	
+	.tops_takeos101_anchors .row .col-12 {
+		border-right: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	.tops_takeos101_anchors .row .col-12:first-of-type {
+		border-left: 1px solid rgba(255, 255, 255, 0.3);
+	}
+	
+	.tops_workshops_container .tops_workshops_tabs .workshop_tab {
+		padding: 20px;
+		padding-top: 25px;
+		padding-bottom: 25px;
 	}
 }
 
@@ -1622,6 +1831,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	
 	.tops_hero.home_hero {
 		min-height: 75vh;
+	}
+	
+	.tops_hero_align_50_65 {
+		background-position: 50% 65%;
 	}
 	
 	.tops_four_cta .col-6 {
@@ -1717,5 +1930,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	.tops_half_section .tops_doublebuttons .btn {
 		padding-left: 22px;
 		padding-right: 22px;
+	}
+	
+	.tops_takeos101_anchors .row .col-12 {
+		border-right: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	.tops_takeos101_anchors .row .col-12:first-of-type {
+		border-left: 1px solid rgba(255, 255, 255, 0.3);
+	}
+	
+	.tops_workshops_container .tops_workshops_tabs .workshop_tab {
+		padding: 25px;
 	}
 }
