@@ -199,4 +199,75 @@ document.addEventListener("DOMContentLoaded", function() {
 	  
 	  return result;
   }
+
+  function inject_workshop_tabs() {
+	let tops_workshops_container = document.getElementById("tops_workshops_container");
+
+	if(tops_workshops_container != null) {
+		console.log("TOPS: Found workshop tabs element");
+		let tops_workshops_tabs = tops_workshops_container.getElementsByClassName("tops_workshops_tabs");
+		let tops_workshops_tables = tops_workshops_container.getElementsByClassName("tops_workshops_tables");
+
+		if(tops_workshops_tabs != null && tops_workshops_tables != null) {
+			if(tops_workshops_tabs.length == 1 && tops_workshops_tables.length == 1) {
+				let tops_workshops_tabs_obj = tops_workshops_tabs[0];
+				let tops_workshops_tables_obj = tops_workshops_tables[0];
+				let tops_workshops_tabs_buttons = tops_workshops_tabs_obj.getElementsByClassName("workshop_tab");
+				let tops_workshops_tables_containers = tops_workshops_tables_obj.getElementsByClassName("workshop_table");
+
+				if(tops_workshops_tabs_buttons != null && tops_workshops_tables_containers != null) {
+					if(tops_workshops_tabs_buttons.length == 2 && tops_workshops_tables_containers.length == 2) {
+						console.log("TOPS: Workshop tables and workshop tabs are " + tops_workshops_tabs_buttons.length);
+
+						tops_workshops_tabs_buttons[0].addEventListener("click", function(){
+							console.log("TOPS: Workshop tables changed to Tab 1");
+							
+							if(tops_workshops_tabs_buttons[0].classList.contains("active") == false){
+								tops_workshops_tabs_buttons[0].classList.add("active");
+							}
+
+							if(tops_workshops_tabs_buttons[1].classList.contains("active") == true){
+								tops_workshops_tabs_buttons[1].classList.remove("active");
+							}
+
+							if(tops_workshops_tables_containers[0].classList.contains("active") == false){
+								tops_workshops_tables_containers[0].classList.add("active");
+							}
+
+							if(tops_workshops_tables_containers[1].classList.contains("active") == true){
+								tops_workshops_tables_containers[1].classList.remove("active");
+							}
+						});
+
+						tops_workshops_tabs_buttons[1].addEventListener("click", function(){
+							console.log("TOPS: Workshop tables changed to Tab 2");
+
+							if(tops_workshops_tabs_buttons[0].classList.contains("active") == true){
+								tops_workshops_tabs_buttons[0].classList.remove("active");
+							}
+							
+							if(tops_workshops_tabs_buttons[1].classList.contains("active") == false){
+								tops_workshops_tabs_buttons[1].classList.add("active");
+							}
+
+							if(tops_workshops_tables_containers[0].classList.contains("active") == true){
+								tops_workshops_tables_containers[0].classList.remove("active");
+							}
+							
+							if(tops_workshops_tables_containers[1].classList.contains("active") == false){
+								tops_workshops_tables_containers[1].classList.add("active");
+							}
+						});
+
+					}
+				}
+
+			}
+		}
+
+	}
+  }
+
+  inject_workshop_tabs();
+
 });
