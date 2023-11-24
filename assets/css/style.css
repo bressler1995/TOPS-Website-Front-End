@@ -666,9 +666,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   flex-flow: column wrap;
   position: relative;
   min-height: 100%;
-  background-color: #FFF;
+  background-color: #EFF2F1;
   border-radius: 5px;
   overflow: hidden;
+}
+
+.tops_posts_section.tops_gray_section .tops_posts_post .tops_posts_post_inner {
+	background-color: #FFFFFF;
 }
 
 .tops_posts_section .tops_posts_post .tops_posts_post_image {
@@ -715,7 +719,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .tops_posts_section .tops_posts_post .tops_posts_post_content {
 	display: block;
 	width: 100%;
-	background-color: #FFF;
+	background-color: transparent;
 	padding: 20px;
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -769,7 +773,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	padding-top: 12px;
 	padding-bottom: 12px;
 	border-top: 1px solid #DDD;
-	background-color: #FFF;
+	background-color: transparent;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
