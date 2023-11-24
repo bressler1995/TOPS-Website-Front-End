@@ -287,6 +287,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	opacity: 0.72;
 }
 
+.opacity-80 {
+	opacity: 0.80;
+}
+
 
 /* End Universal */
 
@@ -1636,6 +1640,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		background-position: 50% 50%;
 	}
 
+	.tops_hero_align_50_100 {
+		background-position: 50% 100%;
+	}
+
 	.tops_four_cta .col-6:nth-child(odd) {
 		border-right: 1px solid rgba(255, 255, 255, 0.3);
 	}
@@ -1898,6 +1906,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	.tops_hero_align_50_65 {
 		background-position: 50% 50%;
 	}
+
+	.tops_hero_align_50_100 {
+		background-position: 50% 100%;
+	}
 	
 	.tops_four_cta .col-6:nth-child(odd) {
 		border-right: 1px solid rgba(255, 255, 255, 0.3);
@@ -2068,6 +2080,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	
 	.tops_hero_align_50_65 {
 		background-position: 50% 65%;
+	}
+
+	.tops_hero_align_50_100 {
+		background-position: 50% 100%;
 	}
 	
 	.tops_four_cta .col-6 {
