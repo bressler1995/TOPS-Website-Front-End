@@ -1195,6 +1195,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background-color: #FFF;
 	font-size: 14px;
 	line-height: 18px;
+	font-weight: 600;
 	height: auto;
 	box-shadow: none;
 }
@@ -1446,8 +1447,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 /* Content Area Formatting */
-.primary_content_md p b {
+.tops_white_section .primary_content_md p b {
 	color: #222;
+}
+
+/* Content Area Formatting */
+.tops_overlay_section .primary_content_md p b {
+	color: #FFF;
 }
 
 @media (max-width: 767.9px) {
