@@ -5,15 +5,19 @@ title: "Home"
 
 <!---FOR EVERYONE-->
 
-<!---Hero (Plain Text)-->
+<!---START Hero (Plain Text)-->
+<!---Hero Title-->
 {% capture home-hero-title %}
 Transform to Open Science
 {% endcapture %}
-
-<!---Four Column Orange CTA (Plain Text)-->
+<!---Hero Description-->
 {% capture home-hero-description %}
 NASA's Transform to Open Science (TOPS) initiative is designed to transform agencies, organizations, and communities to an inclusive culture of open science. TOPS's first priority is to develop the infrastructure to train scientists and researchers as part of our 5-year program. The open science curriculum will introduce those beginning their open science journey to important definitions, tools, and resources; and provide participants at all levels recommendations on best practices.
 {% endcapture %}
+<!---END Hero-->
+
+
+<!---START Four Column Orange CTA (Plain Text)-->
 <!---Four Column Orange CTA Titles-->
 {% assign home-fourcta-title-one = "Enroll in Curriculum" %}
 {% assign home-fourcta-title-two = "Sign Up For Newsletter" %}
@@ -25,12 +29,12 @@ NASA's Transform to Open Science (TOPS) initiative is designed to transform agen
 {% assign home-fourcta-desc-three = "Attend conferences with TOPS to learn about open science and the Open Science 101 curriculum." %}
 {% assign home-fourcta-desc-four = "Engage with our community, learn more about open science, and contribute to our curriculum." %}
 <!---Four Column Orange CTA Links-->
-{% assign home-fourcta-link-one = "#test1" %}
-{% assign home-fourcta-link-two = "#test2" %}
 {% assign home-fourcta-link-three = "https://github.com/nasa/Transform-to-Open-Science/blob/main/docs/Area1_Engagement/Outreach/tops_conferences.md" %}
 {% assign home-fourcta-link-four = "https://github.com/nasa/Transform-to-Open-Science/" %}
+<!---END Four Column Orange CTA-->
 
-<!---What is TOPS-->
+
+<!---START What is TOPS-->
 <!---What is TOPS Title (Plain Text)-->
 {% capture home-whatistops-title %}
 What is TOPS?
@@ -55,8 +59,71 @@ Learn More
 {% capture home-whatistops-linktwo_url %}
 #test2
 {% endcapture %}
+<!---END What is TOPS-->
+
+
+<!---START Recent Posts-->
+<!---What is TOPS Title (Plain Text)-->
+{% capture home-posts-title %}
+Recent Posts
+{% endcapture %}
+<!---Recent Posts Description (Markdown)-->
+{% capture home-posts-description %}
+Explore blog posts to discover compelling open science success stories and gain valuable insights into the evolving landscape of transparent and collaborative research. Engaging with these narratives provides a firsthand account of the positive impact open science can have on various fields, inspiring a deeper appreciation for its principles and potential benefits.
+{% endcapture %}
+<!---Recent Posts Link One Text (Plain Text)-->
+{% capture home-posts-linkone_text %}
+Tell Your Story
+{% endcapture %}
+<!---Recent Posts Link Two Text (Plain Text)-->
+{% capture home-posts-linktwo_text %}
+View All
+{% endcapture %}
+<!---Recent Posts Link One URL-->
+{% capture home-posts-linkone_url %}
+#test3
+{% endcapture %}
+<!---Recent Posts Link Two URL-->
+{% capture home-posts-linktwo_url %}
+#test4
+{% endcapture %}
+<!---END Recent Posts-->
+
+
+<!---START TOPS Strategies-->
+<!---TOPS Strategies (Plain Text)-->
+{% capture home-strat-title %}
+TOPS Strategies
+{% endcapture %}
+<!---TOPS Strategies Description (Markdown)-->
+{% capture home-strat-description %}
+TOPS Open Science mission strategy is centered around fostering a collaborative and transparent research ecosystem,  increasing awareness of Open Science in Action, highlighting the greater impact of scientific efforts and more equitable access to science results.
+{% endcapture %}
+<!---Engagement Description-->
+{% capture home-strat-engagement-desc %}
+TOPS prioritizes engagement by actively involving researchers, institutions, and the public in the scientific process.
+{% endcapture %}
+<!---Capacity Sharing Description-->
+{% capture home-strat-capacity-desc %}
+Promotes capacity sharing by facilitating the exchange of knowledge, data, and resources to enhance research capabilities.
+{% endcapture %}
+<!---Incentives Description-->
+{% capture home-strat-incentives-desc %}
+Designed to encourage and reward research that utilizes open science practices, such as data sharing and open access publishing.
+{% endcapture %}
+<!---Coordination Description-->
+{% capture home-strat-coordination-desc %}
+Emphasize collaboration with the wider open science community to align and contribute to global progress in open and accessible research.
+{% endcapture %}
+<!---END TOPS Strategies-->
+
+
+
 
 <!---FOR DEVELOPER ONLY (UNLESS YOU FEEL BRAVE)-->
+
+{% assign home-fourcta-link-one = site.baseurl | append: "/take-os-101/" %}
+{% assign home-fourcta-link-two = site.baseurl | append: "/signup/" %}
 
 {% assign home-fourcta-icon-one = "fa-solid fa-chalkboard-user" %}
 {% assign home-fourcta-icon-two = "fa-brands fa-readme" %}
