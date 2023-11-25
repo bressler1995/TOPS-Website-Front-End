@@ -8,6 +8,8 @@ domain: bressler1995.github.io
 url: "https://bressler1995.github.io"
 baseurl: "/TOPS-Website-Development"
 permalink: "/:title/"
+logo: 'assets/img/tops_w_nasa_v2.png'
+footerlogo: 'assets/img/tops_badge_big.png'
 author: TOPS
 excerpt_separator: <!-- excerpt-end -->
 sass:
