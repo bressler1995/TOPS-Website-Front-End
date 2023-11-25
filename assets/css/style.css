@@ -894,6 +894,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	border-radius: 5px;
+	min-height: 100%;
 }
 
 .tops_infoicon .tops_infoicon_icon {
