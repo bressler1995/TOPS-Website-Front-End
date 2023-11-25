@@ -101,19 +101,19 @@ TOPS Open Science mission strategy is centered around fostering a collaborative 
 {% endcapture %}
 <!---Engagement Description-->
 {% capture home-strat-engagement-desc %}
-TOPS prioritizes engagement by actively involving researchers, institutions, and the public in the scientific process.
+TOPS engages with researchers and institutions by attending conferences, publishing stories, and expanding knowledge of open science.
 {% endcapture %}
 <!---Capacity Sharing Description-->
 {% capture home-strat-capacity-desc %}
-Promotes capacity sharing by facilitating the exchange of knowledge, data, and resources to enhance research capabilities.
+Promotes the exchange of knowledge, data, and resources through the open science 101 curriculum, workshops, events, cohorts, and more.
 {% endcapture %}
 <!---Incentives Description-->
 {% capture home-strat-incentives-desc %}
-Designed to encourage and reward research that utilizes open science practices, such as data sharing and open access publishing.
+Encourages and rewards research utilizing open science practices through OS101 badging, high profile awards, and funding opportunities.
 {% endcapture %}
 <!---Coordination Description-->
 {% capture home-strat-coordination-desc %}
-Emphasize collaboration with the wider open science community to align and contribute to global progress in open and accessible research.
+Emphasizes collaboration with the broader community to ensure efforts align with the global advancement of open and accessible research.
 {% endcapture %}
 <!---END TOPS Strategies-->
 
