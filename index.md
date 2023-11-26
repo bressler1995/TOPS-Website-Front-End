@@ -51,10 +51,6 @@ Enroll Now
 {% capture home-whatistops-linktwo_text %}
 Learn More
 {% endcapture %}
-<!---What is TOPS Link One URL-->
-{% capture home-whatistops-linkone_url %}
-#test1
-{% endcapture %}
 <!---What is TOPS Link Two URL-->
 {% capture home-whatistops-linktwo_url %}
 #test2
@@ -122,8 +118,8 @@ Emphasizes collaboration with the broader community to ensure efforts align with
 
 <!---FOR DEVELOPER ONLY (UNLESS YOU FEEL BRAVE)-->
 
-{% assign home-fourcta-link-one = site.baseurl | append: "/take-os-101/" %}
-{% assign home-fourcta-link-two = site.baseurl | append: "/signup/" %}
+{% assign home-fourcta-link-one = site.baseurl | append: "/" | append: site.enrollbutton %}
+{% assign home-fourcta-link-two = site.baseurl | append: "/" | append: site.signupbutton %}
 
 {% assign home-fourcta-icon-one = "fa-solid fa-chalkboard-user" %}
 {% assign home-fourcta-icon-two = "fa-brands fa-readme" %}
