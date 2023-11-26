@@ -837,6 +837,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	z-index: -1;
 }
 
+.tops_blue_divider_section .tops_shape.tops_shape_reverse svg {
+    transform: translateX(-50%) rotateY(180deg);
+}
+
 .tops_blue_divider_section .tops_shape path {
 	fill: #FFF;
     -webkit-transform-origin: center;
