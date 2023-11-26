@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
 										  
 										  let the_table_filter_obj = the_table_filter[0];
 										  let the_table_filter_controls = the_table_filter_obj.getElementsByTagName("select");
+										  let the_table_filter_reset = the_table_filter_obj.getElementsByClassName("workshop_table_resetopt");
 										  
 										  if(the_table_filter_controls != null) {
 											if(the_table_filter_controls.length > 0) {
@@ -102,8 +103,19 @@ document.addEventListener("DOMContentLoaded", function() {
 														  console.log("");
 														  
 													  });
-
 												  }
+
+												  if(the_table_filter_reset != null) {
+													if(the_table_filter_reset.length == 1) {
+														the_table_filter_reset[0].addEventListener("click", function(){
+															for(x = 0; x < the_table_filter_controls.length; x++) {
+																let current_filter_control = the_table_filter_controls[x];
+																resetSelector(current_filter_control);
+															}
+														});
+													}
+												  }
+
 											}
 										  }
 										  
@@ -269,5 +281,10 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   inject_workshop_tabs();
+
+	function resetSelector(selElement) {
+		selElement.selectedIndex = 0;
+    	selElement.dispatchEvent(new Event('change'));
+	}
 
 });
