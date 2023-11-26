@@ -17,5 +17,5 @@ topmenu:
   url: "contact/"
 
 - title: Enroll
-  url: "take-os-101/"
+  url: "take-os101/"
   special: true
