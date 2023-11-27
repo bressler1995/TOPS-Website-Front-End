@@ -282,9 +282,50 @@ document.addEventListener("DOMContentLoaded", function() {
 
   inject_workshop_tabs();
 
-	function resetSelector(selElement) {
-		selElement.selectedIndex = 0;
-    	selElement.dispatchEvent(new Event('change'));
+  function resetSelector(selElement) {
+  	selElement.selectedIndex = 0;
+    selElement.dispatchEvent(new Event('change'));
+  }
+
+  function inject_tops_opensocial() {
+	let sharebuttons = document.getElementsByClassName("tops_eventsingle_sbutton");
+
+	if(sharebuttons != null) {
+		if(sharebuttons.length > 0) {
+			for(sb = 0; sb < sharebuttons.length; sb++) {
+				sharebuttons[sb].addEventListener("click", function(){
+					let sharebutton_shareable = this.dataset.shareable;
+					let shareable_snetwork = this.dataset.snetwork;
+					let shareable_generictext = 'Check out this awesome article: ';
+					let shareable_generictitle = 'Your Title Here';
+					let open_share = false;
+					let open_this = '';
+					console.log(sharebutton_shareable);
+					console.log(shareable_snetwork);
+
+					if(shareable_snetwork == 'facebook') {
+						open_share = true;
+						open_this = 'https://www.facebook.com/sharer.php?u=' + sharebutton_shareable;
+					} else if(shareable_snetwork == 'twitter') {
+						open_share = true;
+						open_this = 'https://twitter.com/intent/tweet?text=' + shareable_generictext + '\x20' + sharebutton_shareable;
+					} else if(shareable_snetwork == 'linkedin') {
+						open_share = true;
+						open_this = 'https://www.linkedin.com/shareArticle?mini=true&url=' + sharebutton_shareable + '&title=' + shareable_generictitle + '&summary=' + shareable_generictext + '&source=' + sharebutton_shareable;
+					} else if(shareable_snetwork == 'mail') {
+						window.location.href = 'mailto:?subject=' + shareable_generictitle + '&body=' + shareable_generictext + '\n' + sharebutton_shareable;
+					}
+
+					if(open_share == true) {
+						window.open(open_this, "pop", "width=600, height=400, scrollbars=no");
+					}
+				});
+			}
+		}
 	}
+
+  }
+
+  inject_tops_opensocial();
 
 });

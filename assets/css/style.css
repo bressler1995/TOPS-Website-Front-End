@@ -964,21 +964,25 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin-bottom: 0;
 }
 
-.tops_events_section .tops_events_tiles {
+.tops_events_tiles {
 	display: block;
 	width: 100%;
 	overflow:auto;
 	padding: 0;
 }
 
-.tops_events_section .tops_events_tiles .tops_events_tile {
+.tops_events_tiles.tops_eventsingle_tiles {
+	margin-top: 30px;
+}
+
+.tops_events_tiles .tops_events_tile {
 	display: block;
 	float: left;
 	box-sizing: border-box;
 	height: auto;
 }
 
-.tops_events_section .tops_events_tiles .tops_events_tile a {
+.tops_events_tiles .tops_events_tile a {
 	display: block;
 	position: relative;
 	width: 100%;
@@ -987,15 +991,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	overflow: hidden;
 }
 
-.tops_events_section .tops_events_tiles .tops_events_tile a:hover .tops_events_tile_overlay, .tops_events_section .tops_events_tiles .tops_events_tile a:active .tops_events_tile_overlay, .tops_events_section .tops_events_tiles .tops_events_tile a:focus .tops_events_tile_overlay {
-	opacity: 0.75;
+.tops_events_tiles .tops_events_tile a:hover .tops_events_tile_overlay, .tops_events_tiles .tops_events_tile a:active .tops_events_tile_overlay, .tops_events_tiles .tops_events_tile a:focus .tops_events_tile_overlay {
+	opacity: 0.72;
 }
 
-.tops_events_section .tops_events_tiles .tops_events_tile a:hover .tops_events_tile_image, .tops_events_section .tops_events_tiles .tops_events_tile a:active .tops_events_tile_image, .tops_events_section .tops_events_tiles .tops_events_tile a:focus .tops_events_tile_image {
+.tops_events_tiles .tops_events_tile a:hover .tops_events_tile_image, .tops_events_tiles .tops_events_tile a:active .tops_events_tile_image, .tops_events_tiles .tops_events_tile a:focus .tops_events_tile_image {
 	transform: scale(1.2);
 }
 
-.tops_events_section .tops_events_tiles .tops_events_tile .tops_events_tile_image {
+.tops_events_tiles .tops_events_tile .tops_events_tile_image {
 	display: block;
 	position: absolute;
 	width: 100%;
@@ -1011,7 +1015,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	transition: transform 0.5s ease;
 }
 
-.tops_events_section .tops_events_tiles .tops_events_tile .tops_events_tile_image img {
+.tops_events_tiles .tops_events_tile .tops_events_tile_image img {
 	display: block;
 	position: relative;
 	width: 100%;
@@ -1019,7 +1023,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	object-fit: cover;
 }
 
-.tops_events_section .tops_events_tiles .tops_events_tile .tops_events_tile_overlay {
+.tops_events_tiles .tops_events_tile .tops_events_tile_overlay {
 	display: block;
 	position: absolute;
 	width: 100%;
@@ -1034,7 +1038,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	transition: opacity 0.3s ease;
 }
 
-.tops_events_section .tops_events_tiles .tops_events_tile .tops_events_tile_context {
+.tops_events_tiles .tops_events_tile .tops_events_tile_context {
 	display: block;
 	position: absolute;
 	width: 100%;
@@ -1048,7 +1052,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	padding-bottom: 25px;
 }
 
-.tops_events_section .tops_events_tiles .tops_events_tile .tops_events_tile_context h3 {
+.tops_events_tiles .tops_events_tile .tops_events_tile_context h3 {
 	display: block;
 	width: 100%;
 	color: #FFF;
@@ -1056,11 +1060,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin-bottom: 12px;
 }
 
-.tops_events_section .tops_events_tiles .tops_events_tile .tops_events_tile_context .tops_events_tile_meta {
+.tops_events_tiles .tops_events_tile .tops_events_tile_context .tops_events_tile_meta {
 	width: 100%;
 }
 
-.tops_events_section .tops_events_tiles .tops_events_tile .tops_events_tile_context .tops_events_tile_meta .tops_events_tile_metaitem {
+.tops_events_tiles .tops_events_tile .tops_events_tile_context .tops_events_tile_meta .tops_events_tile_metaitem {
 	display: inline-block;
 	color: rgba(255, 255, 255, 0.85);
 	font-size: 13px;
@@ -1069,7 +1073,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin-right: 10px;
 }
 
-.tops_events_section .tops_events_tiles .tops_events_tile .tops_events_tile_context .tops_events_tile_meta .tops_events_tile_metadivider {
+.tops_events_tiles .tops_events_tile .tops_events_tile_context .tops_events_tile_meta .tops_events_tile_metadivider {
 	display: inline-block;
     width: auto;
     height: auto;
@@ -1078,7 +1082,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-right: 10px;
 }
 
-.tops_events_section .tops_events_tiles .tops_events_tile .tops_events_tile_context .tops_events_tile_categories span {
+.tops_events_tiles .tops_events_tile .tops_events_tile_context .tops_events_tile_categories span {
 	display: inline-block;
 	width: auto;
 	height: auto;
@@ -1465,6 +1469,265 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin-bottom: 0;
 }
 
+/* Event Styling */
+
+.tops_eventsingle_section .row div.tops_eventsingle_content {
+	box-sizing: border-box;
+}
+
+.tops_eventsingle_section .tops_eventsingle_content .tops_eventsingle_captionimage {
+	display: block;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.tops_eventsingle_section .tops_eventsingle_content .tops_eventsingle_captionimage img {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	object-position: center;
+	z-index: 2;
+}
+
+.tops_eventsingle_section .tops_eventsingle_content .tops_eventsingle_captionimage p {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	bottom: 0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 20px;
+	z-index: 3;
+	margin: 0;
+	color: #FFF;
+	font-size: 14px;
+	line-height: 1.5rem;
+	font-weight: 400;
+	background-color: rgba(13, 66, 95, 0.87);
+}
+
+.tops_eventsingle_section .tops_eventsingle_content .tops_eventsingle_categories {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+	margin-top: 50px;
+}
+
+.tops_eventsingle_section .tops_eventsingle_content .tops_eventsingle_categories span {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #0D425F;
+    border-radius: 3px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.tops_eventsingle_section .tops_eventsingle_content h2.tops_eventsingle_maintitle {
+	display: block;
+	color: #222;
+	font-size: 36px;
+	line-height: 40px;
+	text-transform: uppercase;
+	margin-top: 14px;
+	font-weight: 900;
+}
+
+.tops_eventsingle_section .tops_eventsingle_content h2.tops_eventsingle_moretitle {
+	display: block;
+	color: #222;
+	font-size: 30px;
+	line-height: 34px;
+	text-transform: uppercase;
+	margin-top: 14px;
+	font-weight: 900;
+	margin-top: 50px;
+}
+
+.tops_eventsingle_section .tops_eventsingle_content .tops_eventsingle_content_text {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+.tops_eventsingle_section .tops_eventsingle_content .tops_eventsingle_content_text p {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: #777;
+	margin-bottom: 12px;
+}
+
+.tops_eventsingle_section .tops_eventsingle_content .tops_eventsingle_content_text p:last-of-type {
+	margin-bottom: 0;
+}
+
+.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #EFF2F1;
+	border-radius: 5px;
+	margin-bottom: 40px;
+}
+
+.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget:last-of-type {
+	margin-bottom: 0;
+}
+
+.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget h3 {
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: #222;
+	font-weight: 900;
+}
+
+.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget p.tops_eventsingle_widgetdescription {
+	display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: #777;
+    margin-bottom: 0;
+}
+
+.tops_eventsingle_image_box {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-bottom: 1px solid #DDD;
+}
+
+.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget .tops_eventsingle_image_box:last-of-type {
+	border-bottom: none;
+}
+
+.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget .tops_eventsingle_image_box .tops_image_box_imagecol {
+    display: block;
+    box-sizing: border-box;
+	width: 55px;
+}
+
+.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget .tops_eventsingle_image_box .tops_image_box_contentcol {
+    display: block;
+    box-sizing: border-box;
+	width: calc(100% - 55px);
+    padding-left: 12px;
+}
+
+.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget .tops_eventsingle_image_box .tops_image_box_imageinner {
+    display: inline-block;
+    position: relative;
+    width: 55px;
+    height: 55px;
+    background-color: #0D425F;
+    border-radius: 50%;
+}
+
+.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget .tops_eventsingle_image_box .tops_image_box_imageinner i {
+    display: block;
+    position: absolute;
+    font-size: 18px;
+	line-height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+}
+
+.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget .tops_eventsingle_image_box h4 {
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 8px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #222;
+}
+
+.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget .tops_eventsingle_image_box p {
+	display: block;
+	width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+	color: #777;
+}
+
+.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget iframe {
+	display: block;
+	width: 100%;
+}
+
+.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget .tops_eventsingle_sbuttons {
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 17px;
+}
+
+.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget .tops_eventsingle_sbuttons .tops_eventsingle_sbutton {
+	display: inline-block;
+	position: relative;
+	border: none;
+	background-color: #000;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	-ms-transition: opacity 0.3s ease;
+	-o-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
+.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget .tops_eventsingle_sbuttons .tops_eventsingle_sbutton:hover, .tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget .tops_eventsingle_sbuttons .tops_eventsingle_sbutton:active, .tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget .tops_eventsingle_sbuttons .tops_eventsingle_sbutton:focus {
+	opacity: 0.65;
+}
+
+.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget .tops_eventsingle_sbuttons .tops_eventsingle_sbutton i {
+	display: block;
+    position: absolute;
+    font-size: 20px;
+	line-height: 22px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+}
+
 /* Footer Styling */
 
 .tops_footer_cta {
@@ -1804,17 +2067,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		padding-bottom: 60%;
 	}
 	
-	.tops_events_section .tops_events_tiles .tops_events_tile {
+	.tops_events_tiles .tops_events_tile {
 		padding-bottom: 24px;
 		width: 100%;
 		height: 280px;
 	}
-	
-	.tops_events_section .tops_events_tiles .tops_events_tile:last-of-type {
-		padding-bottom: 0;
+
+	.tops_events_tiles.tops_eventsingle_tiles .tops_events_tile {
+		padding: 0;
+		padding-bottom: 24px;
+		width: 100%;
+		height: 280px;
 	}
 
-	.tops_events_section .tops_events_tiles .tops_events_tile.tops_events_tile_larger {
+	.tops_events_tiles .tops_events_tile.tops_events_tile_larger {
 		width: 100%;
 		height: 280px;
 	}
@@ -1904,6 +2170,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 	.tops_whyos_section .tops_whyos_item:last-of-type {
 		padding-bottom: 0 !important;
+	}
+
+	.tops_eventsingle_section .row div.tops_eventsingle_content {
+		padding-bottom: 30px;
+	}
+
+	.tops_eventsingle_section .tops_eventsingle_content .tops_eventsingle_captionimage {
+		height: 350px;
+	}
+
+	.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget iframe {
+		height: 300px;
 	}
 	
 }
@@ -2093,13 +2371,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		padding-bottom: 65%;
 	}
 	
-	.tops_events_section .tops_events_tiles .tops_events_tile {
+	.tops_events_tiles .tops_events_tile {
 		padding: 15px;
 		width: 50%;
 		height: 280px;
 	}
 
-	.tops_events_section .tops_events_tiles .tops_events_tile.tops_events_tile_larger {
+	.tops_events_tiles.tops_eventsingle_tiles .tops_events_tile {
+		padding: 0;
+		padding-bottom: 24px;
+		width: 100%;
+		height: 250px;
+	}
+
+	.tops_events_tiles .tops_events_tile.tops_events_tile_larger {
 		width: 50%;
 		height: 280px;
 	}
@@ -2134,6 +2419,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	.tops_whyos_section .tops_whyos_item .tops_whyos_image {
 		padding-bottom: 65%;
 	}
+
+	.tops_eventsingle_section .row div.tops_eventsingle_content {
+		padding-right: 50px;
+	}
+
+	.tops_eventsingle_section .tops_eventsingle_content .tops_eventsingle_captionimage {
+		height: 400px;
+	}
+
+	.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget iframe {
+		height: 250px;
+	}
 }
 
 @media(max-width: 991.9px) {
@@ -2142,31 +2439,31 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		line-height: 1.7rem;
 	}
 	
-	.tops_events_section .tops_events_tiles .tops_events_tile .tops_events_tile_overlay {
+	.tops_events_tiles .tops_events_tile .tops_events_tile_overlay {
 		background: linear-gradient(360deg, rgba(0, 0, 0, 0.80) 30.00%, rgba(0, 0, 0, 0.00) 85.00%);
 	}
 
-	.tops_events_section .tops_events_tiles .tops_events_tile.tops_events_tile_larger .tops_events_tile_overlay {
+	.tops_events_tiles .tops_events_tile.tops_events_tile_larger .tops_events_tile_overlay {
 		background: linear-gradient(360deg, rgba(0, 0, 0, 0.80) 30.00%, rgba(0, 0, 0, 0.00) 85.00%);
 	}
 	
-	.tops_events_section .tops_events_tiles .tops_events_tile .tops_events_tile_context h3 {
+	.tops_events_tiles .tops_events_tile .tops_events_tile_context h3 {
 		font-size: 16px;
 		line-height: 20px;
 		font-weight: 700;
 	}
 	
-	.tops_events_section .tops_events_tiles .tops_events_tile.tops_events_tile_larger .tops_events_tile_context h3 {
+	.tops_events_tiles .tops_events_tile.tops_events_tile_larger .tops_events_tile_context h3 {
 		font-size: 16px;
 		line-height: 20px;
 		font-weight: 700;
 	}
 	
-	.tops_events_section .tops_events_tiles .tops_events_tile .tops_events_tile_context .tops_events_tile_categories {
+	.tops_events_tiles .tops_events_tile .tops_events_tile_context .tops_events_tile_categories {
 		display: none;
 	}
 
-	.tops_events_section .tops_events_tiles .tops_events_tile.tops_events_tile_larger .tops_events_tile_context .tops_events_tile_categories {
+	.tops_events_tiles .tops_events_tile.tops_events_tile_larger .tops_events_tile_context .tops_events_tile_categories {
 		display: none;
 	}
 
@@ -2278,42 +2575,49 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		padding-bottom: 70%;
 	}
 	
-	.tops_events_section .tops_events_tiles .tops_events_tile {
+	.tops_events_tiles .tops_events_tile {
 		padding: 15px;
 		width: 25%;
 		height: 240px;
 	}
 
-	.tops_events_section .tops_events_tiles .tops_events_tile.tops_events_tile_larger {
+	.tops_events_tiles.tops_eventsingle_tiles .tops_events_tile {
+		padding: 0;
+		padding-right: 30px;
+		width: 33.3%;
+		height: 220px;
+	}
+
+	.tops_events_tiles .tops_events_tile.tops_events_tile_larger {
 		width: 50%;
 		height: 480px;
 	}
 	
-	.tops_events_section .tops_events_tiles .tops_events_tile .tops_events_tile_overlay {
+	.tops_events_tiles .tops_events_tile .tops_events_tile_overlay {
 		background: linear-gradient(360deg, rgba(0, 0, 0, 0.80) 30.00%, rgba(0, 0, 0, 0.00) 85.00%);
 	}
 
-	.tops_events_section .tops_events_tiles .tops_events_tile.tops_events_tile_larger .tops_events_tile_overlay {
+	.tops_events_tiles .tops_events_tile.tops_events_tile_larger .tops_events_tile_overlay {
 		background: linear-gradient(360deg, rgba(0, 0, 0, 0.85) 15.02%, rgba(0, 0, 0, 0.00) 77.97%)
 	}
 	
-	.tops_events_section .tops_events_tiles .tops_events_tile .tops_events_tile_context h3 {
+	.tops_events_tiles .tops_events_tile .tops_events_tile_context h3 {
 		font-size: 16px;
 		line-height: 20px;
 		font-weight: 700;
 	}
 	
-	.tops_events_section .tops_events_tiles .tops_events_tile.tops_events_tile_larger .tops_events_tile_context h3 {
+	.tops_events_tiles .tops_events_tile.tops_events_tile_larger .tops_events_tile_context h3 {
 		font-size: 28px;
 		line-height: 32px;
 		font-weight: 900;
 	}
 	
-	.tops_events_section .tops_events_tiles .tops_events_tile .tops_events_tile_context .tops_events_tile_categories {
+	.tops_events_tiles .tops_events_tile .tops_events_tile_context .tops_events_tile_categories {
 		display: none;
 	}
 
-	.tops_events_section .tops_events_tiles .tops_events_tile.tops_events_tile_larger .tops_events_tile_context .tops_events_tile_categories {
+	.tops_events_tiles .tops_events_tile.tops_events_tile_larger .tops_events_tile_context .tops_events_tile_categories {
 		display: flex;
 		flex-flow: row wrap;
 		width: 100%;
@@ -2353,5 +2657,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 	.tops_whyos_section .tops_whyos_item .tops_whyos_image {
 		padding-bottom: 45%;
+	}
+
+	.tops_eventsingle_section .row div.tops_eventsingle_content {
+		padding-right: 70px;
+	}
+
+	.tops_eventsingle_section .tops_eventsingle_content .tops_eventsingle_captionimage {
+		height: 450px;
+	}
+
+	.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget iframe {
+		height: 300px;
 	}
 }
