@@ -1638,6 +1638,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: #FFF;
 }
 
+.tops_white_section .tops_whyos_content p b {
+	color: #222;
+}
+
+.tops_overlay_section .tops_whyos_content p b {
+	color: #FFF;
+}
+
 .tops_white_section.tops_half_section p b {
 	color: #222;
 }
