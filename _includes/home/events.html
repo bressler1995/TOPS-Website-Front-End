@@ -22,11 +22,15 @@
 							<div class="tops_events_tile_overlay"></div>
 							<div class="tops_events_tile_context">
 								<div class="tops_events_tile_categories">
-									<span>BPS</span>
-									<span>Planetary</span>
-									<span>Helio</span>
-									<span>Earth</span>
-									<span>Astro</span>
+									{% if event.acronyms %}
+										{% assign event-acronyms-split = event.acronyms | split: "," %}
+
+										{% for event-acronym in event-acronyms-split %}
+										  <span>{{ event-acronym }}</span>
+										{% endfor %}
+									{% else %}
+										<span>Other</span>
+									{% endif %}
 								</div>
 								<h3>{{ event.title }}</h3>
 								<div class="d-flex flex-row flex-wrap align-items-center tops_events_tile_meta">
@@ -44,11 +48,15 @@
 								<div class="tops_events_tile_overlay"></div>
 								<div class="tops_events_tile_context">
 									<div class="tops_events_tile_categories">
-										<span>BPS</span>
-										<span>Planetary</span>
-										<span>Helio</span>
-										<span>Earth</span>
-										<span>Astro</span>
+										{% if event.acronyms %}
+											{% assign event-acronyms-split = event.acronyms | split: "," %}
+											
+											{% for event-acronym in event-acronyms-split %}
+											  <span>{{ event-acronym }}</span>
+											{% endfor %}
+										{% else %}
+											<span>Other</span>
+										{% endif %}
 									</div>
 									<h3>{{ event.title }}</h3>
 									<div class="d-flex flex-row flex-wrap align-items-center tops_events_tile_meta">
