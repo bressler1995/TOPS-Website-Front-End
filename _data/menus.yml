@@ -44,6 +44,10 @@ footermenu:
 - title: Sign Up For Newsletter
   url: "signup/"
 
+- title: NASA Privacy Policy
+  url: "https://nasa.gov/privacy/#privacy-policy"
+  external: true
+
 # Curriculum Modules
 cmodules:
 
