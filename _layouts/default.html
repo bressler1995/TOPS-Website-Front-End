@@ -15,8 +15,12 @@
                 <div class="col-6"></div>
                 <div class="col-6 social_icons">
                     <div class="sicon_container d-flex flex-row flex-wrap justify-content-end">
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        {% if site.social.linkedin %}
+                          <a href="{{ site.social.linkedin }}" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        {% endif %}
+                        {% if site.social.github %}
+                          <a href="{{ site.social.github }}" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -34,19 +38,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                   <ul class="navbar-nav ms-auto m-0">
-                    {% for item in site.data.menus.topmenu %}
-                      {% if item.special %}
+                    {% for topmenu-item in site.data.menus.topmenu %}
+                      {% if topmenu-item.special %}
                       <li class="nav-item nav-special">
-                        <a class="nav-link" href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}">{{item.title}}</a>
+                        <a class="nav-link" href="{% unless topmenu-item.external %}{{site.baseurl}}/{% endunless %}{{topmenu-item.url}}">{{topmenu-item.title}}</a>
                       </li>
                       {% else %}
-                        {% if item.title == page.title %}
+                        {% if topmenu-item.title == page.title %}
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}">{{item.title}}</a>
+                            <a class="nav-link active" aria-current="page" href="{% unless topmenu-item.external %}{{site.baseurl}}/{% endunless %}{{topmenu-item.url}}">{{topmenu-item.title}}</a>
                           </li>
                         {% else %}
                           <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}">{{item.title}}</a>
+                            <a class="nav-link" aria-current="page" href="{% unless topmenu-item.external %}{{site.baseurl}}/{% endunless %}{{topmenu-item.url}}">{{topmenu-item.title}}</a>
                           </li>
                         {% endif %}
                       {% endif %}
@@ -86,32 +90,30 @@
             <h3 class="text-white text-center text-lg-start">All Pages</h3>
             <div class="tops_divider div_smallest justify-content-center justify-content-lg-start mb-4"><div class="div_inner"></div></div>
             <ul class="footer_submenu">
-              <li><a class="text-center text-lg-start" href="#">Home</a></li>
-              <li><a class="text-center text-lg-start" href="#">About</a></li>
-              <li><a class="text-center text-lg-start" href="#">Events</a></li>
-              <li><a class="text-center text-lg-start" href="#">Blog</a></li>
-              <li><a class="text-center text-lg-start" href="#">Contact</a></li>
-              <li><a class="text-center text-lg-start" href="#">Take OS101</a></li>
-              <li><a class="text-center text-lg-start" href="#">Sign Up for Newsletter</a></li>
+              {% for footermenu-item in site.data.menus.footermenu %}
+                <li><a class="text-center text-lg-start" href="{{site.baseurl}}/{{footermenu-item.url}}">{{footermenu-item.title}}</a></li>
+              {% endfor %}
             </ul>
           </div>
           <div class="footer_column_small">
             <h3 class="text-white text-center text-lg-start">Curriculum</h3>
             <div class="tops_divider div_smallest justify-content-center justify-content-lg-start mb-4"><div class="div_inner"></div></div>
             <ul class="footer_submenu">
-              <li><a class="text-center text-lg-start" href="#">Ethos of Open Science</a></li>
-              <li><a class="text-center text-lg-start" href="#">Open Tools and Resources</a></li>
-              <li><a class="text-center text-lg-start" href="#">Open Data</a></li>
-              <li><a class="text-center text-lg-start" href="#">Open Code</a></li>
-              <li><a class="text-center text-lg-start" href="#">Open Results</a></li>
+              {% for cmodules-item in site.data.menus.cmodules %}
+                <li><a class="text-center text-lg-start" href="{{cmodules-item.url}}" target="_blank">{{cmodules-item.title}}</a></li>
+              {% endfor %}
             </ul>
           </div>
           <div class="footer_column_small">
             <h3 class="text-white text-center text-lg-start">Follow Us</h3>
             <div class="tops_divider div_smallest justify-content-center justify-content-lg-start mb-4"><div class="div_inner"></div></div>
             <div class="social_icons_footer d-flex flex-row flex-wrap justify-content-center justify-content-lg-start">
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#"><i class="fa-brands fa-github"></i></a>
+              {% if site.social.linkedin %}
+                <a href="{{ site.social.linkedin }}" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+              {% endif %}
+              {% if site.social.github %}
+                <a href="{{ site.social.github }}" target="_blank"><i class="fa-brands fa-github"></i></a>
+              {% endif %}
             </div>
           </div>
         </div>

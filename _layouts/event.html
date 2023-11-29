@@ -40,70 +40,34 @@ layout: default
           <h2 class="text-start mb-2 tops_eventsingle_moretitle">Upcoming Events</h2>
           <div class="tops_divider div_smaller justify-content-start mb-0"><div class="div_inner"></div></div>
           <div class="tops_events_tiles tops_eventsingle_tiles">
-              
-              <div class="tops_events_tile">
-                      <a href="#">
-                      <div class="tops_events_tile_image"><img src="assets/img/events/sacnas.jpg"></div>
-                      <div class="tops_events_tile_overlay"></div>
-                      <div class="tops_events_tile_context">
-                          <div class="tops_events_tile_categories">
-                              <span>BPS</span>
-                              <span>Planetary</span>
-                              <span>Helio</span>
-                              <span>Earth</span>
-                              <span>Astro</span>
-                          </div>
-                          <h3>American Geophysical Union (AGU) Fall</h3>
-                          <div class="d-flex flex-row flex-wrap align-items-center tops_events_tile_meta">
-                              <div class="tops_events_tile_metaitem">Dec 11 - 15, 2023</div>
-                              <div class="tops_events_tile_metadivider"><i class="fa-solid fa-circle"></i></div>
-                              <div class="tops_events_tile_metaitem">San Francisco</div>
-                          </div>
-                      </div>
+              {% assign sorted = site.events | sort: 'date' | reverse %}
+              {% for event in sorted limit:3 %}
+                <div class="tops_events_tile">
+                  <a href="{{ event.url | absolute_url }}">
+                    <div class="tops_events_tile_image"><img src="{{ site.baseurl }}/{{ event.image }}"></div>
+                    <div class="tops_events_tile_overlay"></div>
+                    <div class="tops_events_tile_context">
+                        <div class="tops_events_tile_categories">
+                          {% if event.acronyms %}
+                            {% assign event-acronyms-split = event.acronyms | split: "," %}
+        
+                            {% for event-acronym in event-acronyms-split %}
+                              <span>{{ event-acronym }}</span>
+                            {% endfor %}
+                          {% else %}
+                            <span>Other</span>
+                          {% endif %}
+                        </div>
+                        <h3>{{ event.title }}</h3>
+                        <div class="d-flex flex-row flex-wrap align-items-center tops_events_tile_meta">
+                            <div class="tops_events_tile_metaitem">{{ event.daterange }}</div>
+                            <div class="tops_events_tile_metadivider"><i class="fa-solid fa-circle"></i></div>
+                            <div class="tops_events_tile_metaitem">{{ event.location }}</div>
+                        </div>
+                    </div>
                   </a>
-              </div>
-              <div class="tops_events_tile">
-                      <a href="#">
-                      <div class="tops_events_tile_image"><img src="assets/img/events/sacnas.jpg"></div>
-                      <div class="tops_events_tile_overlay"></div>
-                      <div class="tops_events_tile_context">
-                          <div class="tops_events_tile_categories">
-                              <span>BPS</span>
-                              <span>Planetary</span>
-                              <span>Helio</span>
-                              <span>Earth</span>
-                              <span>Astro</span>
-                          </div>
-                          <h3>American Geophysical Union (AGU) Fall</h3>
-                          <div class="d-flex flex-row flex-wrap align-items-center tops_events_tile_meta">
-                              <div class="tops_events_tile_metaitem">Dec 11 - 15, 2023</div>
-                              <div class="tops_events_tile_metadivider"><i class="fa-solid fa-circle"></i></div>
-                              <div class="tops_events_tile_metaitem">San Francisco</div>
-                          </div>
-                      </div>
-                  </a>
-              </div>
-              <div class="tops_events_tile">
-                      <a href="#">
-                      <div class="tops_events_tile_image"><img src="assets/img/events/sacnas.jpg"></div>
-                      <div class="tops_events_tile_overlay"></div>
-                      <div class="tops_events_tile_context">
-                          <div class="tops_events_tile_categories">
-                              <span>BPS</span>
-                              <span>Planetary</span>
-                              <span>Helio</span>
-                              <span>Earth</span>
-                              <span>Astro</span>
-                          </div>
-                          <h3>American Geophysical Union (AGU) Fall</h3>
-                          <div class="d-flex flex-row flex-wrap align-items-center tops_events_tile_meta">
-                              <div class="tops_events_tile_metaitem">Dec 11 - 15, 2023</div>
-                              <div class="tops_events_tile_metadivider"><i class="fa-solid fa-circle"></i></div>
-                              <div class="tops_events_tile_metaitem">San Francisco</div>
-                          </div>
-                      </div>
-                  </a>
-              </div>
+                </div>
+              {% endfor %}
           </div>
         </div>
         <div class="col-12 col-md-4 col-lg-3 tops_eventsingle_sidebar">
