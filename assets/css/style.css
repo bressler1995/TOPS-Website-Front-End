@@ -2008,6 +2008,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		background-position: 50% 50%;
 	}
 
+	.tops_hero_align_50_70 {
+		background-position: 50% 50%;
+	}
+
 	.tops_hero_align_50_100 {
 		background-position: 50% 100%;
 	}
@@ -2319,6 +2323,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		background-position: 50% 50%;
 	}
 
+	.tops_hero_align_50_70 {
+		background-position: 50% 50%;
+	}
+
 	.tops_hero_align_50_100 {
 		background-position: 50% 100%;
 	}
@@ -2521,6 +2529,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	
 	.tops_hero_align_50_65 {
 		background-position: 50% 65%;
+	}
+
+	.tops_hero_align_50_70 {
+		background-position: 50% 70%;
 	}
 
 	.tops_hero_align_50_100 {
