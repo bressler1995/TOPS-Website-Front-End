@@ -1,0 +1,48 @@
+<div class="tops_white_section tops_events_section">
+	<div class="container tops_container">
+		<div class="row">
+			<div class="col-12 tops_events_primary_content primary_content_md">
+				<h2 class="text-center mb-2">All TOPS Events</h2>
+				<div class="tops_divider div_larger justify-content-center mb-3"><div class="div_inner"></div></div>
+				<p>We invite you to visit us at various events where TOPS will be prominently featured, including  scientific meetings and gatherings of historically underrepresented communities. Our presence at these events is a unique opportunity to engage with us in a dynamic learning environment and connect with fellow open science enthusiasts. In addition to attending insightful sessions, engaging townhalls, and exploring our informative booth, we are proud to offer workshops specifically designed to teach our Open Science 101 curriculum centered around essential skills for open science practitioners.</p>
+				<div class="d-flex flex-row flex-wrap tops_doublebuttons justify-content-center">
+					<a class="btn btn-primary" href="#" role="button">Contact Us</a>
+				</div>
+			</div>
+		</div>
+		<div class="row mt-5 mt-md-4">
+			<div class="tops_events_tiles">
+				{% assign sorted = site.events | sort: 'date' | reverse %}
+				{% for event in sorted %}
+					
+					<div class="tops_events_tile {% if forloop.index == 1 %}tops_events_tile_larger{% endif %}">
+						<a href="{{ event.url | absolute_url }}">
+							<div class="tops_events_tile_image"><img src="{{ site.baseurl }}/{{ event.image }}"></div>
+							<div class="tops_events_tile_overlay"></div>
+							<div class="tops_events_tile_context">
+								<div class="tops_events_tile_categories">
+									{% if event.acronyms %}
+										{% assign event-acronyms-split = event.acronyms | split: "," %}
+
+										{% for event-acronym in event-acronyms-split %}
+										  <span>{{ event-acronym }}</span>
+										{% endfor %}
+									{% else %}
+										<span>Other</span>
+									{% endif %}
+								</div>
+								<h3>{{ event.title }}</h3>
+								<div class="d-flex flex-row flex-wrap align-items-center tops_events_tile_meta">
+									<div class="tops_events_tile_metaitem">{{ event.daterange }}</div>
+									<div class="tops_events_tile_metadivider"><i class="fa-solid fa-circle"></i></div>
+									<div class="tops_events_tile_metaitem">{{ event.location }}</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

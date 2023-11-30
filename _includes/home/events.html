@@ -15,8 +15,7 @@
             <div class="tops_events_tiles">
 				{% assign sorted = site.events | sort: 'date' | reverse %}
 				{% for event in sorted limit:9 %}
-					{% if forloop.index == 1 %}
-					<div class="tops_events_tile tops_events_tile_larger">
+					<div class="tops_events_tile {% if forloop.index == 1 %}tops_events_tile_larger{% endif %}">
 						<a href="{{ event.url | absolute_url }}">
 							<div class="tops_events_tile_image"><img src="{{ site.baseurl }}/{{ event.image }}"></div>
 							<div class="tops_events_tile_overlay"></div>
@@ -26,7 +25,7 @@
 										{% assign event-acronyms-split = event.acronyms | split: "," %}
 
 										{% for event-acronym in event-acronyms-split %}
-										  <span>{{ event-acronym }}</span>
+										<span>{{ event-acronym }}</span>
 										{% endfor %}
 									{% else %}
 										<span>Other</span>
@@ -41,33 +40,6 @@
 							</div>
 						</a>
 					</div>
-					{% else %}
-						<div class="tops_events_tile">
-							<a href="{{ event.url | absolute_url }}">
-								<div class="tops_events_tile_image"><img src="{{ site.baseurl }}/{{ event.image }}"></div>
-								<div class="tops_events_tile_overlay"></div>
-								<div class="tops_events_tile_context">
-									<div class="tops_events_tile_categories">
-										{% if event.acronyms %}
-											{% assign event-acronyms-split = event.acronyms | split: "," %}
-											
-											{% for event-acronym in event-acronyms-split %}
-											  <span>{{ event-acronym }}</span>
-											{% endfor %}
-										{% else %}
-											<span>Other</span>
-										{% endif %}
-									</div>
-									<h3>{{ event.title }}</h3>
-									<div class="d-flex flex-row flex-wrap align-items-center tops_events_tile_meta">
-										<div class="tops_events_tile_metaitem">{{ event.daterange }}</div>
-										<div class="tops_events_tile_metadivider"><i class="fa-solid fa-circle"></i></div>
-										<div class="tops_events_tile_metaitem">{{ event.location }}</div>
-									</div>
-								</div>
-							</a>
-						</div>
-					{% endif %}
 				{% endfor %}
                 
             </div>
