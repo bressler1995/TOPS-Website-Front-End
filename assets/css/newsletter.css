@@ -103,7 +103,7 @@ p, span, p a {
 }
 
 .tops_form_container .tops_form_content p a {
-	color: #2b94ab;
+	color: #D83E00;
 	text-decoration: underline;
 }
 
@@ -162,7 +162,7 @@ div.ctct-form-embed form.ctct-form-custom label.ctct-form-label, div.ctct-form-e
 .tops_form_container .ctct-form-success {
 	min-height: initial !important;
 	border-radius: 5px;
-	background-color: #28a745;
+	background-color: #1E8806;
 	width: 100%;
 	height: auto;
 	box-sizing: border-box;
