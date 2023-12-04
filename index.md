@@ -43,15 +43,15 @@ What is TOPS?
 {% capture home-whatistops-description %}
 The Transform to Open Science (TOPS) mission is a NASA initiative designed to rapidly transform agencies, organizations, and communities to an inclusive culture of open science. TOPS is part of NASA’s Open-Source Science Initiative. NASA's TOPS mission will allow us to create a scientific culture that is ready for 21st century challenges.
 {% endcapture %}
-<!---What is TOPS Link One Text (Plain Text)-->
+<!---What is TOPS Enroll Now Text (Plain Text)-->
 {% capture home-whatistops-linkone_text %}
 Enroll Now
 {% endcapture %}
-<!---What is TOPS Link Two Text (Plain Text)-->
+<!---What is TOPS Learn More Text (Plain Text)-->
 {% capture home-whatistops-linktwo_text %}
 Learn More
 {% endcapture %}
-<!---What is TOPS Link Two URL-->
+<!---What is TOPS Learn More Link-->
 {% capture home-whatistops-linktwo_url %}
 #test2
 {% endcapture %}
@@ -67,21 +67,17 @@ Recent Posts
 {% capture home-posts-description %}
 Explore blog posts to discover compelling open science success stories and gain valuable insights into the evolving landscape of transparent and collaborative research. Engaging with these narratives provides a firsthand account of the positive impact open science can have on various fields, inspiring a deeper appreciation for its principles and potential benefits.
 {% endcapture %}
-<!---Recent Posts Link One Text (Plain Text)-->
+<!---Recent Posts Tell Your Story Text (Plain Text)-->
 {% capture home-posts-linkone_text %}
 Tell Your Story
 {% endcapture %}
-<!---Recent Posts Link Two Text (Plain Text)-->
+<!---Recent Posts View All Text (Plain Text)-->
 {% capture home-posts-linktwo_text %}
 View All
 {% endcapture %}
-<!---Recent Posts Link One URL-->
+<!---Recent Posts Tell Your Story Link-->
 {% capture home-posts-linkone_url %}
-#test3
-{% endcapture %}
-<!---Recent Posts Link Two URL-->
-{% capture home-posts-linktwo_url %}
-#test4
+https://forms.gle/X4omhrAhhGZYMs6c7
 {% endcapture %}
 <!---END Recent Posts-->
 

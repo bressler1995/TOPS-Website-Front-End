@@ -12,6 +12,7 @@ logo: 'assets/img/tops_w_nasa_v2.png'
 footerlogo: 'assets/img/tops_badge_big.png'
 enrollbutton: 'take-os101/'
 signupbutton: 'signup/'
+blogbutton: 'blog/'
 author: TOPS
 excerpt_separator: <!-- excerpt-end -->
 sass:
