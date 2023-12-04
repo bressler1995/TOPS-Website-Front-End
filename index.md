@@ -110,17 +110,17 @@ TOPS Strategies
 TOPS Open Science mission strategy is centered around fostering a collaborative and transparent research ecosystem,  increasing awareness of Open Science in Action, highlighting the greater impact of scientific efforts and more equitable access to science results.
 {% endcapture %}
 
-<!---TOPS Strategies Enroll Now Text-->
+<!---TOPS Strategies Enroll Button Text-->
 {% capture home-strat-enroll-text %}
 Enroll Now
 {% endcapture %}
 
-<!---TOPS Strategies Learn More Text-->
+<!---TOPS Strategies Learn More Button Text-->
 {% capture home-strat-learn-more-text %}
 Learn More
 {% endcapture %}
 
-<!---TOPS Strategies Learn More Link-->
+<!---TOPS Strategies Learn More Button Link-->
 {% capture home-strat-learn-more-link %}
 https://github.com/nasa/Transform-to-Open-Science/tree/main/docs
 {% endcapture %}
@@ -179,6 +179,21 @@ Open Science 101 Curriculum
 The Open Science 101 curriculum is a 5-module curriculum designed to equip researchers, students and citizen scientists with the knowledge and skills to navigate the principles and practices of open science, including developing an open science and data management plan. Expand your Open Science expertise and equip yourself with the essential skills required to excel in the realm of open science. Sign up today to embark on your journey towards advancing your open science proficiency and gain your NASA Open Science Certification.
 {% endcapture %}
 
+<!---OS 101 Enroll Button Text-->
+{% capture home-os101-enroll-text %}
+Enroll Now
+{% endcapture %}
+
+<!---OS 101 Learn More Button Text-->
+{% capture home-os101-learn-more-text %}
+Learn More
+{% endcapture %}
+<!---END OS 101-->
+
+<!---OS 101 Learn More Button Link-->
+{% capture home-os101-learn-more-link %}
+https://github.com/nasa/Transform-to-Open-Science/tree/main/docs/Area2_Capacity_Sharing/Open-Science-101/modules
+{% endcapture %}
 <!---END OS 101-->
 
 
