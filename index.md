@@ -17,6 +17,7 @@ NASA's Transform to Open Science (TOPS) initiative is designed to transform agen
 <!---END Hero-->
 
 
+
 <!---START Four Column Orange CTA (Plain Text)-->
 <!---Four Column Orange CTA Titles-->
 {% assign home-fourcta-title-one = "Enroll in Curriculum" %}
@@ -32,6 +33,7 @@ NASA's Transform to Open Science (TOPS) initiative is designed to transform agen
 {% assign home-fourcta-link-three = "https://github.com/nasa/Transform-to-Open-Science/blob/main/docs/Area1_Engagement/Outreach/tops_conferences.md" %}
 {% assign home-fourcta-link-four = "https://github.com/nasa/Transform-to-Open-Science/" %}
 <!---END Four Column Orange CTA-->
+
 
 
 <!---START What is TOPS-->
@@ -58,6 +60,7 @@ Learn More
 <!---END What is TOPS-->
 
 
+
 <!---START Recent Posts-->
 <!---What is TOPS Title (Plain Text)-->
 {% capture home-posts-title %}
@@ -82,60 +85,74 @@ https://forms.gle/X4omhrAhhGZYMs6c7
 <!---END Recent Posts-->
 
 
+
 <!---START TOPS Strategies-->
 <!---TOPS Strategies Title (Plain Text)-->
 {% capture home-strat-title %}
 TOPS Strategies
 {% endcapture %}
+
 <!---TOPS Strategies Description (Markdown)-->
 {% capture home-strat-description %}
 TOPS Open Science mission strategy is centered around fostering a collaborative and transparent research ecosystem,  increasing awareness of Open Science in Action, highlighting the greater impact of scientific efforts and more equitable access to science results.
 {% endcapture %}
+
 <!---TOPS Strategies Enroll Now Text-->
 {% capture home-strat-enroll-text %}
 Enroll Now
 {% endcapture %}
+
 <!---TOPS Strategies Learn More Text-->
 {% capture home-strat-learn-more-text %}
 Learn More
 {% endcapture %}
+
 <!---TOPS Strategies Learn More Link-->
 {% capture home-strat-learn-more-link %}
 https://github.com/nasa/Transform-to-Open-Science/tree/main/docs
 {% endcapture %}
+
 <!---Engagement Description-->
 {% capture home-strat-engagement-desc %}
 TOPS engages with researchers and institutions by attending conferences, publishing stories, and expanding knowledge of open science.
 {% endcapture %}
+
 <!---Engagement Link-->
 {% capture home-strat-engagement-link %}
 https://github.com/nasa/Transform-to-Open-Science/tree/main/docs/Area1_Engagement
 {% endcapture %}
+
 <!---Capacity Sharing Description-->
 {% capture home-strat-capacity-desc %}
 Promotes the exchange of knowledge, data, and resources through the open science 101 curriculum, workshops, events, cohorts, and more.
 {% endcapture %}
+
 <!---Capacity Sharing Link-->
 {% capture home-strat-capacity-link %}
 https://github.com/nasa/Transform-to-Open-Science/tree/main/docs/Area2_Capacity_Sharing
 {% endcapture %}
+
 <!---Incentives Description-->
 {% capture home-strat-incentives-desc %}
 Encourages and rewards research utilizing open science practices through OS101 badging, high profile awards, and funding opportunities.
 {% endcapture %}
+
 <!---Incentives Link-->
 {% capture home-strat-incentives-link %}
 https://github.com/nasa/Transform-to-Open-Science/tree/main/docs/Area3_Incentives
 {% endcapture %}
+
 <!---Coordination Description-->
 {% capture home-strat-coordination-desc %}
 Emphasizes collaboration with the broader community to ensure efforts align with the global advancement of open and accessible research.
 {% endcapture %}
+
 <!---Coordination Link-->
 {% capture home-strat-coordination-link %}
 https://github.com/nasa/Transform-to-Open-Science/tree/main/docs/Area4_Moving_To_Openness
 {% endcapture %}
 <!---END TOPS Strategies-->
+
 
 
 
