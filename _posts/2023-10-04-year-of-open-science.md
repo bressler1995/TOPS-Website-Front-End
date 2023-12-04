@@ -3,6 +3,7 @@ layout: post
 title:  "2023: Year of Open Science"
 author: "TOPS"
 image: assets/img/posts/post_1.jpg
+external: "https://nasa.github.io/Transform-to-Open-Science-Book/Year_of_Open_Science_Guide/readme.html"
 ---
 2023: A Year of Open Science!
 
