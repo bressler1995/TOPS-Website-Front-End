@@ -45,7 +45,7 @@ footermenu:
   url: "signup/"
 
 - title: NASA Privacy Policy
-  url: "https://nasa.gov/privacy/#privacy-policy"
+  url: "https://www.nasa.gov/privacy/"
   external: true
 
 # Curriculum Modules
