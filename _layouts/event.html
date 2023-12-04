@@ -18,7 +18,7 @@ layout: default
           <div class="tops_eventsingle_captionimage">
               <img src="{{ site.baseurl }}/{{ page.image }}">
               {% if page.imagecaption %}
-                <p>{{ page.imagecaption }}</p>
+                <p>{{ page.imagecaption }} {% if page.imageattribution %} <br>Image credit: {{ page.imageattribution }} {% endif %}</p>
               {% endif %}
           </div>
           <div class="tops_eventsingle_categories">
@@ -32,7 +32,7 @@ layout: default
                 <span>Other</span>
               {% endif %}
           </div>
-          <h2 class="text-start mb-2 tops_eventsingle_maintitle">Why Is This Event Important?</h2>
+          <h2 class="text-start mb-2 tops_eventsingle_maintitle">Event Description</h2>
           <div class="tops_divider div_larger justify-content-start mb-3"><div class="div_inner"></div></div>
           <div class="tops_eventsingle_content_text">
               {{content}}
