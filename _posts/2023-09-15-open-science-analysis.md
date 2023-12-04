@@ -3,6 +3,7 @@ layout: post
 title:  "Open Science Analysis Working Groups: Collaborating on the Future"
 author: "TOPS"
 image: assets/img/posts/williansilveira.jpg
+external: "https://blogs.nasa.gov/transformtoopenscience/2023/09/15/open-science-analysis-working-groups-collaborating-on-the-future/"
 ---
 It's a closely held belief among those who practice open science that it can lead to wonderful discoveries and collaborations that can close the gap between the now and the future of science. For some in the open science community, those collaborative opportunities can take them down a path they never expected.
 
