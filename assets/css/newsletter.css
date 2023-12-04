@@ -39,7 +39,7 @@ p, span, p a {
 	padding: 30px;
 	padding-top: 70px;
 	padding-bottom: 70px;
-	background: linear-gradient(180deg, rgba(13,66,95,0.8) 30%, rgba(216,62,0,0.3) 100%), url('../img/tops_signup_bg.jpg');
+	background: linear-gradient(180deg, rgba(13,66,95,0.9) 30%, rgba(216,62,0,0.4) 100%), url('../img/tops_signup_bg.jpg');
 	background-size: cover;
 	background-position: center center;
 }
