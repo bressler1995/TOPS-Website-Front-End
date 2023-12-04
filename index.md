@@ -168,6 +168,21 @@ https://github.com/nasa/Transform-to-Open-Science/tree/main/docs/Area4_Moving_To
 
 
 
+<!---START OS 101-->
+<!---OS 101 Title (Plain Text)-->
+{% capture home-os101-title %}
+Open Science 101 Curriculum
+{% endcapture %}
+
+<!---OS 101 Description (Markdown)-->
+{% capture home-os101-description %}
+The Open Science 101 curriculum is a 5-module curriculum designed to equip researchers, students and citizen scientists with the knowledge and skills to navigate the principles and practices of open science, including developing an open science and data management plan. Expand your Open Science expertise and equip yourself with the essential skills required to excel in the realm of open science. Sign up today to embark on your journey towards advancing your open science proficiency and gain your NASA Open Science Certification.
+{% endcapture %}
+
+<!---END OS 101-->
+
+
+
 
 
 <!---FOR DEVELOPER ONLY (UNLESS YOU FEEL BRAVE)-->
