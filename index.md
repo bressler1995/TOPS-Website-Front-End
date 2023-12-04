@@ -83,13 +83,25 @@ https://forms.gle/X4omhrAhhGZYMs6c7
 
 
 <!---START TOPS Strategies-->
-<!---TOPS Strategies (Plain Text)-->
+<!---TOPS Strategies Title (Plain Text)-->
 {% capture home-strat-title %}
 TOPS Strategies
 {% endcapture %}
 <!---TOPS Strategies Description (Markdown)-->
 {% capture home-strat-description %}
 TOPS Open Science mission strategy is centered around fostering a collaborative and transparent research ecosystem,  increasing awareness of Open Science in Action, highlighting the greater impact of scientific efforts and more equitable access to science results.
+{% endcapture %}
+<!---TOPS Strategies Enroll Now Text-->
+{% capture home-strat-enroll-text %}
+Enroll Now
+{% endcapture %}
+<!---TOPS Strategies Learn More Text-->
+{% capture home-strat-learn-more-text %}
+Learn More
+{% endcapture %}
+<!---TOPS Strategies Learn More Link-->
+{% capture home-strat-learn-more-link %}
+https://github.com/nasa/Transform-to-Open-Science/tree/main/docs
 {% endcapture %}
 <!---Engagement Description-->
 {% capture home-strat-engagement-desc %}
