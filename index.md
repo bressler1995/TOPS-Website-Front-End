@@ -53,7 +53,7 @@ Learn More
 {% endcapture %}
 <!---What is TOPS Learn More Link-->
 {% capture home-whatistops-linktwo_url %}
-#test2
+{{site.baseurl}}/about
 {% endcapture %}
 <!---END What is TOPS-->
 
