@@ -13,6 +13,7 @@ footerlogo: 'assets/img/tops_badge_big.png'
 enrollbutton: 'take-os101/'
 signupbutton: 'signup/'
 blogbutton: 'blog/'
+eventsbutton: 'events/'
 author: TOPS
 excerpt_separator: <!-- excerpt-end -->
 sass:

@@ -81,12 +81,12 @@ Recent Posts
 Explore blog posts to discover compelling open science success stories and gain valuable insights into the evolving landscape of transparent and collaborative research. Engaging with these narratives provides a firsthand account of the positive impact open science can have on various fields, inspiring a deeper appreciation for its principles and potential benefits.
 {% endcapture %}
 
-<!---Recent Posts Tell Your Story Text (Plain Text)-->
+<!---Recent Posts Tell Your Story Button Text (Plain Text)-->
 {% capture home-posts-linkone_text %}
 Tell Your Story
 {% endcapture %}
 
-<!---Recent Posts View All Text (Plain Text)-->
+<!---Recent Posts View All Button Text (Plain Text)-->
 {% capture home-posts-linktwo_text %}
 View All
 {% endcapture %}
@@ -195,6 +195,33 @@ Learn More
 https://github.com/nasa/Transform-to-Open-Science/tree/main/docs/Area2_Capacity_Sharing/Open-Science-101/modules
 {% endcapture %}
 <!---END OS 101-->
+
+<!---START Events-->
+<!---Events Title (Plain Text)-->
+{% capture home-events-title %}
+Find TOPS at Events
+{% endcapture %}
+
+<!---Events Description (Markdown)-->
+{% capture home-events-description %}
+We invite you to visit us at various events where TOPS will be prominently featured, including  scientific meetings and gatherings of historically underrepresented communities. Our presence at these events is a unique opportunity to engage with us in a dynamic learning environment and connect with fellow open science enthusiasts. In addition to attending insightful sessions, engaging townhalls, and exploring our informative booth, we are proud to offer workshops specifically designed to teach our Open Science 101 curriculum centered around essential skills for open science practitioners.
+{% endcapture %}
+
+<!---Events View All Button Text-->
+{% capture home-events-view-all-text %}
+View All
+{% endcapture %}
+
+<!---Events Contact Button Text-->
+{% capture home-events-contact-text %}
+Contact Us
+{% endcapture %}
+
+<!---Events Contact Button Link-->
+{% capture home-events-contact-link %}
+mailto:hq-openscience@nasa.gov
+{% endcapture %}
+<!---END Events-->
 
 
 
