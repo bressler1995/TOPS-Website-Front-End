@@ -2,11 +2,11 @@
     <div class="container tops_container">
       <div class="row">
           <div class="col-12 tops_posts_primary_content primary_content_md">
-              <h2 class="text-center mb-2">All Posts</h2>
+              <h2 class="text-center mb-2">{{ blog-posts-title }}</h2>
               <div class="tops_divider div_larger justify-content-center mb-3"><div class="div_inner"></div></div>
-              <p>Explore blog posts to discover compelling open science success stories and gain valuable insights into the evolving landscape of transparent and collaborative research. Engaging with these narratives provides a firsthand account of the positive impact open science can have on various fields, inspiring a deeper appreciation for its principles and potential benefits.</p>
+              {{ blog-posts-description | markdownify }}
               <div class="d-flex flex-row flex-wrap tops_doublebuttons justify-content-center">
-                  <a class="btn btn-primary" href="#" role="button">Tell Your Story</a>
+                  <a class="btn btn-primary" href="{{ blog-posts-story-link }}" target="_blank" role="button">{{ blog-posts-story-text }}</a>
               </div>
           </div>
       </div>

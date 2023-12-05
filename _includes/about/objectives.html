@@ -13,12 +13,12 @@
     <div class="container tops_container">
       <div class="row">
         <div class="col-12 tops_blue_divider_primary_content primary_content_md">
-          <h2 class="text-center text-white mb-2">Strategic Objectives</h2>
+          <h2 class="text-center text-white mb-2">{{ about-strat-title }}</h2>
           <div class="tops_divider div_larger justify-content-center mb-3"><div class="div_inner"></div></div>
-          <p>Open Science creates more advanced and inclusive research faster, builds a more just and equitable world, and ensures that minds from all walks of life can participate in science. TOPS is NASA’s ambitious plan to accelerate open science practices. It's a 5 year journey that will:</p>
+          {{ about-strat-description | markdownify }}
           <div class="d-flex flex-row flex-wrap tops_doublebuttons justify-content-center">
-            <a class="btn btn-primary" href="{{site.baseurl}}/{{site.enrollbutton}}" role="button">Enroll Now</a>
-            <a class="btn btn-outline-light" href="#" role="button">Contact Us</a>
+            <a class="btn btn-primary" href="{{site.baseurl}}/{{site.enrollbutton}}" role="button">{{ about-strat-enroll-text }}</a>
+            <a class="btn btn-outline-light" href="{{ about-strat-contact-link }}" role="button">{{ about-strat-contact-text }}</a>
           </div>
         </div>
       </div>
@@ -26,22 +26,22 @@
         <div class="col-12 col-md-4 p-0 pb-4 p-md-3 tops_infoicon">
           <div class="d-flex flex-column flex-wrap align-items-center tops_infoicon_inner">
             <div class="tops_infoicon_icon mb-4"><i class="fa-solid fa-microscope"></i></div>
-            <h3 class="text-center mb-2">Accelerate</h3>
-            <p class="text-center mb-0">Accelerate major scientific discoveries.</p>
+            <h3 class="text-center mb-2">{{ about-strat-accelerate-title }}</h3>
+            <p class="text-center mb-0">{{ about-strat-accelerate-desc }}</p>
           </div>
         </div>
         <div class="col-12 col-md-4 p-0 pb-4 p-md-3 tops_infoicon">
           <div class="d-flex flex-column flex-wrap align-items-center tops_infoicon_inner">
             <div class="tops_infoicon_icon mb-4"><i class="fa-solid fa-users"></i></div>
-            <h3 class="text-center mb-2">Broaden</h3>
-            <p class="text-center mb-0">Broaden participation by historically excluded communities.</p>
+            <h3 class="text-center mb-2">{{ about-strat-broaden-title }}</h3>
+            <p class="text-center mb-0">{{ about-strat-broaden-desc }}</p>
           </div>
         </div>
         <div class="col-12 col-md-4 p-0 pb-4 p-md-3 tops_infoicon">
           <div class="d-flex flex-column flex-wrap align-items-center tops_infoicon_inner">
             <div class="tops_infoicon_icon mb-4"><i class="fa-solid fa-lightbulb"></i></div>
-            <h3 class="text-center mb-2">Understand and Adopt</h3>
-            <p class="text-center mb-0">Increase understanding and adoption of open science principles and techniques.</p>
+            <h3 class="text-center mb-2">{{ about-strat-understand-title }}</h3>
+            <p class="text-center mb-0">{{ about-strat-understand-desc }}</p>
           </div>
         </div>
 
