@@ -16,9 +16,9 @@
                 <div class="tops_posts_post_inner">
                 <a target="{% if post.external %}_blank{% else %}_self{% endif %}" href="{% if post.external %}{{ post.external }}{% else %}{{ post.url | absolute_url }}{% endif %}" class="tops_posts_post_image"><img src="{{ site.baseurl }}/{{ post.image }}"></a>
                 <div class="tops_posts_post_content">
-                    <h3 class="mb-2">{{ post.title }}</h3>
+                    <h3 class="mb-2">{{ post.title }}{% if post.external %} (External Link){% endif %}</h3>
                     <p class="mb-3">{{ post.excerpt | strip_html | truncate:135 }}</p>
-                    <a target="{% if post.external %}_blank{% else %}_self{% endif %}" class="tops_posts_post_readmore" href="{% if post.external %}{{ post.external }}{% else %}{{ post.url | absolute_url }}{% endif %}">Read More{% if post.external %}(external){% endif %}<i class="fa-solid fa-circle-arrow-right"></i></a>
+                    <a target="{% if post.external %}_blank{% else %}_self{% endif %}" class="tops_posts_post_readmore" href="{% if post.external %}{{ post.external }}{% else %}{{ post.url | absolute_url }}{% endif %}">Read More<i class="fa-solid fa-circle-arrow-right"></i></a>
                 </div>
                 <div class="tops_posts_post_meta d-flex flex-row flex-wrap align-items-center">
                     <div class="tops_posts_post_metaitem"><i class="fa-solid fa-calendar-days"></i>{{ post.date | date: '%B %-d, %Y' }}</div>

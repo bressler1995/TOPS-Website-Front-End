@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Success Stories of Open Science Series: With a large network of people, you can do a lot of fun things in science: Q&A with Dr. Afshin Beheshti on open science practices"
+title:  "With a large network of people, you can do a lot of fun things in science: Q&A with Dr. Afshin Beheshti on open science practices"
 author: "TOPS"
 image: assets/img/posts/afshin.jpg
 external: "https://blogs.nasa.gov/transformtoopenscience/2022/07/27/success-stories-of-open-science-series-with-a-large-network-of-people-you-can-do-a-lot-of-fun-things-in-science-qa-with-dr-afshin-beheshti-on-open-science-practices/"

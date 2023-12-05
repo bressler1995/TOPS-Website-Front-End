@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Success Stories of Open Science Series: Fostering the next generation and adapting to local realities: Q&A with Dr. Reina Camacho Toro on open science practices"
+title:  "Fostering the next generation and adapting to local realities: Q&A with Dr. Reina Camacho Toro on open science practices"
 author: "TOPS"
 image: assets/img/posts/reinatoro.jpg
 external: "https://blogs.nasa.gov/transformtoopenscience/2022/07/19/success-stories-of-open-science-series-fostering-the-next-generation-and-adapting-to-local-realities-qa-with-dr-reina-camacho-toro-on-open-science-practices/"

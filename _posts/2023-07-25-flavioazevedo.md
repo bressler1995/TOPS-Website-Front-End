@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Success Stories of Open Science Series: Equitable science for all: Q&A with Dr. Flavio Azevedo on open science practices"
+title:  "Q&A with Dr. Flavio Azevedo on open science practices"
 author: "TOPS"
 image: assets/img/posts/azevedo.jpg
 external: "https://blogs.nasa.gov/transformtoopenscience/2022/07/25/success-stories-of-open-science-series-equitable-science-for-all-qa-with-dr-flavio-azevedo-on-open-science-practices/"

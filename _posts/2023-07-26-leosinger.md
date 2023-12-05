@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Success Stories of Open Science Series: Q&A with Dr. Leo Singer on open science practices"
+title:  "Q&A with Dr. Leo Singer on open science practices"
 author: "TOPS"
 image: assets/img/posts/leosinger.jpg
 external: "https://blogs.nasa.gov/transformtoopenscience/2022/07/26/success-stories-of-open-science-series-qa-with-dr-leo-singer-on-open-science-practices/"
