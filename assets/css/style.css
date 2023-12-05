@@ -1885,31 +1885,31 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 /* Markdown Styling (Will need more over time) */
-.tops_white_section .primary_content_md p b {
+.tops_white_section .primary_content_md p b, .tops_white_section .primary_content_md p strong {
 	color: #222;
 }
 
-.tops_overlay_section .primary_content_md p b {
+.tops_overlay_section .primary_content_md p b, .tops_overlay_section .primary_content_md p strong {
 	color: #FFF;
 }
 
-.tops_white_section .tops_getinvolved_content p b {
+.tops_white_section .tops_getinvolved_content p b, .tops_white_section .tops_getinvolved_content p strong {
 	color: #222;
 }
 
-.tops_overlay_section .tops_getinvolved_content p b {
+.tops_overlay_section .tops_getinvolved_content p b, .tops_overlay_section .tops_getinvolved_content p strong {
 	color: #FFF;
 }
 
-.tops_white_section .tops_whyos_content p b {
+.tops_white_section .tops_whyos_content p b, .tops_white_section .tops_whyos_content p strong {
 	color: #222;
 }
 
-.tops_overlay_section .tops_whyos_content p b {
+.tops_overlay_section .tops_whyos_content p b, .tops_overlay_section .tops_whyos_content p strong {
 	color: #FFF;
 }
 
-.tops_white_section.tops_half_section p b {
+.tops_white_section.tops_half_section p b, .tops_white_section.tops_half_section p strong {
 	color: #222;
 }
 
