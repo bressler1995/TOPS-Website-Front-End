@@ -14,7 +14,8 @@ topmenu:
   url: "blog/"
 
 - title: Contact
-  url: "contact/"
+  url: "mailto:hq-openscience@nasa.gov"
+  external: true
 
 - title: Enroll
   url: "take-os101/"
@@ -36,7 +37,8 @@ footermenu:
   url: "blog/"
 
 - title: Contact
-  url: "contact/"
+  url: "mailto:hq-openscience@nasa.gov"
+  external: true
 
 - title: Take OS101
   url: "take-os101/"

@@ -91,11 +91,7 @@
             <div class="tops_divider div_smallest justify-content-center justify-content-lg-start mb-4"><div class="div_inner"></div></div>
             <ul class="footer_submenu">
               {% for footermenu-item in site.data.menus.footermenu %}
-                {% if footermenu-item.external %}
-                  <li><a target="_blank" class="text-center text-lg-start" href="{{footermenu-item.url}}">{{footermenu-item.title}}</a></li>
-                {% else %}
-                  <li><a class="text-center text-lg-start" href="{{site.baseurl}}/{{footermenu-item.url}}">{{footermenu-item.title}}</a></li>
-                {% endif %}
+                <li><a class="text-center text-lg-start" href="{% unless footermenu-item.external %}{{site.baseurl}}/{% endunless %}{{footermenu-item.url}}">{{footermenu-item.title}}</a></li>
               {% endfor %}
             </ul>
           </div>
