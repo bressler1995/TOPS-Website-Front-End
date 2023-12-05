@@ -2569,13 +2569,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	
 	.footer_column_big {
 		width: 40%;
-		padding-right: 35px;
+		padding-right: 40x;
 	}
 
 	.footer_column_small {
 		width: 20%;
-		padding-left: 17.5px;
-		padding-right: 17.5px;
+		padding-right: 20px;
 	}
 	
 	.tops_nav .navbar {
