@@ -271,8 +271,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_list_icons .list_external {
 	display: inline-block;
-	width: 16px;
-	height: 16px;
+	width: 16.5px;
+	height: 16.5px;
 	position: relative;
 	background-color: #1e8806;
 	color: #FFF;
