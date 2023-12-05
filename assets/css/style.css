@@ -269,7 +269,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #1e8806;
 }
 
-.list_external {
+.tops_list_icons .list_external {
 	display: inline-block;
 	width: 16px;
 	height: 16px;
@@ -281,7 +281,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	border-radius: 50%;
 }
 
-.list_external i {
+.tops_list_icons .list_external i {
 	display: block;
 	position: absolute;
 	top: 50%;
