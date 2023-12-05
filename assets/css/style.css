@@ -98,17 +98,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: rgba(255, 255, 255, 0.85);
 }
 
-.btn {
-	padding: 10px;
-	padding-left: 22px;
-	padding-right: 22px;
-}
-
 .btn.btn-primary {
 	background-color: #D83E00;
 	border-color: #D83E00;
 	color: #FFF;
-	font-size: 14px;
+	font-size: 13.5px;
 	line-height: 18px;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -121,7 +115,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	background-color: transparent;
 	border-color: #D83E00;
 	color: #D83E00;
-	font-size: 14px;
+	font-size: 13.5px;
 	line-height: 18px;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -134,7 +128,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	background-color: transparent;
 	border-color: #FFFFFF;
 	color: #FFFFFF;
-	font-size: 14px;
+	font-size: 13.5px;
 	line-height: 18px;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -1273,6 +1267,47 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	overflow-x: auto;
 }
 
+.no_workshops {
+	display: flex;
+	flex-flow: column wrap;
+	width:100%;
+	padding:25px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.no_workshops .noworkshops_icon_holder, .no_workshops p {
+	display: block;
+	width: 100%;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.no_workshops .noworkshops_icon_holder {
+	margin-bottom: 20px;
+}
+
+.no_workshops .noworkshops_icon_holder div {
+	display: inline-block;
+    position: relative;
+    width: 92px;
+    height: 92px;
+    background-color: #0D425F;
+	color: #FFF;
+    border-radius: 50%;
+}
+
+.no_workshops .noworkshops_icon_holder div i {
+	display: block;
+    position: absolute;
+    font-size: 32px;
+    line-height: 34px;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .tops_workshops_container .tops_workshops_tables table {
 	display: table;
     table-layout: fixed;
@@ -1885,31 +1920,31 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 /* Markdown Styling (Will need more over time) */
-.tops_white_section .primary_content_md p b {
+.tops_white_section .primary_content_md p b, .tops_white_section .primary_content_md p strong {
 	color: #222;
 }
 
-.tops_overlay_section .primary_content_md p b {
+.tops_overlay_section .primary_content_md p b, .tops_overlay_section .primary_content_md p strong {
 	color: #FFF;
 }
 
-.tops_white_section .tops_getinvolved_content p b {
+.tops_white_section .tops_getinvolved_content p b, .tops_white_section .tops_getinvolved_content p strong {
 	color: #222;
 }
 
-.tops_overlay_section .tops_getinvolved_content p b {
+.tops_overlay_section .tops_getinvolved_content p b, .tops_overlay_section .tops_getinvolved_content p strong {
 	color: #FFF;
 }
 
-.tops_white_section .tops_whyos_content p b {
+.tops_white_section .tops_whyos_content p b, .tops_white_section .tops_whyos_content p strong {
 	color: #222;
 }
 
-.tops_overlay_section .tops_whyos_content p b {
+.tops_overlay_section .tops_whyos_content p b, .tops_overlay_section .tops_whyos_content p strong {
 	color: #FFF;
 }
 
-.tops_white_section.tops_half_section p b {
+.tops_white_section.tops_half_section p b, .tops_white_section.tops_half_section p strong {
 	color: #222;
 }
 
@@ -2103,9 +2138,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		line-height: 19px;
 	}
 
+	.btn {
+		padding: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
 	.tops_half_section .tops_doublebuttons .btn {
-		padding-left: 22px;
-		padding-right: 22px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	.tops_blue_divider_section .tops_infoicon:last-of-type {
@@ -2340,16 +2381,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	}
 	
 	.tops_half_section .tops_half_section_column_small {
-		width: 50%;
+		width: 48%;
 	}
 
 	.tops_half_section .tops_half_section_column_big {
-		width: 50%;
-		min-height: 400px;
+		width: 52%;
+		min-height: 380px;
 	}
 	
 	.tops_half_section .tops_half_section_imageoutter {
-		height: 400px;
+		height: 380px;
 	}
 	
 	.tops_half_section .tops_half_section_shinysquare {
@@ -2358,11 +2399,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	}
 	
 	.tops_half_section.half_section_left .tops_half_section_column_big {
-		padding-left: 50px;
+		padding-left: 45px;
 	}
 
 	.tops_half_section.half_section_right .tops_half_section_column_big {
-		padding-right: 50px;
+		padding-right: 45px;
 	}
 	
 	.tops_half_section.half_section_left .tops_half_section_imageoutter {
@@ -2395,6 +2436,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	.tops_events_tiles .tops_events_tile.tops_events_tile_larger {
 		width: 50%;
 		height: 280px;
+	}
+
+	.btn {
+		padding: 10px;
+		padding-left: 18px;
+		padding-right: 18px;
 	}
 
 	.tops_half_section .tops_doublebuttons .btn {
@@ -2634,6 +2681,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		flex-flow: row wrap;
 		width: 100%;
 		margin-bottom: 2px;
+	}
+
+	.btn {
+		padding: 10px;
+		padding-left: 22px;
+		padding-right: 22px;
 	}
 
 	.tops_half_section .tops_doublebuttons .btn {

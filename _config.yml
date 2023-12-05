@@ -19,6 +19,12 @@ excerpt_separator: <!-- excerpt-end -->
 sass:
   sass_dir: ./_sass
 
+
+# Workshops
+hideinperson: true
+hidevirtual: true
+
+
 # Collections
 collections:
   events:

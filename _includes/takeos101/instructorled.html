@@ -25,62 +25,70 @@
           <div class="tops_workshops_tables">
             
             <div class="workshop_table active">
-              <div class="workshop_table_filters">
-                <div class="d-flex flex-row flex-wrap justify-content-start workshop_table_filters_selectoutter">
-                  <select class="form-select" data-col-index="2"><option selected="">Event Types</option><option value="Event Type 1">Event Type 1</option><option value="Event Type 2">Event Type 2</option><option value="Event Type 3">Event Type 3</option><option value="Event Type 4">Event Type 4</option></select>
-                  <select class="form-select" data-col-index="3"><option selected="">Locations</option><option value="San Francisco, CA">San Francisco, CA</option><option value="New Orleans, LA">New Orleans, LA</option><option value="Houston, TX">Houston, TX</option><option value="Huntsville, AL">Huntsville, AL</option></select>
-                  <select class="form-select" data-col-index="4"><option selected="">Modules</option><option value="1">Module 1</option><option value="2">Module 2</option><option value="3">Module 3</option><option value="4">Module 4</option><option value="5">Module 5</option></select>
+              {% if site.hideinperson %}
+                <div class="no_workshops"><div class="noworkshops_icon_holder"><div><i class="fa-solid fa-calendar-days"></i></div></div><p>Stay tuned!  More training dates will be coming soon...</p></div>
+              {% else %}
+                <div class="workshop_table_filters">
+                  <div class="d-flex flex-row flex-wrap justify-content-start workshop_table_filters_selectoutter">
+                    <select class="form-select" data-col-index="2"><option selected="">Event Types</option><option value="Event Type 1">Event Type 1</option><option value="Event Type 2">Event Type 2</option><option value="Event Type 3">Event Type 3</option><option value="Event Type 4">Event Type 4</option></select>
+                    <select class="form-select" data-col-index="3"><option selected="">Locations</option><option value="San Francisco, CA">San Francisco, CA</option><option value="New Orleans, LA">New Orleans, LA</option><option value="Houston, TX">Houston, TX</option><option value="Huntsville, AL">Huntsville, AL</option></select>
+                    <select class="form-select" data-col-index="4"><option selected="">Modules</option><option value="1">Module 1</option><option value="2">Module 2</option><option value="3">Module 3</option><option value="4">Module 4</option><option value="5">Module 5</option></select>
+                  </div>
+                  <div class="d-flex flex-row flex-wrap justify-content-end workshop_table_filters_resetoutter">
+                    <a class="btn btn-primary workshop_table_resetopt" href="javascript:void(0)" role="button">Reset</a>
+                  </div>
                 </div>
-                <div class="d-flex flex-row flex-wrap justify-content-end workshop_table_filters_resetoutter">
-                  <a class="btn btn-primary workshop_table_resetopt" href="javascript:void(0)" role="button">Reset</a>
+                <div class="workshop_table_table">
+                  <table>
+                    <thead><tr><th>Date</th><th>Time</th><th>Event Type</th><th>Location</th><th>Module</th><th>More Info</th></tr></thead>
+                    <tbody>
+                      {% for row in site.data.inperson %}
+                        <tr>
+                        <td>{{ row.date }}</td>
+                        <td>{{ row.time }}</td>
+                        <td>{{ row.eventtype }}</td>
+                        <td>{{ row.location }}</td>
+                        <td>{{ row.module }}</td>
+                        <td>{{ row.moreinfo }}</td>
+                        </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
                 </div>
-              </div>
-              <div class="workshop_table_table">
-                <table>
-                  <thead><tr><th>Date</th><th>Time</th><th>Event Type</th><th>Location</th><th>Module</th><th>More Info</th></tr></thead>
-                  <tbody>
-                    {% for row in site.data.inperson %}
-                      <tr>
-                      <td>{{ row.date }}</td>
-                      <td>{{ row.time }}</td>
-                      <td>{{ row.eventtype }}</td>
-                      <td>{{ row.location }}</td>
-                      <td>{{ row.module }}</td>
-                      <td>{{ row.moreinfo }}</td>
-                      </tr>
-                    {% endfor %}
-                  </tbody>
-                </table>
-              </div>
+              {% endif %}
             </div>
             <div class="workshop_table">
-              <div class="workshop_table_filters">
-                <div class="d-flex flex-row flex-wrap justify-content-start workshop_table_filters_selectoutter">
-                  <select class="form-select" data-col-index="2"><option selected="">Event Types</option><option value="Event Type 1">Event Type 1</option><option value="Event Type 2">Event Type 2</option><option value="Event Type 3">Event Type 3</option><option value="Event Type 4">Event Type 4</option></select>
-                  <select class="form-select" data-col-index="3"><option selected="">Modules</option><option value="1">Module 1</option><option value="2">Module 2</option><option value="3">Module 3</option><option value="4">Module 4</option><option value="5">Module 5</option></select>
-                  <select class="form-select" data-col-index="4"><option selected="">Instructors</option><option value="Person's Name 1">Person's Name 1</option><option value="Person's Name 2">Person's Name 2</option><option value="Person's Name 3">Person's Name 3</option><option value="Person's Name 4">Person's Name 4</option></select>
+              {% if site.hidevirtual %}
+                <div class="no_workshops"><div class="noworkshops_icon_holder"><div><i class="fa-solid fa-calendar-days"></i></div></div><p>Stay tuned!  More training dates will be coming soon...</p></div>
+              {% else %}
+                <div class="workshop_table_filters">
+                  <div class="d-flex flex-row flex-wrap justify-content-start workshop_table_filters_selectoutter">
+                    <select class="form-select" data-col-index="2"><option selected="">Event Types</option><option value="Event Type 1">Event Type 1</option><option value="Event Type 2">Event Type 2</option><option value="Event Type 3">Event Type 3</option><option value="Event Type 4">Event Type 4</option></select>
+                    <select class="form-select" data-col-index="3"><option selected="">Modules</option><option value="1">Module 1</option><option value="2">Module 2</option><option value="3">Module 3</option><option value="4">Module 4</option><option value="5">Module 5</option></select>
+                    <select class="form-select" data-col-index="4"><option selected="">Instructors</option><option value="Person's Name 1">Person's Name 1</option><option value="Person's Name 2">Person's Name 2</option><option value="Person's Name 3">Person's Name 3</option><option value="Person's Name 4">Person's Name 4</option></select>
+                  </div>
+                  <div class="d-flex flex-row flex-wrap justify-content-end workshop_table_filters_resetoutter">
+                    <a class="btn btn-primary workshop_table_resetopt" href="javascript:void(0)" role="button">Reset</a>
+                  </div>
                 </div>
-                <div class="d-flex flex-row flex-wrap justify-content-end workshop_table_filters_resetoutter">
-                  <a class="btn btn-primary workshop_table_resetopt" href="javascript:void(0)" role="button">Reset</a>
+                <div class="workshop_table_table">
+                  <table>
+                    <thead><tr><th>Date</th><th>Time</th><th>Event Type</th><th>Module</th><th>Instructor</th><th>Register</th></tr></thead>
+                    <tbody>
+                      {% for row in site.data.virtual %}
+                        <tr>
+                        <td>{{ row.date }}</td>
+                        <td>{{ row.time }}</td>
+                        <td>{{ row.eventtype }}</td>
+                        <td>{{ row.module }}</td>
+                        <td>{{ row.instructor }}</td>
+                        <td>{{ row.register }}</td>
+                        </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
                 </div>
-              </div>
-              <div class="workshop_table_table">
-                <table>
-                  <thead><tr><th>Date</th><th>Time</th><th>Event Type</th><th>Module</th><th>Instructor</th><th>Register</th></tr></thead>
-                  <tbody>
-                    {% for row in site.data.virtual %}
-                      <tr>
-                      <td>{{ row.date }}</td>
-                      <td>{{ row.time }}</td>
-                      <td>{{ row.eventtype }}</td>
-                      <td>{{ row.module }}</td>
-                      <td>{{ row.instructor }}</td>
-                      <td>{{ row.register }}</td>
-                      </tr>
-                    {% endfor %}
-                  </tbody>
-                </table>
-              </div>
+              {% endif %}
             </div>
             
           </div>
