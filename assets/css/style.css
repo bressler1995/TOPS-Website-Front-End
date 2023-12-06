@@ -23,7 +23,20 @@ p a {
 	transition: opacity 0.3s ease;
 }
 
+li a {
+	color: #D83E00;
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	-ms-transition: opacity 0.3s ease;
+	-o-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
 p a:hover, p a:active, p a:focus {
+	opacity: 0.65;
+}
+
+li a:hover, li a:active, li a:focus {
 	opacity: 0.65;
 }
 
