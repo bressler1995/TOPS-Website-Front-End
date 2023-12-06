@@ -1641,10 +1641,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin-bottom: 12px;
 }
 
-.tops_eventsingle_section .tops_eventsingle_content .tops_eventsingle_content_text p:last-of-type {
-	margin-bottom: 0;
-}
-
 .tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget {
 	display: block;
 	width: 100%;
