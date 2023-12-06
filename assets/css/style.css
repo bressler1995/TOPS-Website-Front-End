@@ -1992,19 +1992,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-weight: 900;
 }
 
-.tops_eventsingle_content_text li a {
-	color: #D83E00;
-	-webkit-transition: opacity 0.3s ease;
-	-moz-transition: opacity 0.3s ease;
-	-ms-transition: opacity 0.3s ease;
-	-o-transition: opacity 0.3s ease;
-	transition: opacity 0.3s ease;
-}
-
-.tops_eventsingle_content_text li a:hover, .tops_eventsingle_content_text li a:active, .tops_eventsingle_content_text li a:focus {
-	opacity: 0.65;
-}
-
 .tops_eventsingle_content_text h2 {
 	font-size: 32px;
 	line-height: 36px;
@@ -2044,6 +2031,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     line-height: 1.6rem;
     font-weight: 400;
     color: #777;
+}
+
+.tops_eventsingle_content_text li a {
+	color: #D83E00;
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	-ms-transition: opacity 0.3s ease;
+	-o-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
+.tops_eventsingle_content_text li a:hover, .tops_eventsingle_content_text li a:active, .tops_eventsingle_content_text li a:focus {
+	opacity: 0.65;
 }
 
 @media (max-width: 767.9px) {
