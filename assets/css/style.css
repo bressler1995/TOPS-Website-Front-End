@@ -2021,6 +2021,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	line-height: 20px;
 }
 
+.tops_eventsingle_content_text ul, .tops_eventsingle_content_text ol {
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+.tops_eventsingle_content_text ul li, .tops_eventsingle_content_text ol li {
+	font-size: 16px;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: #777;
+}
+
 @media (max-width: 767.9px) {
     .container {
         padding-left: 30px;
