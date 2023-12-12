@@ -1803,6 +1803,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	padding-bottom: 15px;
 }
 
+.tops_eventsingle_section .tops_eventsingle_eventdisclaimer i {
+	display: inline-block;
+	margin-right: 7px;
+}
+
 /* Footer Styling */
 
 .tops_footer_cta {
