@@ -1652,7 +1652,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	box-sizing: border-box;
 }
 
-.tops_faq_section h2 {
+.tops_faq_section h2:not(.accordion-header) {
 	display: block;
 	width: 100%;
 	font-size: 42px;
@@ -1678,6 +1678,102 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_faq_section .tops_faq_primary_content p:last-of-type {
 	margin-bottom: 0;
+}
+
+.accordion {
+	border: 1px solid #BBB;
+	border-radius: 5px;
+}
+
+.accordion-button {
+	font-family: 'Roboto', sans-serif;
+	background-color: #0D425F;
+	color: #FFF;
+	font-size: 15px;
+	line-height: 19px;
+	font-weight: 700;
+	text-transform: capitalize;
+	padding: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.accordion-item {
+	border:none;
+	border-bottom: 1px solid #BBB;
+}
+
+.accordion-item:last-of-type {
+	border-bottom: none;
+}
+
+.accordion-item:first-of-type .accordion-button {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.accordion-button span {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	line-height: 19px;
+	font-weight: 700;
+	text-transform: capitalize;
+	box-sizing: border-box;
+	padding-right: 35px;
+}
+
+.accordion-button:not(.collapsed) {
+	background-color: #D83E00;
+	color: #FFF;
+}
+
+.accordion-button::after {
+	background-image: url('../img/accordionarrow.png');
+	background-size: contain;
+	width: 18px;
+	height: 18px;
+}
+
+.accordion-button:focus {
+	box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+	background-image: url('../img/accordionarrow.png');
+	transform: rotate(90deg);
+}
+
+.accordion-body {
+	padding: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.accordion-body, .accordion-body p {
+	display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: #777;
+	font-family: 'Nunito', sans-serif;
+}
+
+.accordion-body strong, .accordion-body p strong {
+	color: #222;
+}
+
+.accordion-body a, .accordion-body p a {
+	color: #D83E00;
+	-webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
+.accordion-body a:hover, .accordion-body p a:hover, .accordion-body a:active, .accordion-body p a:active, .accordion-body a:focus, .accordion-body p a:focus {
+	opacity: 0.65;
 }
 
 /* Event Styling */
