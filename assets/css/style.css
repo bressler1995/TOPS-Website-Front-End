@@ -1647,6 +1647,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-bottom: 0;
 }
 
+.tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_boxcontent .tops_howhelp_button {
+	width: 100%;
+	box-sizing: border-box;
+}
+
 /* Event Styling */
 
 .tops_eventsingle_section .row div.tops_eventsingle_content {
