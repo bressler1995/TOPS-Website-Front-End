@@ -1576,9 +1576,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     border-radius: 5px;
     overflow: hidden;
 	box-sizing: border-box;
-	padding: 30px;
-	padding-left: 20px;
-	padding-right: 20px;
 }
 
 .tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_overlay {
@@ -1596,6 +1593,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	display: block;
 	position: relative;
 	z-index: 3;
+	box-sizing: border-box;
+	padding: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_boxcontent h3 {
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
 }
 
 /* Event Styling */
