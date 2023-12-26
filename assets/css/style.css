@@ -1599,6 +1599,33 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	padding-right: 20px;
 }
 
+.tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_boxcontent .tops_howhelp_iconholder {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_boxcontent .tops_howhelp_iconholder .tops_howhelp_icon {
+	display: inline-block;
+	position: relative;
+	width: 105px;
+	height: 105px;
+	background-color: #D83E00;
+	color: #FFF;
+	border-radius: 50%;
+}
+
+.tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_boxcontent .tops_howhelp_iconholder .tops_howhelp_icon i {
+	display: block;
+    position: absolute;
+    font-size: 35px;
+    line-height: 39px;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_boxcontent h3 {
 	display: block;
 	width: 100%;
