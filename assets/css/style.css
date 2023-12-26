@@ -1618,8 +1618,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_boxcontent .tops_howhelp_iconholder .tops_howhelp_icon i {
 	display: block;
     position: absolute;
-    font-size: 35px;
-    line-height: 39px;
+    font-size: 40px;
+    line-height: 44px;
     width: auto;
     top: 50%;
     left: 50%;
