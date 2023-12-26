@@ -1594,9 +1594,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	position: relative;
 	z-index: 3;
 	box-sizing: border-box;
-	padding: 35px;
-	padding-left: 25px;
-	padding-right: 25px;
+}
+
+.tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_boxcontent {
+	padding: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_boxcontent .tops_howhelp_iconholder {
