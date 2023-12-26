@@ -1596,12 +1596,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	box-sizing: border-box;
 }
 
-.tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_boxcontent {
-	padding: 40px;
-	padding-left: 30px;
-	padding-right: 30px;
-}
-
 .tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_boxcontent .tops_howhelp_iconholder {
 	display: block;
 	width: 100%;
@@ -2453,6 +2447,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		padding-bottom: 0 !important;
 	}
 
+	.tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_boxcontent {
+		padding: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
 	.tops_eventsingle_section .row div.tops_eventsingle_content {
 		padding-bottom: 30px;
 	}
@@ -2712,6 +2712,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		padding-bottom: 65%;
 	}
 
+	.tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_boxcontent {
+		padding: 35px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
 	.tops_eventsingle_section .row div.tops_eventsingle_content {
 		padding-right: 50px;
 	}
@@ -2958,6 +2964,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 	.tops_whyos_section .tops_whyos_item .tops_whyos_image {
 		padding-bottom: 45%;
+	}
+
+	.tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_boxcontent {
+		padding: 40px;
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 
 	.tops_eventsingle_section .row div.tops_eventsingle_content {
