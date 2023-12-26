@@ -2119,6 +2119,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: #222;
 }
 
+.tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_boxcontent p b, .tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_boxcontent p strong {
+	color: #FFF;
+}
+
 .tops_eventsingle_content_text h2, .tops_eventsingle_content_text h3, .tops_eventsingle_content_text h4, .tops_eventsingle_content_text h5, .tops_eventsingle_content_text h6 {
 	display: block;
 	width: 100%;
