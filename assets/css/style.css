@@ -1592,6 +1592,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	z-index: 2;
 }
 
+.tops_howhelp_section .tops_howhelp_item .tops_howhelp_inner .tops_howhelp_boxcontent {
+	display: block;
+	position: relative;
+	z-index: 3;
+}
+
 /* Event Styling */
 
 .tops_eventsingle_section .row div.tops_eventsingle_content {
