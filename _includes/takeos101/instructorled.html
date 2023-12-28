@@ -83,7 +83,13 @@
                         <td>{{ row.eventtype }}</td>
                         <td>{{ row.module }}</td>
                         <td>{{ row.instructor }}</td>
-                        <td>{{ row.register }}</td>
+                        <td>
+                          {% if row.register_link %}
+                            <a href="{{ row.register_link }}" target="_blank">{{ row.register }}</a>
+                          {% else %}
+                            {{ row.register }}
+                          {% endif %}
+                        </td>
                         </tr>
                       {% endfor %}
                     </tbody>
