@@ -44,7 +44,13 @@
                         <td>{{ row.eventtype }}</td>
                         <td>{{ row.location }}</td>
                         <td>{{ row.module }}</td>
-                        <td>{{ row.moreinfo }}</td>
+                        <td>
+                          {% if row.moreinfo_link %}
+                            <a href="{{ row.moreinfo_link }}">{{ row.moreinfo }}</a>
+                          {% else %}
+                            {{ row.moreinfo }}
+                          {% endif %}
+                        </td>
                         </tr>
                       {% endfor %}
                     </tbody>
