@@ -2301,6 +2301,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: #777;
 }
 
+.tops_eventsingle_content_text ul li strong, .tops_eventsingle_content_text ol li strong, .tops_eventsingle_content_text ul li b, .tops_eventsingle_content_text ol li b {
+	color: #222;
+}
+
 .tops_eventsingle_content_text li a {
 	color: #D83E00;
 	-webkit-transition: opacity 0.3s ease;
@@ -2341,6 +2345,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     line-height: 1.6rem;
     font-weight: 400;
     color: #777;
+}
+
+.accordion-body ul li strong, .accordion-body ol li strong, .accordion-body ul li b, .accordion-body ol li b {
+	color: #222;
 }
 
 .accordion-body li a {
