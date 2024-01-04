@@ -151,7 +151,7 @@ Content is written in standard Markdown as is standard on a post or collection. 
 
 Events are stored in the **"/\_events"** folder. 
 
-**The editing of Events is only intended for members of TOPS.**
+**The editing of Events is only intended for use by TOPS internally.  Pull requests outside of this will be rejected.**
 
 #### Naming and Sorting
 
@@ -217,7 +217,7 @@ Content is written in standard Markdown as is standard on a post or collection. 
 
 This is where YAML knowledge would be handy. Menus are defined for the Top Menu, Footer Menu, and Curriculum Modules. To make changes to these, you will edit the **"/\_data/menus.yml"** file. Menu items can have specific values assigned depending on the menu you are working on:
 
-**The editing of Menus is only intended for members of TOPS.**
+**The editing of Menus is only intended for use by TOPS internally.  Pull requests outside of this will be rejected.**
 
 - topmenu
   - title - title of menu item can be any text
@@ -238,7 +238,7 @@ This is where YAML knowledge would be handy. Menus are defined for the Top Menu,
 
 Social links are handled by the **“\_config.yml”** in the **root directory** which is also written in YAML. Scrolling down within this file, you will see the social section.
 
-**The editing of Social Links is only intended for members of TOPS.**
+**The editing of Social Links is only intended for use by TOPS internally.  Pull requests outside of this will be rejected.**
 
 <img src="./assets/img/documentation/image14.jpg" style="width:350px;height:auto;" />
 
