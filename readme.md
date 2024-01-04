@@ -250,6 +250,8 @@ For our purposes only LinkedIn and GitHub are defined and these links should sta
 
 This section will cover adding your OS101 workshop to our website which is available to all interested researchers. Alternatively, you can request your workshop be added to our NASA internal link which is only available for NASA civil servants and contractors.
 
+Before attempting to add a workshop to the TOPs community website, make sure that you have cleared it with TOPS.  If you have not already, please email us at [hq-openscience@nasa.gov](mailto:hq-openscience@nasa.gov).
+
 ### Workshops For Everyone
 
 Workshop data is stored in the **"/\_data "** folder in the **root directory** within two CSV files: **inperson.csv**, and **virtual.csv**. Each of these likewise corresponds to in person workshops and virtual workshops. Each row in these files is representative of a separate workshop.
