@@ -1,6 +1,6 @@
 # TOPS Community Website Documentation
 
-The new TOPS community website uses a unique method of templating to achieve a fresh new look. Regardless of this new architecture, you are not required to be completely familiar with all the technical aspects. Everything described in this guide is in reference to the [website branch](https://github.com/bressler1995/Transform-to-Open-Science/tree/website) of the TOPS repository.
+The new TOPS community website uses a unique method of templating to achieve a fresh new look. Regardless of this new architecture, you are not required to be completely familiar with all the technical aspects. Everything described in this guide is in reference to the [website branch](https://github.com/nasa/Transform-to-Open-Science/tree/website) of the TOPS repository.
 
 There will be many images and links to help you. However, if you find yourself in need of further assistance, we encourage you to [submit a pull request](https://github.com/nasa/Transform-to-Open-Science/pulls), [submit an issue](https://github.com/nasa/Transform-to-Open-Science/issues), or [start a discussion](https://github.com/nasa/Transform-to-Open-Science/discussions). We are always happy to help and our community is also very knowledgeable.
 
