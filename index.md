@@ -221,7 +221,7 @@ Contact Us
 
 <!---Events Contact Button Link-->
 {% capture home-events-contact-link %}
-{{site.baseurl}}/contact
+mailto:hq-openscience@nasa.gov
 {% endcapture %}
 <!---END Events-->
 
