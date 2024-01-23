@@ -2455,6 +2455,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		min-height: 520px;
 	}
 	
+	.tops_hero_align_50_55 {
+		background-position: 50% 50%;
+	}
+	
+	.tops_hero_align_50_60 {
+		background-position: 50% 50%;
+	}
+	
 	.tops_hero_align_50_65 {
 		background-position: 50% 50%;
 	}
@@ -2783,6 +2791,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		min-height: 60vh;
 	}
 	
+	.tops_hero_align_50_55 {
+		background-position: 50% 50%;
+	}
+	
+	.tops_hero_align_50_60 {
+		background-position: 50% 50%;
+	}
+	
 	.tops_hero_align_50_65 {
 		background-position: 50% 50%;
 	}
@@ -3000,6 +3016,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	
 	.tops_hero.home_hero {
 		min-height: 75vh;
+	}
+	
+	.tops_hero_align_50_55 {
+		background-position: 50% 55%;
+	}
+	
+	.tops_hero_align_50_60 {
+		background-position: 50% 60%;
 	}
 	
 	.tops_hero_align_50_65 {
