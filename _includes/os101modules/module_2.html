@@ -1,4 +1,4 @@
-<div class="tops_half_section half_section_left tops_blue_divider_section tops_overlay_section blue_overlay">
+<div id="module2" class="tops_half_section half_section_left tops_blue_divider_section tops_overlay_section blue_overlay">
 			  <div class="the_overlay opacity-65"></div>
 			  <div class="tops_shape tops_shape_top">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
@@ -17,9 +17,9 @@
                     <div class="tops_half_section_imageoutter"><img src="{{ site.baseurl }}/assets/img/modules/module2.jpg" class="tops_half_section_image"></div>
                   </div>
                   <div class="d-flex flex-column flex-wrap justify-content-center tops_half_section_column_big">
-                    <h2 class="mb-2 text-white">OS101 Module 2: Open Tools and Resources</h2>
+                    <h2 class="mb-2 text-white">{{ os101modules-module2-title }}</h2>
                     <div class="tops_divider div_smaller mb-3"><div class="div_inner"></div></div>
-                    <p>This module is designed to help you get started on your journey to practicing open science. It offers an introductory view of the concepts and resources that are fundamental to open science. The bridge between the concepts and the practice of the concepts is something called the use, make, share framework. There are many methods and models that define how to get started with open science. The use, make, share framework was constructed to help you immediately assign purpose to the concepts and tools that are covered in this module as well as in the entire Open Science 101 curriculum. All of the information that you learn here will be addressed in more detail as you participate in other modules but can also be applied immediately after completing this module.</p>
+                    {{ os101modules-module2-description | markdownify }}
                   </div>
                 </div>
               </div>
