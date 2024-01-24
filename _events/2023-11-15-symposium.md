@@ -5,7 +5,7 @@ permalink: "/events/tops-symposium/"
 image: assets/img/events/agu.jpg
 imagecaption: "An image of the Moscone Center in San Francisco, CA where AGU will be held."
 daterange: "Dec 11 - 15, 2023"
-date: 2023-11-27
+date: 2023-11-15
 location: "San Francisco, CA"
 venue: "Moscone Center"
 acronyms: "BPS,Planetary,Helio,Earth,Astro"
