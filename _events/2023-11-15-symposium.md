@@ -1,7 +1,7 @@
 ---
 layout: event
 title:  "American Geophysical Union (AGU) Fall Meeting"
-permalink: "/events/agu-2023/"
+permalink: "/events/tops-symposium/"
 image: assets/img/events/agu.jpg
 imagecaption: "An image of the Moscone Center in San Francisco, CA where AGU will be held."
 daterange: "Dec 11 - 15, 2023"
