@@ -4,6 +4,7 @@ title:  "Geological Society of America Annual Meeting"
 permalink: "/events/gsa-annual-2024/"
 image: assets/img/events/gsa.jpg
 imagecaption: "An image of Anaheim, CA where GSA will be held."
+date: 2023-11-19
 daterange: "Sep 22 - 25, 2024"
 location: "Anaheim, CA"
 venue: "To be announced"
