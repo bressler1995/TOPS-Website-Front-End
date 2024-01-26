@@ -12,7 +12,7 @@ venue: "The Astronaut Memorial Foundation (AMF), The Center for Space Education"
 map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17668.211620921105!2d-80.68363317924783!3d28.515145175939733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e0ae323bf8b095%3A0x6d2c49c8109fb4d1!2sThe%20Astronauts%20Memorial%20Foundation!5e0!3m2!1sen!2sus!4v1706298033602!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 ---
 
-We are excited to invite you to our TOPS Symposium, a pivotal event under NASA's Transform to Open Science initiative, designed to mainstream the OS101 curriculum and advance an inclusive culture of open science! This three-day symposium will include plenary talks, working sessions, time to network, and tours of NASA's facilities. There may even be a [launch](https://www.visitspacecoast.com/launches/) during our time there!
+The TOPS Symposium is a pivotal event under NASA's Transform to Open Science initiative, designed to mainstream the OS101 curriculum and advance an inclusive culture of open science! This three-day symposium will include plenary talks, working sessions, time to network, and tours of NASA's facilities. There may even be a [launch](https://www.visitspacecoast.com/launches/) during our time there!
 
 **The goals of the symposium include:**
 
@@ -82,4 +82,4 @@ Special Instructions for Foreign Nationals:
     - Date of Visit (From: mm/dd/yyyy, To: mm/dd/yyyy)
     - Purpose of Visit
 
-An official agenda will be distributed in the upcoming weeks.
+An official agenda will be added in the upcoming weeks.
