@@ -15,7 +15,7 @@ map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17668.21
 
 The TOPS Symposium is a pivotal event under NASA's Transform to Open Science initiative, designed to mainstream the OS101 curriculum and advance an inclusive culture of open science! This three-day symposium will include plenary talks, working sessions, time to network, and tours of NASA's facilities. There may even be a [launch](https://www.visitspacecoast.com/launches/) during our time there!
 
-**TOPS Symposium Goals**
+**TOPS Symposium Goals:**
 
 - Laying the foundation for creating a unified approach to training people in open science
 - Learning from those that have begun to teach the curriculum
