@@ -13,8 +13,10 @@
 		<div class="row mt-5 mt-md-4">
 			<div class="tops_events_tiles">
 				{% assign sorted = site.events | sort: 'date' %}
+				{% assign eventcounter = 0 %}
 				{% for event in sorted %}
 					{% unless event.invisible == true %}
+					{% assign eventcounter = eventcounter | plus: 1 %}
 					<div class="tops_events_tile {% if forloop.index == 1 %}tops_events_tile_larger{% endif %}">
 						<a href="{{ event.url | absolute_url }}">
 							<div class="tops_events_tile_image"><img src="{{ site.baseurl }}/{{ event.image }}"></div>
@@ -31,7 +33,7 @@
 										<span>Other</span>
 									{% endif %}
 								</div>
-								<h3>{{ event.title }}</h3>
+								<h3>{{ event.title }} {{ eventcounter }}</h3>
 								<div class="d-flex flex-row flex-wrap align-items-center tops_events_tile_meta">
 									<div class="tops_events_tile_metaitem">{{ event.daterange }}</div>
 									<div class="tops_events_tile_metadivider"><i class="fa-solid fa-circle"></i></div>
