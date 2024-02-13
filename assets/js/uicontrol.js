@@ -350,7 +350,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	  let iframeError; // Store the iframe timeout
 	  
 	  iframe.onload = function () {
-		console.log("Success on " + url);
+		console.log("Load " + url);
 		clearTimeout(iframeError);
 		console.log(this.contentWindow.location);
 	  }
