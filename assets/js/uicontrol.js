@@ -15,9 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 						  let current_wsl = tops_workshop_links[wsl];
 						  let current_wsl_href = current_wsl.href;
 						  let current_wsl_text = current_wsl.innerHTML;
-						  let current_wsl_status = check_workshop_link(current_wsl_href);
-						  
-						  current_wsl.innerHTML = current_wsl_text + "(" + current_wsl_status + ")";
+						  check_workshop_link(current_wsl_href);
 						  
 					  }
 				  }
@@ -348,14 +346,21 @@ document.addEventListener("DOMContentLoaded", function() {
   inject_tops_opensocial();
   
   function check_workshop_link(url) {
-	  var http = new XMLHttpRequest();
-		http.open('GET', url, false);
-		http.send();
-		if (http.status == 404) {
-			return "not found";
-		} else {
-			return "found!"; 
-		}
+	  let iframe = document.createElement('iframe');
+	  let iframeError; // Store the iframe timeout
+	  
+	  iframe.onload = function () {
+		console.log("Load " + url);
+		clearTimeout(iframeError);
+		console.log(this.contentWindow.location);
+	  }
+	  
+	  iframeError = setTimeout(function () {
+		console.log("Error on " + url)
+	  }, 3000);
+	  
+	  iframe.src = url;
+	  document.getElementById("hiddenwsiframes").appendChild(iframe);
   }
 
 });

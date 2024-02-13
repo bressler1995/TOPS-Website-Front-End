@@ -35,7 +35,7 @@
                 </div>
                 <div class="workshop_table_table">
                   <table>
-                    <thead><tr><th>Date</th><th>Time</th><th>Event Type</th><th>Location</th><th>Module</th><th>More Info</th></tr></thead>
+                    <thead><tr><th>Date</th><th>Time</th><th>Event Type</th><th>Location</th><th>Module</th><th>NASA Internal?</th><th>More Info</th></tr></thead>
                     <tbody>
                       {% for row in site.data.inperson %}
                         <tr>
@@ -74,7 +74,7 @@
                 </div>
                 <div class="workshop_table_table">
                   <table>
-                    <thead><tr><th>Date</th><th>Time</th><th>Event Type</th><th>Module</th><th>Instructor</th><th>Register</th></tr></thead>
+                    <thead><tr><th>Date</th><th>Time</th><th>Event Type</th><th>Module</th><th>Instructor</th><th>NASA Internal?</th><th>Register</th></tr></thead>
                     <tbody>
                       {% for row in site.data.virtual %}
                         <tr>
@@ -83,6 +83,7 @@
                         <td>{{ row.eventtype }}</td>
                         <td>{{ row.module }}</td>
                         <td>{{ row.instructor }}</td>
+						<td>{{ row.nasa }}</td>
                         <td>
                           {% if row.register_link %}
                             <a class="tops_workshop_link" href="{{ row.register_link }}" target="_blank">{{ row.register }}</a>
