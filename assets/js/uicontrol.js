@@ -3,9 +3,28 @@ document.addEventListener("DOMContentLoaded", function() {
   
   function inject_tops_tables() {
 	  let tops_tables = document.getElementsByClassName("workshop_table");
+	  let tops_workshop_links = document.getElementsByClassName("tops_workshop_link");
 	  
 	  if(tops_tables != null) {
 		  if(tops_tables.length > 0) {
+			  
+			  //Workshop Link Injection
+			  if(tops_workshop_links != null) {
+				  if(tops_workshop_links.length > 0) {
+					  for(wsl = 0; wsl < tops_workshop_links.length; wsl++) {
+						  let current_wsl = tops_workshop_links[wsl];
+						  let current_wsl_href = current_wsl.href;
+						  let current_wsl_text = current_wsl.innerHTML;
+						  let current_wsl_status = check_workshop_link(current_wsl_href);
+						  
+						  current_wsl.innerHTML = current_wsl_text + "(" + current_wsl_status + ")";
+						  
+					  }
+				  }
+			  }
+			  
+			  
+			  //Filters Injection
 			  console.log("TOPS: Found total of " + tops_tables.length + " tables");
 			  
 			  for(i = 0; i < tops_tables.length; i++) {
@@ -327,5 +346,16 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   inject_tops_opensocial();
+  
+  function check_workshop_link(url) {
+	  var http = new XMLHttpRequest();
+		http.open('HEAD', url, false);
+		http.send();
+		if (http.status == 404) {
+			return "not found";
+		} else {
+			return "found!"; 
+		}
+  }
 
 });
