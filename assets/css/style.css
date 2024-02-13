@@ -2223,6 +2223,65 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     transform: translate(-50%, -50%);
 }
 
+/* Popup Styling */
+.tops_popup {
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	z-index: 9999;
+	overflow: hidden;
+}
+
+.tops_popup.show {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+
+.tops_popup .tops_popup_overlay {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 2;
+}
+
+.tops_popup .tops_popup_overlay.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.tops_popup_window {
+	display: block;
+	position: absolute;
+	width: 90%;
+	max-width: 768px;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.8);
+	box-sizing: border-box;
+	background-color: #FFF;
+	border-radius: 5px;
+	visibility: hidden;
+	z-index: 3;
+}
+
+.tops_popup_window.show {
+	visibility: visible;
+	transform: translate(-50%, -50%) scale(1.0);
+}
+
 /* Markdown Styling (Will need more over time) */
 .tops_white_section .primary_content_md p b, .tops_white_section .primary_content_md p strong {
 	color: #222;
