@@ -17,7 +17,7 @@
 				{% for event in sorted %}
 					{% unless event.invisible == true %}
 					{% assign eventcounter = eventcounter | plus: 1 %}
-					<div class="tops_events_tile {% if forloop.index == 1 %}tops_events_tile_larger{% endif %}">
+					<div class="tops_events_tile {% if eventcounter == 1 %}tops_events_tile_larger{% endif %}">
 						<a href="{{ event.url | absolute_url }}">
 							<div class="tops_events_tile_image"><img src="{{ site.baseurl }}/{{ event.image }}"></div>
 							<div class="tops_events_tile_overlay"></div>
