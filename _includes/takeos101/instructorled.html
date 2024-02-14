@@ -55,15 +55,23 @@
                           {% if row.moreinfo_link %}
 							  {% assign registercalculate = row.moreinfo_link %}
 							  {% assign registernewwin = "_blank" %}
+							  
+							  {% assign registertitle = "This Workshop is NASA Internal" %}
+							  {% assign registerdesc = "If you are not a NASA civil servant or contract, this workshop is unfortunately not available to you. However, there are still many incredible workshops for you to choose from!" %}
+							  {% assign registerlink = row.moreinfo_link %}
+							  
+							  {% assign registeronclick = "no" %}
+							  
 							
 							  {% if row.nasa %}
 								{% if row.nasa == "yes" or row.nasa == "Yes" %}
 									{% assign registercalculate = "javascript:void(0)" %}
 									{% assign registernewwin = "_self" %}
+									{% assign registeronclick = "yes" %}
 								{% endif %}
 							  {% endif %}
 						  
-							  <a class="tops_workshop_link" href="{{ registercalculate }}" target="{{ registernewwin }}">{{ row.moreinfo }}</a>
+							  <a class="tops_workshop_link" href="{{ registercalculate }}" target="{{ registernewwin }}" {% if registeronclick == "yes" %}onclick="tops_open_popup({{registertitle}}, {{registerdesc}}, {{registerlink}})"{% endif %}>{{ row.moreinfo }}</a>
                           {% else %}
                             {{ row.moreinfo }}
                           {% endif %}
