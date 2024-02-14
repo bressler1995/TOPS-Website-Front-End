@@ -356,6 +356,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			let tops_popup_overlay = document.getElementById("tops_popup_overlay");
 			let tops_popup_window = document.getElementById("tops_popup_window");
 			
+			let tops_popup_title = document.getElementById("tops_popup_title");
+			let tops_popup_desc = document.getElementById("tops_popup_desc");
+			let tops_popup_button = document.getElementById("tops_popup_button");
+			
 			if(tops_popup_overlay.classList.contains("show") == false) {
 				tops_popup_overlay.classList.add("show");
 			}
@@ -363,6 +367,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			if(tops_popup_window.classList.contains("show") == false) {
 				tops_popup_window.classList.add("show");
 			}
+			
+			tops_popup_title.innerHTML = titleParam;
+			tops_popup_desc.innerHTML = descParam;
+			tops_popup_button.href = linkParam;
 			
 		}, 500);
 	}
