@@ -2326,6 +2326,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	padding: 0;
 }
 
+.tops_popup_close {
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	top: 30px;
+	right: 30px;
+	color: #FFF;
+	background-color: #dc3545;
+}
+
 /* Markdown Styling (Will need more over time) */
 .tops_white_section .primary_content_md p b, .tops_white_section .primary_content_md p strong {
 	color: #222;
