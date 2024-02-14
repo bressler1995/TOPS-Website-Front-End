@@ -347,7 +347,7 @@ document.addEventListener("DOMContentLoaded", function() {
   function toggle_tops_popup(titleParam, descParam, linkParam, closeParam) {
 	let tops_popup = document.getElementById("tops_popup");
 	
-	if(tops_pop != null) {
+	if(toggle_tops_popup != null) {
 		if(tops_popup.classList.contains("show") == false) {
 			tops_popup.classList.add("show");
 		}
