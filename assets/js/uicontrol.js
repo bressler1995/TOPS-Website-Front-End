@@ -396,7 +396,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			  }
 			  
 			  setTimeout(function(){
-				  tops_popup.classList.remove("show");
+				  if(tops_popup.classList.contains("show") == true) {
+					tops_popup.classList.remove("show");
+				  }
 			  }, 500);
 		  });
 	  }
