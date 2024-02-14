@@ -344,7 +344,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   inject_tops_opensocial();
   
-  function toggle_open_popup(titleParam, descParam, linkParam) {
+  function tops_open_popup(titleParam, descParam, linkParam) {
 	let tops_popup = document.getElementById("tops_popup");
 	
 	if(tops_popup != null) {
@@ -405,9 +405,5 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   
   inject_tops_popup_close();
-  
-  setTimeout(function(){
-	  toggle_open_popup("Test Title", "Test Description", "https://google.com", false);
-  }, 1000);
 
 });
