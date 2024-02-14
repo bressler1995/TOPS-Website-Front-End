@@ -344,7 +344,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   inject_tops_opensocial();
   
-  function toggle_tops_popup(titleParam, descParam, linkParam, closeParam) {
+  function toggle_open_popup(titleParam, descParam, linkParam) {
 	let tops_popup = document.getElementById("tops_popup");
 	
 	if(toggle_tops_popup != null) {
@@ -377,8 +377,35 @@ document.addEventListener("DOMContentLoaded", function() {
 	
   }
   
+  function inject_tops_popup_close() {
+	  let tops_popup = document.getElementById("tops_popup");
+	  
+	  if(toggle_tops_popup != null) {
+		  let tops_popup_close = document.getElementById("tops_popup_close");
+		  
+		  tops_popup_close.addEventListener("click", function(){
+			  let tops_popup_overlay = document.getElementById("tops_popup_overlay");
+			  let tops_popup_window = document.getElementById("tops_popup_window");
+			  
+			  if(tops_popup_overlay.classList.contains("show") == true) {
+				tops_popup_overlay.classList.remove("show");
+			  }
+				
+			  if(tops_popup_window.classList.contains("show") == true) {
+				tops_popup_window.classList.remove("show");
+			  }
+			  
+			  setTimeout(function(){
+				  tops_popup.classList.remove("show");
+			  }, 500);
+		  });
+	  }
+  }
+  
+  inject_tops_popup_close();
+  
   setTimeout(function(){
-	  toggle_tops_popup("Test Title", "Test Description", "https://google.com", false);
+	  toggle_open_popup("Test Title", "Test Description", "https://google.com", false);
   }, 1000);
 
 });
