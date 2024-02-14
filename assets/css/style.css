@@ -2288,7 +2288,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .tops_popup_window.show {
 	visibility: visible;
 	transform: translate(-50%, -50%) scale(1.0);
-	opacity: 0;
+	opacity: 1;
 }
 
 .tops_popup_window .tops_popup_icon, .tops_popup_window .tops_popup_content, .tops_popup_window .tops_popup_button_holder {
