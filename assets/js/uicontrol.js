@@ -343,5 +343,27 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   inject_tops_opensocial();
+  
+  function toggle_tops_popup(titleParam, descParam, linkParam, closeParam) {
+	let tops_popup = document.getElementById("tops_popup");
+	
+	if(tops_popup.classList.contains("show") == false) {
+		tops_popup.classList.add("show");
+	}
+	
+	setTimeout(function(){
+		let tops_popup_overlay = document.getElementById("tops_popup_overlay");
+		let tops_popup_window = document.getElementById("tops_popup_window");
+		
+		if(tops_popup_overlay.classList.contains("show") == false) {
+			tops_popup_overlay.classList.add("show");
+		}
+		
+		if(tops_popup_window.classList.contains("show") == false) {
+			tops_popup_window.classList.add("show");
+		}
+		
+	}, 500);
+  }
 
 });

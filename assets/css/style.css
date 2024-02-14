@@ -2244,6 +2244,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .tops_popup .tops_popup_overlay {
+	transition: all 0.5s ease;
+	transition-delay: 0.5s;
 	display: block;
 	position: absolute;
 	top: 0;
@@ -2257,11 +2259,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .tops_popup .tops_popup_overlay.show {
-	opacity: 0.8;
+	opacity: 0.75;
 	visibility: visible;
 }
 
 .tops_popup_window {
+	transition: all 0.5s ease;
+	transition-delay: 1.0s;
 	display: block;
 	position: absolute;
 	width: 90%;
@@ -2270,6 +2274,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0.8);
+	opacity: 0;
 	box-sizing: border-box;
 	padding: 30px;
 	padding-top: 45px;
@@ -2283,6 +2288,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .tops_popup_window.show {
 	visibility: visible;
 	transform: translate(-50%, -50%) scale(1.0);
+	opacity: 0;
 }
 
 .tops_popup_window .tops_popup_icon, .tops_popup_window .tops_popup_content, .tops_popup_window .tops_popup_button_holder {
@@ -2305,8 +2311,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-weight: 900;
 	text-transform: uppercase;
 	color: #222;
-	font-size: 32px;
-	line-height: 36px;
+	font-size: 30px;
+	line-height: 34px;
 }
 
 .tops_popup_window .tops_popup_content p {
