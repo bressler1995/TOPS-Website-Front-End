@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", function() {
 				let current_wsl_desc = current_wsl.dataset.regdesc;
 				let current_wsl_link = current_wsl.dataset.reglink;
 					  
-				tops_open_popup(current_wsl_title, current_wsl_desc, current_wsl_link);
+				current_wsl.addEventListener("click", function(){
+					tops_open_popup(current_wsl_title, current_wsl_desc, current_wsl_link);
+				});
 			}
 		}
 	  }
