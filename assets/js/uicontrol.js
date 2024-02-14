@@ -399,7 +399,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				  if(tops_popup.classList.contains("show") == true) {
 					tops_popup.classList.remove("show");
 				  }
-			  }, 500);
+			  }, 1000);
 		  });
 	  }
   }
