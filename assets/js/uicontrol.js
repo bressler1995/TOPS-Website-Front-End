@@ -372,7 +372,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			tops_popup_desc.innerHTML = descParam;
 			tops_popup_button.href = linkParam;
 			
-		}, 500);
+		}, 300);
 	}
 	
   }
