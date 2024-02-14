@@ -380,7 +380,7 @@ document.addEventListener("DOMContentLoaded", function() {
   function inject_tops_popup_close() {
 	  let tops_popup = document.getElementById("tops_popup");
 	  
-	  if(toggle_tops_popup != null) {
+	  if(tops_popup != null) {
 		  let tops_popup_close = document.getElementById("tops_popup_close");
 		  
 		  tops_popup_close.addEventListener("click", function(){
