@@ -71,7 +71,7 @@
 								{% endif %}
 							  {% endif %}
 						  
-							  <a class="tops_workshop_link" href="{{ registercalculate }}" target="{{ registernewwin }}" {% if registeronclick == "yes" %}onclick="tops_open_popup('{{registertitle}}', '{{registerdesc}}', '{{registerlink}}')"{% endif %}>{{ row.moreinfo }}</a>
+							  <a class="{% if registeronclick == "yes" %}tops_workshop_link{% endif %}" href="{{ registercalculate }}" target="{{ registernewwin }}" {% if registeronclick == "yes" %}data-regtitle="{{ registertitle }}" data-regdesc="{{ registerdesc }}" data-reglink="{{ registerlink }}"{% endif %}>{{ row.moreinfo }}</a>
                           {% else %}
                             {{ row.moreinfo }}
                           {% endif %}
@@ -117,7 +117,7 @@
 						</td>
                         <td>
                           {% if row.register_link %}
-                            <a class="tops_workshop_link" href="{{ row.register_link }}" target="_blank">{{ row.register }}</a>
+                            <a class="" href="{{ row.register_link }}" target="_blank">{{ row.register }}</a>
                           {% else %}
                             {{ row.register }}
                           {% endif %}

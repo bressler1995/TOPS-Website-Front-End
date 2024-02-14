@@ -5,21 +5,22 @@ document.addEventListener("DOMContentLoaded", function() {
 	  let tops_tables = document.getElementsByClassName("workshop_table");
 	  let tops_workshop_links = document.getElementsByClassName("tops_workshop_link");
 	  
+	  //Workshop Link Injection
+	  if(tops_workshop_links != null) {
+		if(tops_workshop_links.length > 0) {
+			for(wsl = 0; wsl < tops_workshop_links.length; wsl++) {
+				let current_wsl = tops_workshop_links[wsl];
+				let current_wsl_title = current_wsl.dataset.regtitle;
+				let current_wsl_desc = current_wsl.dataset.regdesc;
+				let current_wsl_link = current_wsl.dataset.reglink;
+					  
+				tops_open_popup(current_wsl_title, current_wsl_desc, current_wsl_link);
+			}
+		}
+	  }
+	  
 	  if(tops_tables != null) {
-		  if(tops_tables.length > 0) {
-			  
-			  //Workshop Link Injection
-			  if(tops_workshop_links != null) {
-				  if(tops_workshop_links.length > 0) {
-					  for(wsl = 0; wsl < tops_workshop_links.length; wsl++) {
-						  let current_wsl = tops_workshop_links[wsl];
-						  let current_wsl_href = current_wsl.href;
-						  let current_wsl_text = current_wsl.innerHTML;
-						  
-					  }
-				  }
-			  }
-			  
+		  if(tops_tables.length > 0) {  
 			  
 			  //Filters Injection
 			  console.log("TOPS: Found total of " + tops_tables.length + " tables");
