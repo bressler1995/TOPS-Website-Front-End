@@ -2244,8 +2244,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .tops_popup .tops_popup_overlay {
-	transition: all 0.5s ease;
-	transition-delay: 0.5s;
+	transition: all 0.3s ease;
+	transition-delay: 0.3s;
 	display: block;
 	position: absolute;
 	top: 0;
@@ -2264,8 +2264,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .tops_popup_window {
-	transition: all 0.5s ease;
-	transition-delay: 1.0s;
+	transition: all 0.3s ease;
+	transition-delay: 0.6s;
 	display: block;
 	position: absolute;
 	width: 90%;
