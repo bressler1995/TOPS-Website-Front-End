@@ -21,8 +21,8 @@ sass:
 
 
 # Workshops
-hideinperson: true
-hidevirtual: true
+hideinperson: false
+hidevirtual: false
 
 
 # Collections
