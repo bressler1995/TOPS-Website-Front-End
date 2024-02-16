@@ -372,10 +372,11 @@ document.addEventListener("DOMContentLoaded", function() {
 	  
 	  if(tops_popup != null) {
 		  let tops_popup_close = document.getElementById("tops_popup_close");
+		  let tops_popup_closeTwo = document.getElementById("tops_popup_closeTwo");
+		  let tops_popup_overlay = document.getElementById("tops_popup_overlay");
+		  let tops_popup_window = document.getElementById("tops_popup_window");
 		  
 		  tops_popup_close.addEventListener("click", function(){
-			  let tops_popup_overlay = document.getElementById("tops_popup_overlay");
-			  let tops_popup_window = document.getElementById("tops_popup_window");
 			  
 			  if(tops_popup_overlay.classList.contains("show") == true) {
 				tops_popup_overlay.classList.remove("show");
@@ -391,6 +392,24 @@ document.addEventListener("DOMContentLoaded", function() {
 				  }
 			  }, 1500);
 		  });
+		  
+		  tops_popup_closeTwo.addEventListener("click", function(){
+			  
+			  if(tops_popup_overlay.classList.contains("show") == true) {
+				tops_popup_overlay.classList.remove("show");
+			  }
+				
+			  if(tops_popup_window.classList.contains("show") == true) {
+				tops_popup_window.classList.remove("show");
+			  }
+			  
+			  setTimeout(function(){
+				  if(tops_popup.classList.contains("show") == true) {
+					tops_popup.classList.remove("show");
+				  }
+			  }, 1500);
+		  });
+		  
 	  }
   }
   
