@@ -33,7 +33,7 @@ Event Location:
 Entry and Parking Information:
 
 - Entry and parking will be at the Kennedy Space Center Visitor Complex. 
-- Guest Access Directions and parking placard to waive fees - <a href="https://science.nasa.gov/wp-content/uploads/2024/02/nasa-tops-access-package.pdf" target="_blank">NASA TOPS KSC Access Package</a>
+- Guest access directions and parking placard to waive fees - <a href="https://science.nasa.gov/wp-content/uploads/2024/02/nasa-tops-access-package.pdf" target="_blank">NASA TOPS KSC Access Package</a>
 - The Center for Space Education - <a href="https://science.nasa.gov/wp-content/uploads/2024/02/advance-team-and-vip-cse-guest-directions.pdf" target="_blank">Advance Team and VIP CSE Guest Directions</a>
 - Parking Opens: 8:30 AM
 - Turnstiles Open: 9:00 AM 
