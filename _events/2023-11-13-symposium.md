@@ -33,8 +33,7 @@ Event Location:
 Entry and Parking Information:
 
 - Entry and parking will be at the Kennedy Space Center Visitor Complex. 
-- Guest access directions and parking placard to waive fees - <a href="https://science.nasa.gov/wp-content/uploads/2024/02/nasa-tops-access-package.pdf" target="_blank">NASA TOPS KSC Access Package</a>
-- The Center for Space Education - <a href="https://science.nasa.gov/wp-content/uploads/2024/02/advance-team-and-vip-cse-guest-directions.pdf" target="_blank">Advance Team and VIP CSE Guest Directions</a>
+- Guest access directions and parking placard to waive fees - <a href="https://science.nasa.gov/wp-content/uploads/2024/02/nasa-tops-access-package.pdf" target="_blank">NASA TOPS KSC Access Package</a> and <a href="https://science.nasa.gov/wp-content/uploads/2024/02/advance-team-and-vip-cse-guest-directions.pdf" target="_blank">Advance Team and VIP CSE Guest Directions</a>
 - Parking Opens: 8:30 AM
 - Turnstiles Open: 9:00 AM 
 - Security Checkpoint: All attendees must enter through the Kennedy Space Center Visitor Complex security checkpoint and turnstiles with the AMF-provided ticket or paperwork. Please allow sufficient time for security procedures.
@@ -44,16 +43,16 @@ Entry and Parking Information:
 Event Dates and Schedule:
 
 - February 27th:
-  - 9:00 AM: Beverages and breakfast grazing available in the event space.
-  - 10:00 AM - 5:00 PM: General TOPS presentations and working Sessions. Lunch options include "Make a Plate" and Kennedy Space Center Visitor Complex restaurants.
+  - 9:00 AM - 10:00AM: Beverages and breakfast grazing will be available in the event space.
+  - 10:00 AM - 5:00 PM: General TOPS presentations and working sessions; lunch options include "make a plate" and Kennedy Space Center Visitor Complex restaurants.
 
 - February 28th:
-  - 9:00 AM: Beverages and breakfast grazing available in the event space.
-  - 10:00 AM - 5:00 PM: Presentations & Working Sessions, with breakouts by topic including OS101 Training and Science Core. Lunch options include "Make a Plate" and Kennedy Space Center Visitor Complex restaurants.
+  - 9:00 AM - 10:00AM: Beverages and breakfast grazing will be available in the event space.
+  - 10:00 AM - 5:00 PM: Presentations and working sessions, with breakouts by topic including OS101 training and Science Core; lunch options include "make a plate" and Kennedy Space Center Visitor Complex restaurants.
 
 - February 29th:
-  - 9:00 AM - 11:30 AM: Coffee and tea available in the event space. 
-  - 9:00 AM - Noon: Attendees have the opportunity to explore the Kennedy Space Center Visitor Complex, accommodating for the impact on tours due to the launch. The event space will also be open for co-working and networking, with the TOPS PMO available from 9:00 AM to noon.
+  - 9:00 AM - 11:30 AM: Coffee and tea will be available in the event space.
+  - 9:00 AM - 12:00 PM: Attendees have the opportunity to explore the Kennedy Space Center Visitor Complex, accommodating for the impact on tours due to the launch. The event space will also be open for co-working and networking, with the TOPS PMO available until noon.
 
 
 <span style="color:red;">We ask that all attendees complete the OS101 training prior to the event.</span> Attendees will receive a certificate and pin, in addition to the digital badge awarded through the MOOC. 
