@@ -63,7 +63,7 @@ Please be aware that the launch may potentially affect tours.
 
 Please use the following links to join the event virtually...
 
-- Webinar topic: TOPS Symposium Day 1</u>
+- Webinar topic: TOPS Symposium Day 1
   - Date and time: Tuesday, February 27, 2024 9:00 AM &#124; (UTC-06:00) Central Time (US & Canada)
   - Join link: [https://nasaenterprise.webex.com/nasaenterprise/j.php?MTID=ma1ac87531f410da906cfe9f0ea6c3df6](https://nasaenterprise.webex.com/nasaenterprise/j.php?MTID=ma1ac87531f410da906cfe9f0ea6c3df6)
   - Webinar number: 2821 527 9055
@@ -72,22 +72,15 @@ Please use the following links to join the event virtually...
     - +1-929-251-9612 United States Toll (New York City)
     - +1-415-527-5035 United States Toll
   - Access code: 282 152 79055
-
-<u>Webinar topic: TOPS Symposium Day 2</u>
-
-Date and time: Wednesday, February 28, 2024 9:00 AM &#124; (UTC-06:00) Central Time (US & Canada)
-
-Join link: [https://nasaenterprise.webex.com/nasaenterprise/j.php?MTID=ma8a3b27afc30bd05dceb098559acb3ad](https://nasaenterprise.webex.com/nasaenterprise/j.php?MTID=ma8a3b27afc30bd05dceb098559acb3ad)
-
-Webinar number: 2822 447 3286
-
-Webinar password: kVDyf28Ms$2 (58393286 from phones and video systems)
-
-Join by phone
-- +1-929-251-9612 United States Toll (New York City)
-- +1-415-527-5035 United States Toll
-
-Access code: 282 244 73286
+- Webinar topic: TOPS Symposium Day 2
+  - Date and time: Wednesday, February 28, 2024 9:00 AM &#124; (UTC-06:00) Central Time (US & Canada)
+  - Join link: [https://nasaenterprise.webex.com/nasaenterprise/j.php?MTID=ma8a3b27afc30bd05dceb098559acb3ad](https://nasaenterprise.webex.com/nasaenterprise/j.php?MTID=ma8a3b27afc30bd05dceb098559acb3ad)
+  - Webinar number: 2822 447 3286
+  - Webinar password: kVDyf28Ms$2 (58393286 from phones and video systems)
+  - Join by phone
+    - +1-929-251-9612 United States Toll (New York City)
+    - +1-415-527-5035 United States Toll
+  - Access code: 282 244 73286
 
 **Guidance for In Person Attendees:**
 
