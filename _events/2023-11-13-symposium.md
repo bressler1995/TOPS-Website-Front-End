@@ -64,9 +64,7 @@ Please be aware that the launch may potentially affect tours.
 
 Please use the following links to join the event virtually...
 
-##### Webinar topic: 
-
-TOPS Symposium Day 1
+<u>Webinar topic: TOPS Symposium Day 1</u>
 
 Date and time:
 
@@ -93,7 +91,7 @@ Join by phone
 Access code: 282 152 79055
 
 
-##### Webinar topic: TOPS Symposium Day 2
+<u>Webinar topic: TOPS Symposium Day 2</u>
 
 Date and time:
 
