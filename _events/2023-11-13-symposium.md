@@ -40,19 +40,22 @@ Entry and Parking Information:
 - GPS Coordinates for entrance at Kennedy Space Center Visitor Complex: 28°30'56.0"N, 80°40'54"W. (Note: Search for "Kennedy Space Center Visitor Complex" in your GPS, not just "Kennedy Space Center" to avoid being directed to the wrong location.) 
 - [KSCVC Travel Information](https://www.kennedyspacecenter.com/info/travel-information)
 
-Event Dates and Schedule:
+**Event Dates and Schedule:**
 
-- February 27th:
-  - 9:00 AM - 10:00AM: Beverages and breakfast grazing will be available in the event space.
-  - 10:00 AM - 5:00 PM: General TOPS presentations and working sessions; lunch options include "make a plate" and Kennedy Space Center Visitor Complex restaurants.
+<u>February 27th</u>
 
-- February 28th:
-  - 9:00 AM - 10:00AM: Beverages and breakfast grazing will be available in the event space.
-  - 10:00 AM - 5:00 PM: Presentations and working sessions, with breakouts by topic including OS101 training and Science Core; lunch options include "make a plate" and Kennedy Space Center Visitor Complex restaurants.
+- 9:00 AM - 10:00AM: Beverages and breakfast grazing will be available in the event space.
+- 10:00 AM - 5:00 PM: General TOPS presentations and working sessions; lunch options include "make a plate" and Kennedy Space Center Visitor Complex restaurants.
 
-- February 29th:
-  - 9:00 AM - 11:30 AM: Coffee and tea will be available in the event space.
-  - 9:00 AM - 12:00 PM: Attendees have the opportunity to explore the Kennedy Space Center Visitor Complex, accommodating for the impact on tours due to the launch. The event space will also be open for co-working and networking, with the TOPS PMO available until noon.
+<u>February 28th</u>
+
+- 9:00 AM - 10:00AM: Beverages and breakfast grazing will be available in the event space.
+- 10:00 AM - 5:00 PM: Presentations and working sessions, with breakouts by topic including OS101 training and Science Core; lunch options include "make a plate" and Kennedy Space Center Visitor Complex restaurants.
+
+<u>February 29th</u>
+
+- 9:00 AM - 11:30 AM: Coffee and tea will be available in the event space.
+- 9:00 AM - 12:00 PM: Attendees have the opportunity to explore the Kennedy Space Center Visitor Complex, accommodating for the impact on tours due to the launch. The event space will also be open for co-working and networking, with the TOPS PMO available until noon.
 
 
 <span style="color:red;">We ask that all attendees complete the OS101 training prior to the event.</span> Attendees will receive a certificate and pin, in addition to the digital badge awarded through the MOOC. 
@@ -63,7 +66,7 @@ Please be aware that the launch may potentially affect tours.
 
 Please use the following links to join the event virtually...
 
-<u>TOPS Symposium Day 1</u>
+<u>February 27th</u>
 
 - Join link: [https://nasaenterprise.webex.com/nasaenterprise/j.php?MTID=ma1ac87531f410da906cfe9f0ea6c3df6](https://nasaenterprise.webex.com/nasaenterprise/j.php?MTID=ma1ac87531f410da906cfe9f0ea6c3df6)
 - Webinar number: 2821 527 9055
@@ -73,7 +76,7 @@ Please use the following links to join the event virtually...
   - +1-415-527-5035 United States Toll
   - Access code: 282 152 79055
 
-<u>TOPS Symposium Day 2</u>
+<u>February 28th</u>
 
 - Join link: [https://nasaenterprise.webex.com/nasaenterprise/j.php?MTID=ma8a3b27afc30bd05dceb098559acb3ad](https://nasaenterprise.webex.com/nasaenterprise/j.php?MTID=ma8a3b27afc30bd05dceb098559acb3ad)
 - Webinar number: 2822 447 3286
