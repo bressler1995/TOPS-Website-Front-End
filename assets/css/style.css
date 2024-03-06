@@ -1335,6 +1335,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	padding:25px;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	background-color: #F0F0F0;
+}
+
+.tops_gray_section .no_workshops {
+	background-color: #FFFFFF;
 }
 
 .no_workshops .noworkshops_icon_holder, .no_workshops p {
