@@ -1,6 +1,17 @@
 ---
 layout: default
 ---
+
+{% assign symposium_enabled = false %}
+{% if page.symposium %}
+	{% if page.symposium == true %}
+		{% assign symposium_enabled = true %}
+	{% else %}
+		{% assign symposium_enabled = false %}
+	{% endif %}
+{% else %}
+	{% assign symposium_enabled = false %}
+{% endif %}
 <div style="background-image: url('{{ site.baseurl }}/assets/img/abstractlines.jpg');" class="d-flex flex-column justify-content-center tops_hero sub_hero tops_hero_align_50_100 tops_overlay_section black_overlay">
     <div class="the_overlay opacity-70"></div>
     <div class="container tops_container">
@@ -74,11 +85,11 @@ layout: default
         <div class="col-12 col-md-4 col-lg-3 tops_eventsingle_sidebar">
           <div class="tops_eventsingle_sidebar_widget">
               <h3 class="mb-2">
-                {% if page.symposium %}
-                  Event Location Details
-                {% else %}
-                  Event Details
-                {% endif %}
+                {% if symposium_enabled == true %}
+					Event Location Details
+				{% else %}
+				    Event Details
+				{% endif %}
               </h3>
               <div class="tops_divider div_smallest justify-content-start mb-3"><div class="div_inner"></div></div>
               <p class="tops_eventsingle_widgetdescription">{% if page.symposium %}Please refer to the event description for more details.{% else %}Interested in going to this event?  Below is basic information about when the event will happen and how to get there.{% endif %}</p>
