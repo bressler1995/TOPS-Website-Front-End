@@ -3,6 +3,7 @@ layout: default
 ---
 
 {% assign symposium_enabled = false %}
+{% assign dislaimer_enabled = false %}
 {% if page.symposium %}
 	{% if page.symposium == true %}
 		{% assign symposium_enabled = true %}
@@ -11,6 +12,15 @@ layout: default
 	{% endif %}
 {% else %}
 	{% assign symposium_enabled = false %}
+{% endif %}
+{% if page.disclaimer %}
+	{% if page.disclaimer == true %}
+		{% assign dislaimer_enabled = true %}
+	{% else %}
+		{% assign dislaimer_enabled = false %}
+	{% endif %}
+{% else %}
+	{% assign dislaimer_enabled = false %}
 {% endif %}
 <div style="background-image: url('{{ site.baseurl }}/assets/img/abstractlines.jpg');" class="d-flex flex-column justify-content-center tops_hero sub_hero tops_hero_align_50_100 tops_overlay_section black_overlay">
     <div class="the_overlay opacity-70"></div>
@@ -140,4 +150,5 @@ layout: default
     </div>
   </div>
   
-<p>{{ symposium_enabled }}<p>
+<p>Symposium:{{ symposium_enabled }}<p>
+<p>Disclaimer:{{ dislaimer_enabled }}<p>
