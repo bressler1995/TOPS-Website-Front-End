@@ -79,7 +79,7 @@
 									
 									{% assign registertitle = "This Workshop is Internal to JPL" %}
 									{% assign registerdesc = "If you are not a JPL civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" %}
-								{% elsif registertype == "topst" %}
+								{% elsif registertype contains "external" %}
 									{% assign registercalculate = "javascript:void(0)" %}
 									{% assign registernewwin = "_self" %}
 									{% assign registeronclick = "yes" %}
@@ -89,7 +89,7 @@
 								{% endif %}
 							  {% endif %}
 						  
-							  <a class="{% if registeronclick == "yes" %}tops_workshop_link{% endif %}" href="{{ registercalculate }}" target="{{ registernewwin }}" {% if registeronclick == "yes" %}data-regtitle="{{ registertitle }}" data-regdesc="{{ registerdesc }}" data-reglink="{{ registerlink }}"{% endif %}>{{ row.moreinfo }} ({{ registertype }})</a>
+							  <a class="{% if registeronclick == "yes" %}tops_workshop_link{% endif %}" href="{{ registercalculate }}" target="{{ registernewwin }}" {% if registeronclick == "yes" %}data-regtitle="{{ registertitle }}" data-regdesc="{{ registerdesc }}" data-reglink="{{ registerlink }}"{% endif %}>{{ row.moreinfo }}</a>
                           {% else %}
                             {{ row.moreinfo }}
                           {% endif %}
