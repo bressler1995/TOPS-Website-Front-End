@@ -127,10 +127,10 @@
                         <td>{{ row.module }}</td>
                         <td>{{ row.instructor }}</td>
 						<td>
-							{% if row.nasa %}
-								{{ row.nasa }}
+							{% if row.regtype %}
+								{{ row.regtype }}
 							{% else %}
-								no
+								Other
 							{% endif %}
 						</td>
                         <td>
@@ -138,18 +138,36 @@
 							  {% assign registercalculate = row.register_link %}
 							  {% assign registernewwin = "_blank" %}
 							  
-							  {% assign registertitle = "This Workshop is NASA Internal" %}
+							  {% assign registertitle = "This Workshop is Internal to NASA" %}
 							  {% assign registerdesc = "If you are not a NASA civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" %}
 							  {% assign registerlink = row.register_link %}
+							  {% assign registertype = row.regtype | downcase %}
 							  
 							  {% assign registeronclick = "no" %}
 							  
 							
-							  {% if row.nasa %}
-								{% if row.nasa == "yes" or row.nasa == "Yes" %}
+							  {% if registertype %}
+								{% if registertype == "nasa" %}
 									{% assign registercalculate = "javascript:void(0)" %}
 									{% assign registernewwin = "_self" %}
 									{% assign registeronclick = "yes" %}
+									
+									{% assign registertitle = "This Workshop is Internal to NASA" %}
+									{% assign registerdesc = "If you are not a NASA civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" %}
+								{% elsif registertype == "jpl" %}
+									{% assign registercalculate = "javascript:void(0)" %}
+									{% assign registernewwin = "_self" %}
+									{% assign registeronclick = "yes" %}
+									
+									{% assign registertitle = "This Workshop is Internal to JPL" %}
+									{% assign registerdesc = "If you are not a JPL civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" %}
+								{% elsif registertype contains "external" %}
+									{% assign registercalculate = "javascript:void(0)" %}
+									{% assign registernewwin = "_self" %}
+									{% assign registeronclick = "yes" %}
+									
+									{% assign registertitle = "This Event is External" %}
+									{% assign registerdesc = "We would like to inform you that you are being taken to an external registration form should you choose to proceed." %}
 								{% endif %}
 							  {% endif %}
 						  
