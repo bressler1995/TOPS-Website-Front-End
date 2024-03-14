@@ -56,7 +56,7 @@ footermenu:
 cmodules:
 
 - title: All Modules
-  url: "os101-modules/
+  url: "os101-modules/"
 
 - title: Ethos Of Open Science
   url: "os101-modules/#ethos"
