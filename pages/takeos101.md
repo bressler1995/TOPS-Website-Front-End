@@ -92,7 +92,7 @@ TOPS offers in-person training opportunities at conferences and institutions acr
 
 <!---Submit a Workshop Text-->
 {% capture takeos101-instructorled-contactus-text %}
-Submit a Workshop
+List a Workshop
 {% endcapture %}
 
 <!---Submit a Workshop Link-->
