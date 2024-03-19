@@ -90,12 +90,12 @@ Virtual cohorts are online workshops designed to assist individuals to complete 
 TOPS offers in-person training opportunities at conferences and institutions across the country.  See the calendar of events below for opportunities near you.  Going to a professional conference? See if TOPS is leading a workshop.
 {% endcapture %}
 
-<!---Contact Us Text-->
+<!---Submit a Workshop Text-->
 {% capture takeos101-instructorled-contactus-text %}
-Contact Us
+Submit a Workshop
 {% endcapture %}
 
-<!---Contact Us Link-->
+<!---Submit a Workshop Link-->
 {% capture takeos101-instructorled-contactus-link %}
 {{site.baseurl}}/contact
 {% endcapture %}
