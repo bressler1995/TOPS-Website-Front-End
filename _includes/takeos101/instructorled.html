@@ -36,7 +36,11 @@
 						{% assign alleventtypes = '' %}
 						
 						{% for row in site.data.inperson %}
-							{% assign alleventtypes = alleventtypes | append: ',' | append: row.eventtype %}
+							{% if forloop.index == 1 %}
+								{% assign alleventtypes = alleventtypes | append: row.eventtype %}
+							{% else %}
+								{% assign alleventtypes = alleventtypes | append: '_' | append: row.eventtype %}
+							{% endif %}
 						{% endfor %}
 						
 						<option value="{{ alleventtypes }}">{{ alleventtypes }}</option>
