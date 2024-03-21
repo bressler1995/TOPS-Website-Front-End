@@ -33,17 +33,20 @@
 						<option value="Event Type 3">Event Type 3</option>
 						<option value="Event Type 4">Event Type 4</option>
 						
-						{% assign alleventtypes = '' %}
+						{% assign all_eventtypes = '' %}
 						
 						{% for row in site.data.inperson %}
 							{% if forloop.index == 1 %}
-								{% assign alleventtypes = alleventtypes | append: row.eventtype %}
+								{% assign all_eventtypes = all_eventtypes | append: row.eventtype %}
 							{% else %}
-								{% assign alleventtypes = alleventtypes | append: '_' | append: row.eventtype %}
+								{% assign all_eventtypes = all_eventtypes | append: '_' | append: row.eventtype %}
 							{% endif %}
 						{% endfor %}
 						
-						<option value="{{ alleventtypes }}">{{ alleventtypes }}</option>
+						{% assign split_eventtypes = all_eventtypes | split: '_' %}
+						{% assign unique_eventtypes = split_eventtypes | uniq %}
+						
+						<option value="{{ unique_eventtypes | join: ', ' }}">{{ unique_eventtypes | join: ', ' }}</option>
 					</select>
                     <select class="form-select" data-col-index="3">
 						<option selected="">Locations</option>
