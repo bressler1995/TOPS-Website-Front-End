@@ -32,9 +32,7 @@
 						<option value="Event Type 2">Event Type 2</option>
 						<option value="Event Type 3">Event Type 3</option>
 						<option value="Event Type 4">Event Type 4</option>
-						
 						{% assign all_eventtypes = '' %}
-						
 						{% for row in site.data.inperson %}
 							{% if forloop.index == 1 %}
 								{% assign all_eventtypes = all_eventtypes | append: row.eventtype %}
@@ -42,12 +40,10 @@
 								{% assign all_eventtypes = all_eventtypes | append: '_' | append: row.eventtype %}
 							{% endif %}
 						{% endfor %}
-						
 						{% assign split_eventtypes = all_eventtypes | split: '_' %}
 						{% assign unique_eventtypes = split_eventtypes | uniq %}
-						
 						{% for unique_eventtype in unique_eventtypes %}
-							<option value="{{ unique_eventtype">{{ unique_eventtype }}</option>
+							<option value="{{ unique_eventtype }}">{{ unique_eventtype }}</option>
 						{% endfor %}
 					</select>
                     <select class="form-select" data-col-index="3">
