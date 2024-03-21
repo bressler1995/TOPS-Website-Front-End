@@ -46,7 +46,9 @@
 						{% assign split_eventtypes = all_eventtypes | split: '_' %}
 						{% assign unique_eventtypes = split_eventtypes | uniq %}
 						
-						<option value="{{ unique_eventtypes | join: ', ' }}">{{ unique_eventtypes | join: ', ' }}</option>
+						{% for unique_eventtype in unique_eventtypes %}
+							<option value="{{ unique_eventtype">{{ unique_eventtype }}</option>
+						{% endfor %}
 					</select>
                     <select class="form-select" data-col-index="3">
 						<option selected="">Locations</option>
