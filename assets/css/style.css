@@ -2814,27 +2814,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		padding-bottom: 25px;
 	}
 
-	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters {
-		padding: 15px 20px;
-	}
-
-	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_selectoutter {
-		width: 100%;
-	}
-
-	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_resetoutter {
-		width: 100%;
-	}
-
-	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_resetoutter .workshop_table_resetopt {
-		width: 100%;
-	}
-
-	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_selectoutter select {
-		width: 100%;
-		margin-bottom: 12px;
-	}
-
 	.tops_getinvolved_section img {
 		height: 350px;
 	}
@@ -2919,40 +2898,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	.tops_hero.sub_hero h1 {
 		font-size: 44px;
 		line-height: 48px;
-	}
-
-	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters {
-		padding-top: 15px;
-		padding-bottom: 3px;
-		padding-left: 25px;
-		padding-right: 25px;
-	}
-
-	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_selectoutter {
-		width: 85%;
-	}
-
-	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_resetoutter {
-		width: 15%;
-	}
-
-	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_resetoutter .workshop_table_resetopt {
-		height: 38px;
-		line-height: 38px;
-		padding-top:0;
-		padding-bottom: 0;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-
-	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_selectoutter select {
-		width: auto;
-		margin-right: 12px;
-		margin-bottom: 12px;
-	}
-
-	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_selectoutter select:last-of-type {
-		margin-right: 0;
 	}
 	
 	.tops_workshops_container .tops_workshops_tables table {
@@ -3195,6 +3140,27 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_table tr td {
 		padding: 10px 20px;
 	}
+	
+	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters {
+		padding: 15px 20px;
+	}
+
+	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_selectoutter {
+		width: 100%;
+	}
+
+	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_resetoutter {
+		width: 100%;
+	}
+
+	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_resetoutter .workshop_table_resetopt {
+		width: 100%;
+	}
+
+	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_selectoutter select {
+		width: 100%;
+		margin-bottom: 12px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -3423,5 +3389,39 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	
 	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_table tr td {
 		padding: 15px 25px;
+	}
+	
+	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters {
+		padding-top: 15px;
+		padding-bottom: 3px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_selectoutter {
+		width: 85%;
+	}
+
+	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_resetoutter {
+		width: 15%;
+	}
+
+	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_resetoutter .workshop_table_resetopt {
+		height: 38px;
+		line-height: 38px;
+		padding-top:0;
+		padding-bottom: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_selectoutter select {
+		width: auto;
+		margin-right: 12px;
+		margin-bottom: 12px;
+	}
+
+	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_selectoutter select:last-of-type {
+		margin-right: 0;
 	}
 }
