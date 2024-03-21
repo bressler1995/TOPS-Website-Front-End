@@ -147,13 +147,63 @@
                       <div class="tops_workshops_tables">
                         
                         <div class="workshop_table active">
-                          <div class="no_workshops"><div class="noworkshops_icon_holder"><div><i class="fa-solid fa-calendar-days"></i></div></div><p>Stay tuned!  More training dates will be coming soon...</p></div>
+                          <div class="workshop_table_filters">
+                            <div class="d-flex flex-row flex-wrap justify-content-start workshop_table_filters_selectoutter">
+                               <select class="form-select" data-col-index="2">
+								 <option selected="">Event Types</option>
+								 <option value="Event Type 1">Event Type 1</option>
+								 <option value="Event Type 2">Event Type 2</option>
+								 <option value="Event Type 3">Event Type 3</option>
+								 <option value="Event Type 4">Event Type 4</option>
+							   </select>
+							   <select class="form-select" data-col-index="3">
+								 <option selected="">Locations</option>
+								 <option value="San Francisco, CA">San Francisco, CA</option>
+								 <option value="New Orleans, LA">New Orleans, LA</option>
+								 <option value="Houston, TX">Houston, TX</option>
+								 <option value="Huntsville, AL">Huntsville, AL</option>
+							   </select>
+							   <select class="form-select" data-col-index="4">
+								 <option selected="">Topics</option>
+								 <option value="OS101 Module 1">OS101 Module 1</option>
+								 <option value="OS101 Module 2">OS101 Module 2</option>
+								 <option value="OS101 Module 3">OS101 Module 3</option>
+								 <option value="OS101 Module 4">OS101 Module 4</option>
+								 <option value="OS101 Module 5">OS101 Module 5</option>
+							  </select>
+							  <select class="form-select" data-col-index="5">
+								 <option selected="">Instructors</option>
+								 <option value="Person's Name 1">Person's Name 1</option>
+								 <option value="Person's Name 2">Person's Name 2</option>
+								 <option value="Person's Name 3">Person's Name 3</option>
+								 <option value="Person's Name 4">Person's Name 4</option>
+								 <option value="Person's Name 5">Person's Name 5</option>
+							  </select>
+                            </div>
+                            <div class="d-flex flex-row flex-wrap justify-content-end workshop_table_filters_resetoutter">
+                              <a class="btn btn-primary workshop_table_resetopt" href="javascript:void(0)" role="button">Reset</a>
+                            </div>
+                          </div>
+                          <div class="workshop_table_table">
+                            <table>
+								<thead><tr><th>Date</th><th>Time</th><th>Event Type</th><th>Location</th><th>Topic</th><th>Instructor</th><th>Registration Type</th><th>More Info</th></tr></thead>
+								<tbody>
+									<tr><td>Mar. 3 - 7, 2024</td><td>12:00 - 2:30 PM</td><td>Event Type 1, Event Name</td><td>Venue Name, San Francisco, CA</td><td>OS101 Module 1</td><td>Person's Name 1, TOPS</td><td>NASA (Internal Only)</td><td><a href="javascript:void(0)" target="_self" class="tops_workshop_link" data-regdesc="If you are not a NASA civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" data-reglink="https://nasa.sharepoint.com/teams/TOPSOpenScience101Events" data-regtitle="This Workshop is Internal to NASA">Example Website</a></td></tr>
+									<tr><td>Apr. 8, 2024</td><td>1:00 - 3:30 PM</td><td>Event Type 2, Event Name</td><td>Venue Name, New Orleans, LA</td><td>OS101 Module 2, OS101 Module 3, OS101 Module 4</td><td>Person's Name 2, Don't Use This Code</td><td>JPL (Internal Only)</td><td><a href="javascript:void(0)" target="_self" class="tops_workshop_link" data-regdesc="If you are not a JPL civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" data-reglink="https://nasa.sharepoint.com/teams/TOPSOpenScience101Events" data-regtitle="This Workshop is Internal to JPL">Example Website</a></td></tr>
+									<tr><td>Apr. 29, 2024</td><td>4:00 - 5:00 PM</td><td>Event Type 2, Event Name</td><td>Venue Name, Houston, TX</td><td>OS101 Module 5</td><td>Person's Name 3, TOPS</td><td>External (TOPST)</td><td><a href="javascript:void(0)" target="_self" class="tops_workshop_link" data-regdesc="We would like to inform you that you are being taken to an external registration form should you choose to proceed." data-reglink="https://example.com" data-regtitle="This Event is External">Example Website</a></td></tr>
+									<tr><td>Sept.2, 2024</td><td>7:00 - 9:00 AM</td><td>Event Type 4, Event Name</td><td>Venue Name, Huntsville, AL</td><td>OS101 Module 1, OS101 Module 2</td><td>Person's Name 4, TOPS</td><td>Other</td><td><a href="https://example.com" target="_blank">Example Website</a></td></tr>
+									<tr><td>Nov. 5, 2024</td><td>3:00 - 4:00 PM</td><td>Event Type 1, Event Name</td><td>Venue Name, Huntsville, AL</td><td>OS101 Module 1</td><td>Person's Name 2, DUTC</td><td>Other</td><td><a href="https://example.com" target="_blank">Example Website</a></td></tr>
+									<tr><td>Dec. 6, 2024</td><td>7:00 - 9:00 AM</td><td>Event Type 3, Event Name</td><td>Venue Name, Huntsville, AL</td><td>OS101 Module 4</td><td>Person's Name 5, NASA</td><td>Other</td><td>Example Website</td></tr>
+									<tr><td>Jan. 3, 2025</td><td>7:00 - 9:00 AM</td><td>Event Type 4, Event Name</td><td>Venue Name, San Francisco, CA</td><td>OS101 Module 5</td><td>Person's Name 5, NASA</td><td>External (NASA)</td><td><a href="javascript:void(0)" target="_self" class="tops_workshop_link" data-regdesc="We would like to inform you that you are being taken to an external registration form should you choose to proceed." data-reglink="https://nasa.gov" data-regtitle="This Event is External">Example Website</a></td></tr>
+								</tbody>
+							</table>
+                          </div>
                         </div>
                         <div class="workshop_table">
                           <div class="workshop_table_filters">
                             <div class="d-flex flex-row flex-wrap justify-content-start workshop_table_filters_selectoutter">
                               <select class="form-select" data-col-index="2"><option selected="">Event Types</option><option value="Event Type 1">Event Type 1</option><option value="Event Type 2">Event Type 2</option><option value="Event Type 3">Event Type 3</option><option value="Event Type 4">Event Type 4</option></select>
-                              <select class="form-select" data-col-index="3"><option selected="">Modules</option><option value="1">Module 1</option><option value="2">Module 2</option><option value="3">Module 3</option><option value="4">Module 4</option><option value="5">Module 5</option></select>
+                              <select class="form-select" data-col-index="3"><option selected="">Topics</option><option value="1">Module 1</option><option value="2">Module 2</option><option value="3">Module 3</option><option value="4">Module 4</option><option value="5">Module 5</option></select>
                               <select class="form-select" data-col-index="4"><option selected="">Instructors</option><option value="Person's Name 1">Person's Name 1</option><option value="Person's Name 2">Person's Name 2</option><option value="Person's Name 3">Person's Name 3</option><option value="Person's Name 4">Person's Name 4</option></select>
                             </div>
                             <div class="d-flex flex-row flex-wrap justify-content-end workshop_table_filters_resetoutter">
@@ -162,7 +212,7 @@
                           </div>
                           <div class="workshop_table_table">
                             <table>
-								<thead><tr><th>Date</th><th>Time</th><th>Event Type</th><th>Module</th><th>Instructor</th><th>NASA Internal?</th><th>Register</th></tr></thead>
+								<thead><tr><th>Date</th><th>Time</th><th>Event Type</th><th>Topic</th><th>Instructor</th><th>NASA Internal?</th><th>Register</th></tr></thead>
 								<tbody>
 									<tr><td>Dec. 12</td><td>12 - 2:30 p.m</td><td>Event Type 1</td><td>1</td><td>Person's Name 1, TOPS</td><td>No</td><td><a href="https://example.com" target="_blank">CC Form</a></td></tr>
 									<tr><td>Dec. 12 - Jan. 25 (Fridays)</td><td>8:00 a.m - 10:30</td><td>Event Type 2</td><td>1, 2, 3, 4, 5</td><td>Person's Name 2, Don't Use This Code</td><td>Yes</td><td><a class="tops_workshop_link" href="javascript:void(0)" target="_self" data-regtitle="This Workshop is NASA Internal" data-regdesc="If you are not a NASA civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" data-reglink="https://example.com">DUTC Form</a></td></tr>
