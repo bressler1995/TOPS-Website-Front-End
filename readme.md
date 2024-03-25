@@ -283,9 +283,11 @@ You can download the files, change them in Excel or an equivalent open source pr
 
 When editing **virtual.csv**, you will find the following columns.  Each column is thoroughly documented below.
 
+Please note that formatting for the examples provided are suggestions and are not strictly required.  However, it is recommended to keep entries consistent.
+
 - date (Date)
   - Date(s) of the workshop.
-  - No specific formatting is required, but it is recommended to keep this consistent with other entries.
+  - For example: Mar. 3 - 7, 2024.
 - time (Time)
   - The time(s) that the workshop will take place with the time zone.
   - For example: 4:00 - 5:00 PM EST
@@ -310,13 +312,15 @@ When editing **virtual.csv**, you will find the following columns.  Each column 
 
 #### In Person Columns
 
-When editing **inperson.csv**, you will find mostly the same columns as **virtual.csv**.  You will however find these additional columns:
+When editing **inperson.csv**, you will find mostly the same columns as **virtual.csv* with the exception of the columns listed below.
+
+Please note that formatting for the examples provided are suggestions and are not strictly required.  However, it is recommended to keep entries consistent.
 
 - location (Location)
   - The location of the workshop.
-  - This includes the city name and the venue name. An example of this is "Moscone Center, San Francisco, CA".
+  - This includes the city name and the venue name. An example of this is **"Moscone Center, San Francisco, CA"**.
 - moreinfo (More Info)
-  - Label for your more info / registration link, i.e Learn More or Register Now.
+  - Label for your more info / registration link, i.e **Learn More** or **Register Now**.
 - moreinfo_link (More Info Link)
   - A link to your registration page or information.
 
