@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AI for Earth: How NASA’s Artificial Intelligence and Open Science Efforts Combat Climate Change"
+title:  "AI for Earth: How NASA's Artificial Intelligence and Open Science Efforts Combat Climate Change"
 author: "TOPS"
 image: assets/img/posts/aiearth.jpg
 external: "https://science.nasa.gov/earth/ai-open-science-climate-change/"
