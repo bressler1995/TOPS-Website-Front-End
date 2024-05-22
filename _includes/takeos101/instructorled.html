@@ -1,0 +1,248 @@
+<div id="instructorled" class="tops_white_section tops_workshops_section">
+  <div class="container tops_container">
+    <div class="row">
+      <div class="col-12 tops_workshops_primary_content primary_content_md">
+        <h2 class="text-center mb-2">{{ takeos101-instructorled-title }}</h2>
+        <div class="tops_divider div_larger justify-content-center mb-3"><div class="div_inner"></div></div>
+        {{ takeos101-instructorled-description | markdownify }}
+        <div class="d-flex flex-row flex-wrap tops_doublebuttons justify-content-center">
+          <a class="btn btn-primary" href="{{ takeos101-instructorled-listworkshop-link }}" target="_blank" role="button">{{ takeos101-instructorled-listworkshop-text }} <i class="fa-solid fa-up-right-from-square"></i></a>
+		  <a class="btn btn-outline-primary" href="{{ takeos101-instructorled-contactus-link }}" role="button">{{ takeos101-instructorled-contactus-text }}</a>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12">
+        <div id="tops_workshops_container" class="d-flex flex-column flex-wrap tops_workshops_container">
+          <div class="d-flex flex-row flex-wrap justify-content-center tops_workshops_tabs">
+            <button class="workshop_tab active" type="button"><i class="fa-solid fa-users"></i><span>In Person</span></button>
+            <button class="workshop_tab" type="button"><i class="fa-solid fa-desktop"></i><span>Virtual</span></button>
+          </div>
+          <div class="tops_workshops_tables">
+            
+            <div class="workshop_table active">
+              {% if site.hideinperson %}
+                <div class="no_workshops"><div class="noworkshops_icon_holder"><div><i class="fa-solid fa-calendar-days"></i></div></div><p>Stay tuned!  More training dates will be coming soon...</p></div>
+              {% else %}
+                <div class="workshop_table_filters">
+                  <div class="d-flex flex-row flex-wrap justify-content-start workshop_table_filters_selectoutter">
+                    <select class="form-select" data-col-index="2">
+						<option selected="">Event Types</option>
+						<option value="TOPST Summer School">TOPST Summer School</option>
+						<option value="JPL Internal">JPL Internal</option>
+						<option value="ScienceCore">ScienceCore</option>
+						<option value="TOPS Champions Summer Workshop">TOPS Champions Summer Workshop</option>
+					</select>
+                    <select class="form-select" data-col-index="3">
+						<option selected="">Locations</option>
+						<option value="Huntsville, AL">Huntsville, AL</option>
+						<option value="Pasadena, CA">Pasadena, CA</option>
+						<option value="Chicago, IL">Chicago, IL</option>
+						<option value="Wheeling, IL">Wheeling, IL</option>
+						<option value="Tacoma, WA">Tacoma, WA</option>
+					</select>
+                    <select class="form-select" data-col-index="4">
+						<option selected="">Topics</option>
+						<option value="OS101 Module 1">OS101 Module 1</option>
+						<option value="OS101 Module 2">OS101 Module 2</option>
+						<option value="OS101 Module 3">OS101 Module 3</option>
+						<option value="OS101 Module 4">OS101 Module 4</option>
+						<option value="OS101 Module 5">OS101 Module 5</option>
+						<option value="Determining Climate Risks with NASA Earthdata Cloud">Determining Climate Risks with NASA Earthdata Cloud</option>
+					</select>
+					<select class="form-select" data-col-index="5">
+						<option selected="">Instructors</option>
+						<option value="Antonio Tovar">Antonio Tovar</option>
+						<option value="Abdullah Alshboul">Abdullah Alshboul</option>
+						<option value="JPL TOPS Team">JPL TOPS Team</option>
+						<option value="Phuong Thai-Garcia">Phuong Thai-Garcia</option>
+						<option value="Robyn Moncrief">Robyn Moncrief</option>
+						<option value="Toni Holden-McGee">Toni Holden-McGee</option>
+						<option value="Dhavide Aruliah">Dhavide Aruliah</option>
+						<option value="Patricia A. Loto">Patricia A. Loto</option>
+						<option value="Karthik Venkataramani">Karthik Venkataramani</option>
+						<option value="Pontus Olofsson">Pontus Olofsson</option>
+						<option value="Adam Kobelski">Adam Kobelski</option>
+					</select>
+                  </div>
+                  <div class="d-flex flex-row flex-wrap justify-content-end workshop_table_filters_resetoutter">
+                    <a class="btn btn-primary workshop_table_resetopt" href="javascript:void(0)" role="button">Reset</a>
+                  </div>
+                </div>
+                <div class="workshop_table_table">
+                  <table>
+                    <thead><tr><th>Date</th><th>Time</th><th>Event Type</th><th>Location</th><th>Topic</th><th>Instructor</th><th>Registration Type</th><th>More Info</th></tr></thead>
+                    <tbody>
+                      {% for row in site.data.inperson %}
+                        <tr>
+                        <td>{{ row.date }}</td>
+                        <td>{{ row.time }}</td>
+                        <td>{{ row.eventtype }}</td>
+                        <td>{{ row.location }}</td>
+                        <td>{{ row.topic }}</td>
+						<td>{{ row.instructor }}</td>
+						<td>
+							{% if row.regtype %}
+								{{ row.regtype }}
+							{% else %}
+								Other
+							{% endif %}
+						</td>
+                        <td>
+                          {% if row.moreinfo_link %}
+							  {% assign registercalculate = row.moreinfo_link %}
+							  {% assign registernewwin = "_blank" %}
+							  
+							  {% assign registertitle = "This Workshop is Internal to NASA" %}
+							  {% assign registerdesc = "If you are not a NASA civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" %}
+							  {% assign registerlink = row.moreinfo_link %}
+							  {% assign registertype = row.regtype | downcase %}
+							  
+							  {% assign registeronclick = "no" %}
+							  
+							
+							  {% if registertype %}
+								{% if registertype contains "nasa" and registertype contains "internal" %}
+									{% assign registercalculate = "javascript:void(0)" %}
+									{% assign registernewwin = "_self" %}
+									{% assign registeronclick = "yes" %}
+									
+									{% assign registertitle = "This Workshop is Internal to NASA" %}
+									{% assign registerdesc = "If you are not a NASA civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" %}
+								{% elsif registertype contains "jpl" and registertype contains "internal" %}
+									{% assign registercalculate = "javascript:void(0)" %}
+									{% assign registernewwin = "_self" %}
+									{% assign registeronclick = "yes" %}
+									
+									{% assign registertitle = "This Workshop is Internal to JPL" %}
+									{% assign registerdesc = "If you are not a JPL civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" %}
+								{% elsif registertype contains "external" %}
+									{% assign registercalculate = "javascript:void(0)" %}
+									{% assign registernewwin = "_self" %}
+									{% assign registeronclick = "yes" %}
+									
+									{% assign registertitle = "This Event is External" %}
+									{% assign registerdesc = "We would like to inform you that you are being taken to an external registration form should you choose to proceed." %}
+								{% endif %}
+							  {% endif %}
+						  
+							  <a class="{% if registeronclick == "yes" %}tops_workshop_link{% endif %}" href="{{ registercalculate }}" target="{{ registernewwin }}" {% if registeronclick == "yes" %}data-regtitle="{{ registertitle }}" data-regdesc="{{ registerdesc }}" data-reglink="{{ registerlink }}"{% endif %}>{{ row.moreinfo }}</a>
+                          {% else %}
+                            {{ row.moreinfo }}
+                          {% endif %}
+                        </td>
+                        </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+              {% endif %}
+            </div>
+            <div class="workshop_table">
+              {% if site.hidevirtual %}
+                <div class="no_workshops"><div class="noworkshops_icon_holder"><div><i class="fa-solid fa-calendar-days"></i></div></div><p>Stay tuned!  More training dates will be coming soon...</p></div>
+              {% else %}
+                <div class="workshop_table_filters">
+                  <div class="d-flex flex-row flex-wrap justify-content-start workshop_table_filters_selectoutter">
+                    <select class="form-select" data-col-index="2">
+						<option selected="">Event Types</option>
+						<option value="TOPST Virtual Cohort">TOPST Virtual Cohort</option>
+						<option value="TOPS Champions Summer Workshop">TOPS Champions Summer Workshop</option>
+					</select>
+                    <select class="form-select" data-col-index="3">
+						<option selected="">Topics</option>
+						<option value="OS101 Module 1">OS101 Module 1</option>
+						<option value="OS101 Module 2">OS101 Module 2</option>
+						<option value="OS101 Module 3">OS101 Module 3</option>
+						<option value="OS101 Module 4">OS101 Module 4</option>
+						<option value="OS101 Module 5">OS101 Module 5</option>
+					</select>
+                    <select class="form-select" data-col-index="4">
+						<option selected="">Instructors</option>
+						<option value="Cameron Riddell">Cameron Riddell</option>
+						<option value="Genevieve Vigil">Genevieve Vigil</option>
+						<option value="Teresa Miller">Teresa Miller</option>
+						<option value="Adam Kobelski">Adam Kobelski</option>
+						<option value="Michael Katz">Michael Katz</option>
+						<option value="Pontus Olofsson">Pontus Olofsson</option>
+					</select>
+                  </div>
+                  <div class="d-flex flex-row flex-wrap justify-content-end workshop_table_filters_resetoutter">
+                    <a class="btn btn-primary workshop_table_resetopt" href="javascript:void(0)" role="button">Reset</a>
+                  </div>
+                </div>
+                <div class="workshop_table_table">
+                  <table>
+                    <thead><tr><th>Date</th><th>Time</th><th>Event Type</th><th>Topic</th><th>Instructor</th><th>Registration Type</th><th>Register</th></tr></thead>
+                    <tbody>
+                      {% for row in site.data.virtual %}
+                        <tr>
+                        <td>{{ row.date }}</td>
+                        <td>{{ row.time }}</td>
+                        <td>{{ row.eventtype }}</td>
+                        <td>{{ row.topic }}</td>
+                        <td>{{ row.instructor }}</td>
+						<td>
+							{% if row.regtype %}
+								{{ row.regtype }}
+							{% else %}
+								Other
+							{% endif %}
+						</td>
+                        <td>
+						  {% if row.register_link %}
+							  {% assign registercalculate = row.register_link %}
+							  {% assign registernewwin = "_blank" %}
+							  
+							  {% assign registertitle = "This Workshop is Internal to NASA" %}
+							  {% assign registerdesc = "If you are not a NASA civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" %}
+							  {% assign registerlink = row.register_link %}
+							  {% assign registertype = row.regtype | downcase %}
+							  
+							  {% assign registeronclick = "no" %}
+							  
+							
+							  {% if registertype %}
+								{% if registertype contains "nasa" and registertype contains "internal" %}
+									{% assign registercalculate = "javascript:void(0)" %}
+									{% assign registernewwin = "_self" %}
+									{% assign registeronclick = "yes" %}
+									
+									{% assign registertitle = "This Workshop is Internal to NASA" %}
+									{% assign registerdesc = "If you are not a NASA civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" %}
+								{% elsif registertype contains "jpl" and registertype contains "internal" %}
+									{% assign registercalculate = "javascript:void(0)" %}
+									{% assign registernewwin = "_self" %}
+									{% assign registeronclick = "yes" %}
+									
+									{% assign registertitle = "This Workshop is Internal to JPL" %}
+									{% assign registerdesc = "If you are not a JPL civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" %}
+								{% elsif registertype contains "external" %}
+									{% assign registercalculate = "javascript:void(0)" %}
+									{% assign registernewwin = "_self" %}
+									{% assign registeronclick = "yes" %}
+									
+									{% assign registertitle = "This Event is External" %}
+									{% assign registerdesc = "We would like to inform you that you are being taken to an external registration form should you choose to proceed." %}
+								{% endif %}
+							  {% endif %}
+						  
+							  <a class="{% if registeronclick == "yes" %}tops_workshop_link{% endif %}" href="{{ registercalculate }}" target="{{ registernewwin }}" {% if registeronclick == "yes" %}data-regtitle="{{ registertitle }}" data-regdesc="{{ registerdesc }}" data-reglink="{{ registerlink }}"{% endif %}>{{ row.register }}</a>
+                          {% else %}
+                            {{ row.register }}
+                          {% endif %}
+                        </td>
+                        </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+              {% endif %}
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

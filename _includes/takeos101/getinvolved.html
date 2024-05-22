@@ -1,0 +1,50 @@
+<div class="tops_white_section tops_getinvolved_section">
+    <div class="container tops_container">
+      <div class="row">
+        <div class="col-12 tops_getinvolved_primary_content primary_content_md">
+          <h2 class="text-center mb-2">{{ takeos101-getinvolved-title }}</h2>
+          <div class="tops_divider div_larger justify-content-center mb-3"><div class="div_inner"></div></div>
+          {{ takeos101-getinvolved-description | markdownify }}
+          <div class="d-flex flex-row flex-wrap tops_doublebuttons justify-content-center">
+            <a class="btn btn-primary" href="{{ takeos101-getinvolved-contact-link }}" role="button">{{ takeos101-getinvolved-contact-text }}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-12 col-md-6"><img src="{{ site.baseurl }}/assets/img/sciencecommunity.jpg"></div>
+        <div class="col-12 col-md-6">
+          <div class="d-flex flex-column flex-wrap justify-content-center tops_getinvolved_content">
+            <h3 class="text-center mb-2">{{ takeos101-getinvolved-joincomm-title }}</h3>
+            {{ takeos101-getinvolved-joincomm-description | markdownify }}
+            <ul class="d-flex flex-column flex-lg-row flex-wrap justify-content-center tops_list_icons mt-3">
+              {% for joincommitem in takeos101-joincomm-list-titles-split %}
+                {% if takeos101-joincomm-list-externals-split[forloop.index0] == 'yes' %}
+                  <li class="me-lg-3"><a href="{{ takeos101-joincomm-list-links-split[forloop.index0] }}" target="_blank"><span class="list_external"><i class="fa-solid fa-up-right-from-square"></i></span>{{ takeos101-joincomm-list-titles-split[forloop.index0] }}</a></li>
+                {% else %}
+                  <li class="me-lg-3"><a href="{{ takeos101-joincomm-list-links-split[forloop.index0] }}" target="_blank"><i class="fa-solid fa-circle-arrow-right"></i>{{ takeos101-joincomm-list-titles-split[forloop.index0] }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-0">
+        <div class="col-12 col-md-6 order-md-first order-last">
+          <div class="d-flex flex-column flex-wrap justify-content-center tops_getinvolved_content">
+            <h3 class="text-center mb-2">{{ takeos101-getinvolved-contributors-title }}</h3>
+            {{ takeos101-getinvolved-contributors-description | markdownify }}
+            <ul class="d-flex flex-column flex-lg-row flex-wrap justify-content-center tops_list_icons mt-3">
+              {% for contributorsitem in takeos101-contributors-list-titles-split %}
+                {% if takeos101-contributors-list-externals-split[forloop.index0] == 'yes' %}
+                  <li class="me-lg-3"><a href="{{ takeos101-contributors-list-links-split[forloop.index0] }}" target="_blank"><span class="list_external"><i class="fa-solid fa-up-right-from-square"></i></span>{{ takeos101-contributors-list-titles-split[forloop.index0] }}</a></li>
+                {% else %}
+                  <li class="me-lg-3"><a href="{{ takeos101-contributors-list-links-split[forloop.index0] }}" target="_blank"><i class="fa-solid fa-circle-arrow-right"></i>{{ takeos101-contributors-list-titles-split[forloop.index0] }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 order-md-last order-first"><img src="{{ site.baseurl }}/assets/img/contributorsnongraphic.jpg"></div>
+      </div>
+    </div>
+  </div>
