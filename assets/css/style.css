@@ -2901,7 +2901,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	}
 	
 	.tops_workshops_container .tops_workshops_tables table {
-		min-width: 1200px;
+		min-width: 1100px;
 	}
 
 }
@@ -3138,7 +3138,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	}
 	
 	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_table tr td {
-		padding: 10px 15x;
+		padding: 10px 15px;
 	}
 	
 	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters {
