@@ -3134,11 +3134,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	}
 	
 	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_table tr th {
-		padding: 10px 20px;
+		padding: 10px 15px;
 	}
 	
 	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_table tr td {
-		padding: 10px 20px;
+		padding: 10px 15x;
 	}
 	
 	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters {
@@ -3384,11 +3384,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	}
 	
 	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_table tr th {
-		padding: 15px 25px;
+		padding: 15px 20px;
 	}
 	
 	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_table tr td {
-		padding: 15px 25px;
+		padding: 15px 20px;
 	}
 	
 	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters {
