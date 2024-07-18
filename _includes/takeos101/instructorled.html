@@ -291,6 +291,105 @@
                 </div>
               {% endif %}
             </div>
+			<div class="workshop_table">
+				{% if site.hidepast %}
+				  <div class="no_workshops"><div class="noworkshops_icon_holder"><div><i class="fa-solid fa-calendar-days"></i></div></div><p>Stay tuned!  More training dates will be coming soon...</p></div>
+				{% else %}
+				  <div class="workshop_table_filters">
+					<div class="d-flex flex-row flex-wrap justify-content-start workshop_table_filters_selectoutter">
+					  <select class="form-select" data-col-index="2">
+						  <option selected="">Event Types</option>
+						  <option value="Dummy Filter">Dummy Filter</option>
+					  </select>
+					  <select class="form-select" data-col-index="3">
+						  <option selected="">Topics</option>
+						  <option value="Open Science 101 for MSIs">Open Science 101 for MSIs</option>
+						  <option value="OS101 Module 1">OS101 Module 1</option>
+						  <option value="OS101 Module 2">OS101 Module 2</option>
+						  <option value="OS101 Module 3">OS101 Module 3</option>
+						  <option value="OS101 Module 4">OS101 Module 4</option>
+						  <option value="OS101 Module 5">OS101 Module 5</option>
+					  </select>
+					  <select class="form-select" data-col-index="4">
+						  <option selected="">Instructors</option>
+						  <!-- Dummy Filter -->
+						  <optgroup label="Dummy Filter Group">
+							  <option value="Dummy Filter">Dummy Filter</option>
+						  </optgroup>
+					  </select>
+					</div>
+					<div class="d-flex flex-row flex-wrap justify-content-end workshop_table_filters_resetoutter">
+					  <a class="btn btn-primary workshop_table_resetopt" href="javascript:void(0)" role="button">Reset</a>
+					</div>
+				  </div>
+				  <div class="workshop_table_table">
+					<table>
+					  <thead><tr><th>Date</th><th>Time</th><th>Event Type</th><th>Topic</th><th>Instructor</th><th>Registration Type</th><th>Register</th></tr></thead>
+					  <tbody>
+						{% for row in site.data.past %}
+						  <tr>
+						  <td>{{ row.date }}</td>
+						  <td>{{ row.time }}</td>
+						  <td>{{ row.eventtype }}</td>
+						  <td>{{ row.topic }}</td>
+						  <td>{{ row.instructor }}</td>
+						  <td>
+							  {% if row.regtype %}
+								  {{ row.regtype }}
+							  {% else %}
+								  Other
+							  {% endif %}
+						  </td>
+						  <td>
+							{% if row.register_link %}
+								{% assign registercalculate = row.register_link %}
+								{% assign registernewwin = "_blank" %}
+								
+								{% assign registertitle = "This Workshop is Internal to NASA" %}
+								{% assign registerdesc = "If you are not a NASA civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" %}
+								{% assign registerlink = row.register_link %}
+								{% assign registertype = row.regtype | downcase %}
+								
+								{% assign registeronclick = "no" %}
+								
+							  
+								{% if registertype %}
+								  {% if registertype contains "nasa" and registertype contains "internal" %}
+									  {% assign registercalculate = "javascript:void(0)" %}
+									  {% assign registernewwin = "_self" %}
+									  {% assign registeronclick = "yes" %}
+									  
+									  {% assign registertitle = "This Workshop is Internal to NASA" %}
+									  {% assign registerdesc = "If you are not a NASA civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" %}
+								  {% elsif registertype contains "jpl" and registertype contains "internal" %}
+									  {% assign registercalculate = "javascript:void(0)" %}
+									  {% assign registernewwin = "_self" %}
+									  {% assign registeronclick = "yes" %}
+									  
+									  {% assign registertitle = "This Workshop is Internal to JPL" %}
+									  {% assign registerdesc = "If you are not a JPL civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" %}
+								  {% elsif registertype contains "external" %}
+									  {% assign registercalculate = "javascript:void(0)" %}
+									  {% assign registernewwin = "_self" %}
+									  {% assign registeronclick = "yes" %}
+									  
+									  {% assign registertitle = "This Event is External" %}
+									  {% assign registerdesc = "We would like to inform you that you are being taken to an external registration form should you choose to proceed." %}
+								  {% endif %}
+								{% endif %}
+							
+								<a class="{% if registeronclick == "yes" %}tops_workshop_link{% endif %}" href="{{ registercalculate }}" target="{{ registernewwin }}" {% if registeronclick == "yes" %}data-regtitle="{{ registertitle }}" data-regdesc="{{ registerdesc }}" data-reglink="{{ registerlink }}"{% endif %}>{{ row.register }}</a>
+							{% else %}
+							  {{ row.register }}
+							{% endif %}
+						  </td>
+						  </tr>
+						{% endfor %}
+					  </tbody>
+					</table>
+				  </div>
+				{% endif %}
+			  </div>
             
           </div>
         </div>
