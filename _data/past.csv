@@ -2,5 +2,6 @@ date,time,eventtype,topic,instructor,regtype,register,register_link
 "Jan. 1, 2024",1:00 PM - 4:00 PM (Eastern),Type 1,"OS101 Module 1, OS101 Module 2, OS101 Module 3, OS101 Module 4, OS101 Module 5","Person 1, Organization 1",External (TOPST),Register Now,https://example.com
 "Jan. 2, 2024",1:00 PM - 4:00 PM (Eastern),Type 2,"OS101 Module 1, OS101 Module 2, OS101 Module 3, OS101 Module 4, OS101 Module 5","Person 2, Organization 2",External (TOPST),Register Now,https://example.com
 "Jan. 3, 2024",1:00 PM - 4:00 PM (Eastern),Type 2,"OS101 Module 1, OS101 Module 2","Person 3, Organization 2",External (TOPST),Register Now,https://example.com
-"Jan. 3, 2024",1:00 PM - 4:00 PM (Eastern),Type 2,"OS101 Module 1, OS101 Module 2","Person 4, Organization 2",External (TOPST),Register Now,https://example.com
-"Jan. 3, 2024",1:00 PM - 4:00 PM (Eastern),Type 3,OS101 Module 1,"Person 5, Organization 3",External (TOPST),Register Now,https://example.com
+"Jan. 4, 2024",1:00 PM - 4:00 PM (Eastern),Type 2,"OS101 Module 1, OS101 Module 2","Person 4, Organization 2",External (TOPST),Register Now,https://example.com
+"Jan. 5, 2024",1:00 PM - 4:00 PM (Eastern),Type 3,OS101 Module 1,"Person 5, Organization 3",External (TOPST),Register Now,https://example.com
+"Jan. 6, 2024",1:00 PM - 4:00 PM (Eastern),Type 3,OS101 Module 2,"Person 6, Organization 3",External (TOPST),Register Now,https://example.com
