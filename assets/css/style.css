@@ -1355,6 +1355,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	text-transform: capitalize;
 	color: #FFF;
 	text-align: center;
+	margin-bottom: 0;
+	margin-top: 12px;
 }
 
 .tops_workshops_container .tops_workshops_tables .workshop_table_table .hcue .hcue_icon {
