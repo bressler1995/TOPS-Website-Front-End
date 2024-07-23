@@ -24,11 +24,12 @@ document.addEventListener("DOMContentLoaded", function() {
 				  if(the_table_cue != null && the_table_cue.length == 1) {
 					const observer = new window.IntersectionObserver(([entry]) => {
 						if (entry.isIntersecting) {
-						  setTimeout(function(){
-							if(the_table_cue[0].classList.contains("hide") == false) {
+						  if(the_table_cue[0].classList.contains("hide") == false) {
+							console.log('ENTER');
+							setTimeout(function(){
 								the_table_cue[0].classList.add("hide");
-							}
-						  }, 3000);
+							}, 3000);
+						  }
 						  return
 						}
 						console.log('LEAVE')
