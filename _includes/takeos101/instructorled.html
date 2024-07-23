@@ -388,7 +388,7 @@
 								  {% endif %}
 								{% endif %}
 							
-								<a class="{% if registeronclick == "yes" %}tops_workshop_link{% endif %}" href="{{ registercalculate }}" target="{{ registernewwin }}" {% if registeronclick == "yes" %}data-regtitle="{{ registertitle }}" data-regdesc="{{ registerdesc }}" data-reglink="{{ registerlink }}"{% endif %}>{{ row.moreinfo }}</a>
+								<a disabled class="{% if registeronclick == "yes" %}tops_workshop_link{% endif %}" href="{{ registercalculate }}" target="{{ registernewwin }}" {% if registeronclick == "yes" %}data-regtitle="{{ registertitle }}" data-regdesc="{{ registerdesc }}" data-reglink="{{ registerlink }}"{% endif %}>{{ row.moreinfo }}</a>
 							{% else %}
 							  {{ row.moreinfo }}
 							{% endif %}
