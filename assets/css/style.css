@@ -2586,7 +2586,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .tops_workshop_link.disable {
 	pointer-events: none;
 	opacity: 0.5;
-	color: #999;
+	color: #999 !important;
 }
 
 @media (max-width: 767.9px) {
