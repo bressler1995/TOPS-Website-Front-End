@@ -1340,17 +1340,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   z-index: 3;
   background-color: rgba(0, 0, 0, 0.7);
   box-sizing: border-box;
-  padding: 30px;
+  padding: 20px;
+  padding-top: 40px;
   align-items: flex-start;
 }
 
 .tops_workshops_container .tops_workshops_tables .workshop_table_table .hcue p {
 	display: block;
 	width: 100%;
+	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
     line-height: 1.6rem;
-    font-weight: 400;
+    font-weight: 500;
+	text-transform: capitalize;
 	color: #FFF;
+	text-align: center;
 }
 
 .no_workshops {
