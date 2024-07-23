@@ -1330,6 +1330,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .tops_workshops_container .tops_workshops_tables .workshop_table_table .hcue {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   display: flex;
   flex-flow: column wrap;
   position: absolute;
