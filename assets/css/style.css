@@ -1324,6 +1324,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_workshops_container .tops_workshops_tables .workshop_table_table {
 	display: block;
+	position: relative;
 	width: 100%;
 	overflow-x: auto;
 }
