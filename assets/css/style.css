@@ -1335,7 +1335,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  display: flex;
   flex-flow: column wrap;
   position: absolute;
   width: 100%;
@@ -1348,12 +1347,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   padding: 20px;
   padding-top: 40px;
   align-items: flex-start;
-  opacity: 1;
-}
-
-.tops_workshops_container .tops_workshops_tables .workshop_table_table .hcue.hide {
-	opacity: 0;
-	visibility: hidden;
 }
 
 .tops_workshops_container .tops_workshops_tables .workshop_table_table .hcue p {
@@ -2927,6 +2920,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	.tops_workshops_container .tops_workshops_tables table {
 		min-width: 1100px;
 	}
+
+	.tops_workshops_container .tops_workshops_tables .workshop_table_table .hcue {
+		display: flex;
+		opacity: 1;
+	}
+	
+	.tops_workshops_container .tops_workshops_tables .workshop_table_table .hcue.hide {
+		opacity: 0;
+		visibility: hidden;
+	}
 	
 }
 
@@ -2983,6 +2986,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	.tops_workshops_container .tops_workshops_tabs .workshop_tab i {
 		font-size: 20px;
 		margin-right: 7px;
+	}
+
+	.tops_workshops_container .tops_workshops_tables .workshop_table_table .hcue {
+		display: none;
+		visibility: hidden;
+		opacity: 0;
+	}
+	
+	.tops_workshops_container .tops_workshops_tables .workshop_table_table .hcue.hide {
+		opacity: 0;
+		visibility: hidden;
 	}
 
 }
