@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 							console.log('ENTER');
 							setTimeout(function(){
 								the_table_cue[0].classList.add("hide");
-							}, 3000);
+							}, 2000);
 						  }
 						  return
 						}
