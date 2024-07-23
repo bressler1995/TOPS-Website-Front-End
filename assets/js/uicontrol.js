@@ -17,8 +17,24 @@ document.addEventListener("DOMContentLoaded", function() {
 			  for(i = 0; i < tops_tables.length; i++) {
 				  let current_table = tops_tables[i];
 				  let the_table = current_table.getElementsByTagName("table");
+				  let the_table_cue = current_table.getElementsByClassName("hcue");
 				  let the_table_obj;
 				  let the_table_storage = [];
+
+				  if(the_table_cue != null && the_table_cue.length == 1) {
+					const observer = new window.IntersectionObserver(([entry]) => {
+						if (entry.isIntersecting) {
+						  console.log('ENTER')
+						  return
+						}
+						console.log('LEAVE')
+					  }, {
+						root: null,
+						threshold: 0.1, // set offset 0.1 means trigger if atleast 10% of element in viewport
+					  })
+					  
+					  observer.observe(the_table_cue[0]);
+				  }
 				  
 				  
 				  if(the_table != null) {
