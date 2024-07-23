@@ -1371,7 +1371,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	width: auto;
 	top: 0;
 	left: 50%;
-	transform: translateY(-50%)
+	transform: translateX(-50%)
 }
 
 .no_workshops {
