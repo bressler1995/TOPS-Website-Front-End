@@ -1343,6 +1343,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   padding: 20px;
   padding-top: 40px;
   align-items: flex-start;
+  opacity: 1;
+}
+
+.tops_workshops_container .tops_workshops_tables .workshop_table_table .hcue.hide {
+	opacity: 0;
+	visibility: hidden;
 }
 
 .tops_workshops_container .tops_workshops_tables .workshop_table_table .hcue p {

@@ -24,7 +24,11 @@ document.addEventListener("DOMContentLoaded", function() {
 				  if(the_table_cue != null && the_table_cue.length == 1) {
 					const observer = new window.IntersectionObserver(([entry]) => {
 						if (entry.isIntersecting) {
-						  console.log('ENTER')
+						  setTimeout(function(){
+							if(the_table_cue[0].classList.contains("hide") == false) {
+								the_table_cue[0].classList.add("hide");
+							}
+						  }, 3000);
 						  return
 						}
 						console.log('LEAVE')
