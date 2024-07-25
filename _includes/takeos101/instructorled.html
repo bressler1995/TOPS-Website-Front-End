@@ -388,49 +388,6 @@
 									Other
 								{% endif %}
 							</td>
-							<td>
-							  {% if row.moreinfo_link %}
-								  {% assign registercalculate = row.moreinfo_link %}
-								  {% assign registernewwin = "_blank" %}
-								  
-								  {% assign registertitle = "This Workshop is Internal to NASA" %}
-								  {% assign registerdesc = "If you are not a NASA civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" %}
-								  {% assign registerlink = row.moreinfo_link %}
-								  {% assign registertype = row.regtype | downcase %}
-								  
-								  {% assign registeronclick = "no" %}
-								  
-								
-								  {% if registertype %}
-									{% if registertype contains "nasa" and registertype contains "internal" %}
-										{% assign registercalculate = "javascript:void(0)" %}
-										{% assign registernewwin = "_self" %}
-										{% assign registeronclick = "yes" %}
-										
-										{% assign registertitle = "This Workshop is Internal to NASA" %}
-										{% assign registerdesc = "If you are not a NASA civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" %}
-									{% elsif registertype contains "jpl" and registertype contains "internal" %}
-										{% assign registercalculate = "javascript:void(0)" %}
-										{% assign registernewwin = "_self" %}
-										{% assign registeronclick = "yes" %}
-										
-										{% assign registertitle = "This Workshop is Internal to JPL" %}
-										{% assign registerdesc = "If you are not a JPL civil servant or contractor, this workshop is unfortunately not available to you and proceeding will result in a not found error message. However, there are still many incredible OS101 workshops for you to choose from!" %}
-									{% elsif registertype contains "external" %}
-										{% assign registercalculate = "javascript:void(0)" %}
-										{% assign registernewwin = "_self" %}
-										{% assign registeronclick = "yes" %}
-										
-										{% assign registertitle = "This Event is External" %}
-										{% assign registerdesc = "We would like to inform you that you are being taken to an external registration form should you choose to proceed." %}
-									{% endif %}
-								  {% endif %}
-							  
-								  <a class="{% if registeronclick == "yes" %}tops_workshop_link{% endif %} disable" href="{{ registercalculate }}" target="{{ registernewwin }}" {% if registeronclick == "yes" %}data-regtitle="{{ registertitle }}" data-regdesc="{{ registerdesc }}" data-reglink="{{ registerlink }}"{% endif %}>{{ row.moreinfo }}</a>
-							  {% else %}
-								{{ row.moreinfo }}
-							  {% endif %}
-							</td>
 							</tr>
 						  {% endfor %}
 						</tbody>
