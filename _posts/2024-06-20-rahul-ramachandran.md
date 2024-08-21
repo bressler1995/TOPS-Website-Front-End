@@ -2,8 +2,8 @@
 layout: post
 title:  "Marshall Research Scientist Enables Large-Scale Open Science"
 author: "TOPS"
-image: assets/img/posts/astronauthealth.jpg
-external: "https://science.nasa.gov/humans-in-space/nasas-repository-supports-research-of-commercial-astronaut-health/"
+image: assets/img/posts/rahularticle.jpg
+external: "https://science.nasa.gov/open-science/research-scientist-rahul-ramachandran/"
 ---
 By Jessica Barnett 
 
