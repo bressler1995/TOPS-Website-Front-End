@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "NASA's Repository Supports Research of Commercial Astronaut Health "
+title:  "NASA's Repository Supports Research of Commercial Astronaut Health"
 author: "TOPS"
 image: assets/img/posts/astronauthealth.jpg
 external: "https://science.nasa.gov/humans-in-space/nasas-repository-supports-research-of-commercial-astronaut-health/"
