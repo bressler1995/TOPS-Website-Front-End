@@ -2,7 +2,7 @@
 layout: page
 title: Open Science 101 In Spanish
 permalink: "/os101-in-spanish/"
-image: assets/img/contactbg.jpg
+image: assets/img/modulesbg.jpg
 overlay: "opacity-70"
 ---
 
