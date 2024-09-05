@@ -3,7 +3,7 @@ layout: page
 title: Open Science 101 In Spanish
 permalink: "/os101-in-spanish/"
 image: assets/img/modulesbg.jpg
-overlay: "opacity-70"
+overlay: "opacity-75"
 ---
 
 {% include os101spanish/learn.html %}
