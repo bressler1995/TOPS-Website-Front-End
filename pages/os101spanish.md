@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Open Science 101 In Spanish
+title: Introducción a la Ciencia Abierta en Español
 permalink: "/os101-in-spanish/"
 image: assets/img/modulesbg.jpg
 overlay: "opacity-75"
