@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact
+title: Open Science 101 In Spanish
 permalink: "/os101-in-spanish/"
 image: assets/img/contactbg.jpg
 overlay: "opacity-70"
