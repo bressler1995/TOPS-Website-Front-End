@@ -1,7 +1,7 @@
 ---
 layout: cta
 title: Introducción a la Ciencia Abierta en Español
-permalink: "/os101-in-spanish/"
+permalink: "/os101-en-espanol/"
 image: assets/img/modulesbg.jpg
 overlay: "opacity-75"
 ---
