@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: cta
 title: Introducción a la Ciencia Abierta en Español
 permalink: "/os101-in-spanish/"
 image: assets/img/modulesbg.jpg
