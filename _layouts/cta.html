@@ -1,14 +1,19 @@
 ---
 layout: default
 ---
+<style>
+    .ctct-form-defaults {
+        padding: 30px;
+    }
+</style>
 <div style="background-image: url('{{ site.baseurl }}/{{ page.image }}');" class="d-flex flex-column justify-content-center tops_hero sub_hero tops_overlay_section black_overlay {% if page.imagealign %}{{page.imagealign}}{% endif %}">
     <div class="the_overlay {% if page.overlay %}{{page.overlay}}{% endif %}"></div>
     <div class="container tops_container">
         <div class="row align-items-center">
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-6 col-lg-8">
             <h1 class="text-center text-md-start text-white mb-0">{{ page.title }}</h1>
           </div>
-          <div class="col-12 col-md-4"><div id="tops_spanishForm" class="ctct-inline-form" data-form-id="4b6f8172-adc6-4dd2-8d3b-45fcea129731"></div></div> 
+          <div class="col-12 col-md-6 col-lg-4"><div id="tops_spanishForm" class="ctct-inline-form" data-form-id="4b6f8172-adc6-4dd2-8d3b-45fcea129731"></div></div> 
           </div>
         </div>
     </div>
