@@ -549,6 +549,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				tops_cc_gdpr[0].innerHTML = tops_cc_gdpr[0].innerHTML.replace('By submitting this form, you are consenting to receive updates from:', 'Al enviar este formulario, usted acepta recibir actualizaciones de esta dirección:');
 				tops_cc_gdpr[0].innerHTML = tops_cc_gdpr[0].innerHTML.replace('You can revoke your consent to receive emails at any time by using the SafeUnsubscribe® link, found at the bottom of every email.', 'Puede revocar su consentimiento para recibir correos electrónicos en cualquier momento utilizando el enlace SafeUnsubscribe®, que se encuentra en la parte inferior de cada correo electrónico.');
 				tops_cc_gdpr[0].innerHTML = tops_cc_gdpr[0].innerHTML.replace('Emails are serviced by Constant Contact.', 'Los correos electrónicos son atendidos por Constant Contact.');
+				tops_cc_gdpr[0].innerHTML = tops_cc_gdpr[0].innerHTML.replace('Our Privacy Policy.', 'Nuestra Política de Privacidad.');
 			}
 			
 		});
