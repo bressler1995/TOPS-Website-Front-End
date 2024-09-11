@@ -530,7 +530,17 @@ document.addEventListener("DOMContentLoaded", function() {
 			if(tops_cc_labels != null && tops_cc_labels.length > 0) {
 				for(let i = 0; i < tops_cc_labels.length; i++) {
 					let current_cc_label = tops_cc_labels[i];
-					console.log(current_cc_label);
+					let current_cc_labelHTML = current_cc_label.innerHTML;
+					
+					
+					if(current_cc_labelHTML == 'Email') {
+						current_cc_label.innerHTML = current_cc_labelHTML.replace('Email', 'Correo Electrónico');
+					} else if(current_cc_labelHTML == 'First Name') {
+						current_cc_label.innerHTML = current_cc_labelHTML.replace('First Name', 'Nombre');
+					} else if(current_cc_labelHTML == 'Last Name') {
+						current_cc_label.innerHTML = current_cc_labelHTML.replace('Last Name', 'Apellido');
+					}
+					
 				}
 			}
 			
