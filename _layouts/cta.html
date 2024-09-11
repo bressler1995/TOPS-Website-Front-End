@@ -5,6 +5,14 @@ layout: default
     .ctct-form-defaults {
         padding: 30px;
     }
+
+    div.ctct-form-embed form.ctct-form-custom label.ctct-form-label, div.ctct-form-embed form.ctct-form-custom fieldset.ctct-form-lists legend.ctct-form-lists-legend {
+        font-family: 'Roboto', sans-serif !important;
+        color: #222 !important;
+        margin-bottom: 8px !important;
+        font-size: 15px !important;
+        line-height: 17px !important;
+    }
 </style>
 <div style="background-image: url('{{ site.baseurl }}/{{ page.image }}');" class="d-flex flex-column justify-content-center tops_hero sub_hero tops_overlay_section black_overlay {% if page.imagealign %}{{page.imagealign}}{% endif %}">
     <div class="the_overlay {% if page.overlay %}{{page.overlay}}{% endif %}"></div>
