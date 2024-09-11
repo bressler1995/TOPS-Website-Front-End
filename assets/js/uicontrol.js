@@ -518,4 +518,29 @@ document.addEventListener("DOMContentLoaded", function() {
 	  }
   }
 
+  function newsletterLoad() {
+		elementToObserve = document.getElementById('tops_spanishForm');
+
+		// create a new instance of 'MutationObserver' named 'observer', 
+		// passing it a callback function
+		observer = new MutationObserver(function(mutationsList, observer) {
+			console.log(mutationsList);
+			let tops_cc_labels = document.getElementsByClassName("ctct-form-label");
+			
+			if(tops_cc_labels != null && tops_cc_labels.length > 0) {
+				for(let i = 0; i < tops_cc_labels.length; i++) {
+					let current_cc_label = tops_cc_labels[i];
+					console.log(current_cc_label);
+				}
+			}
+			
+		});
+
+		// call 'observe' on that MutationObserver instance, 
+		// passing it the element to observe, and the options object
+		observer.observe(elementToObserve, {characterData: false, childList: true, attributes: false});
+	}
+
+	newsletterLoad();
+
 });
