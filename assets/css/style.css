@@ -2671,6 +2671,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	justify-content: center;
 }
 
+.tops_countdown_promo .tops_countdown_colon {
+	display: block;
+	color: white;
+	width: 25px;
+	height: 75px;
+	line-height: 75px;
+	text-align: center;
+}
+
 .tops_countdown_promo h2 {
 	display: block;
 	width: 100%;
