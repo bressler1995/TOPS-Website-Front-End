@@ -3699,3 +3699,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		line-height: 24px;
 	}
 }
+
+@media (min-width: 1500px) {
+	.tops_countdown_promo {
+		margin-bottom: 80px;
+	}
+}
