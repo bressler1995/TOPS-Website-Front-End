@@ -2641,15 +2641,37 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: #999 !important;
 }
 
+.tops_countdown_promo {
+	padding-top: 85px;
+	padding-bottom: 85px;
+}
+
 .tops_countdown_promo img {
 	display: block;
 	max-width: 100%;
 	margin-bottom: calc(0px - (85px - 50px));
 }
 
+.tops_countdown_promo .tops_countdown {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	height: auto;
+	justify-content: flex-start;
+}
+
+.tops_countdown_promo .tops_countdown_number {
+	display: flex;
+	flex-flow: column wrap;
+	width: 75px;
+	height: 75px;
+	background-color: #FFF;
+	border-radius: 5px;
+	align-items: center;
+	justify-content: center;
+}
+
 .tops_countdown_promo .row .col-12:first-of-type {
-	padding-top: 85px;
-	padding-bottom: 85px;
 	padding-right: 70px;
 }
 
