@@ -2684,8 +2684,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	display: block;
 	width: 100%;
 	font-family: 'Roboto', sans-serif;
-	font-size: 48px;
-	line-height: 52px;
 	font-weight: 900;
 	text-transform: uppercase;
 }
@@ -3368,6 +3366,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		font-size: 14px;
 		line-height: 16px;
 	}
+
+	.tops_countdown_promo h2 {
+		font-size: 44px;
+		line-height: 48px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -3660,5 +3663,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		padding-left: 0px;
 		padding-right: 70px;
 		padding-bottom: 85px;
+	}
+
+	.tops_countdown_promo h2 {
+		font-size: 48px;
+		line-height: 52px;
 	}
 }
