@@ -2670,16 +2670,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	justify-content: center;
 }
 
-.tops_countdown_promo .tops_countdown_number h2 {
+.tops_countdown_promo h2 {
 	display: block;
 	width: 100%;
 	font-family: 'Roboto', sans-serif;
-	font-size: 48px;
-	line-height: 52px;
+	font-size: 50px;
+	line-height: 54px;
 	font-weight: 900;
 }
 
-.tops_countdown_promo .tops_countdown_number h3 {
+.tops_countdown_promo h3 {
 	display: block;
 	width: 100%;
     font-family: 'Nunito', sans-serif;
@@ -2693,6 +2693,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	width: 100%;
 	text-align: center;
 	margin-bottom: 0;
+}
+
+.tops_countdown_promo .tops_countdown_number p:first-of-type {
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	line-height: 44px;
+	font-weight: 900;
+}
+
+.tops_countdown_promo .tops_countdown_number p:last-of-type {
+	font-family: 'Nunito', sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 400;
 }
 
 .tops_countdown_promo .row .col-12:first-of-type {
