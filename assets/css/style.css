@@ -2643,6 +2643,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_countdown_promo {
 	padding-top: 85px;
+	background-position: center 15%;
 }
 
 .tops_countdown_promo img {
