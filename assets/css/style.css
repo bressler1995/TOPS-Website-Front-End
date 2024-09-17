@@ -2649,7 +2649,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .tops_countdown_promo img {
 	display: block;
 	max-width: 100%;
-	margin-bottom: calc(-135px);
 }
 
 .tops_countdown_promo .tops_countdown {
@@ -3371,6 +3370,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		font-size: 44px;
 		line-height: 48px;
 	}
+
+	.tops_countdown_promo img {
+		margin-bottom: 0;
+	}
 }
 
 @media (min-width: 992px) {
@@ -3668,5 +3671,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	.tops_countdown_promo h2 {
 		font-size: 48px;
 		line-height: 52px;
+	}
+
+	.tops_countdown_promo img {
+		margin-bottom: calc(-135px);
 	}
 }
