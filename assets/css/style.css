@@ -2670,6 +2670,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	justify-content: center;
 }
 
+.tops_countdown_promo .tops_countdown_number p {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
 .tops_countdown_promo .row .col-12:first-of-type {
 	padding-right: 70px;
 	padding-bottom: 85px;
