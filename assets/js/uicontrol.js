@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   console.log("TOPS: Injecting UI...");
+  let tops_spanishForm = document.getElementById('tops_spanishForm');
   
   function inject_tops_tables() {
 	  let tops_tables = document.getElementsByClassName("workshop_table");
@@ -519,10 +520,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function newsletterLoad() {
-		elementToObserve = document.getElementById('tops_spanishForm');
 
-		// create a new instance of 'MutationObserver' named 'observer', 
-		// passing it a callback function
 		observer = new MutationObserver(function(mutationsList, observer) {
 			console.log(mutationsList);
 			let tops_cc_labels = document.getElementsByClassName("ctct-form-label");
@@ -556,9 +554,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		// call 'observe' on that MutationObserver instance, 
 		// passing it the element to observe, and the options object
-		observer.observe(elementToObserve, {characterData: false, childList: true, attributes: false});
+		observer.observe(tops_spanishForm, {characterData: false, childList: true, attributes: false});
 	}
 
-	newsletterLoad();
+	if(tops_spanishForm != null) {
+		newsletterLoad();
+	}
 
 });
