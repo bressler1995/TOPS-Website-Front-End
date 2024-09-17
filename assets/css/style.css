@@ -2643,13 +2643,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_countdown_promo {
 	padding-top: 85px;
-	padding-bottom: 85px;
 }
 
 .tops_countdown_promo img {
 	display: block;
 	max-width: 100%;
-	margin-bottom: calc(0px - (85px - 50px));
+	margin-bottom: calc(-135px);
 }
 
 .tops_countdown_promo .tops_countdown {
@@ -2673,6 +2672,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_countdown_promo .row .col-12:first-of-type {
 	padding-right: 70px;
+	padding-bottom: 85px;
 }
 
 @media (max-width: 767.9px) {
