@@ -2719,12 +2719,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: #666
 }
 
-.tops_countdown_promo .row .col-12:first-of-type {
-	padding-left: 0px;
-	padding-right: 70px;
-	padding-bottom: 85px;
-}
-
 @media (max-width: 767.9px) {
     .container {
         padding-left: 30px;
@@ -3014,6 +3008,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		opacity: 0;
 		visibility: hidden;
 	}
+
+	.tops_countdown_promo .row .col-12:first-of-type {
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-bottom: 50px;
+	}
 	
 }
 
@@ -3269,6 +3269,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 	.tops_eventsingle_section .tops_eventsingle_sidebar .tops_eventsingle_sidebar_widget iframe {
 		height: 250px;
+	}
+
+	.tops_countdown_promo .row .col-12:first-of-type {
+		padding-left: 0px;
+		padding-right: 50px;
+		padding-bottom: 85px;
 	}
 }
 
@@ -3648,5 +3654,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	.tops_countdown_promo .tops_countdown_number p:last-of-type {
 		font-size: 16px;
 		line-height: 18px;
+	}
+
+	.tops_countdown_promo .row .col-12:first-of-type {
+		padding-left: 0px;
+		padding-right: 70px;
+		padding-bottom: 85px;
 	}
 }
