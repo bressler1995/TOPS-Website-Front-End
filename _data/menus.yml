@@ -123,14 +123,14 @@ footermenu_es:
   url: "https://www.nasa.gov/privacy/"
   external: true
 
-- title: Boletines Pasados
+- title: Boletínes Pasados
   url: "https://github.com/nasa/Transform-to-Open-Science/tree/main/docs/Area1_Engagement/Newsletters"
   external: true
 
 # Curriculum Modules Spanish
 cmodules_es:
 
-- title: All Modules
+- title: Todos Los Módulos
   url: "os101-modules/"
 
 - title: El Ethos de la Ciencia Abierta
