@@ -2641,6 +2641,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: #999 !important;
 }
 
+.tops_countdown_promo img {
+  max-width: 768px;
+}
+
 @media (max-width: 767.9px) {
     .container {
         padding-left: 30px;
