@@ -2642,7 +2642,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .tops_countdown_promo img {
-  max-width: 768px;
+	display: block;
+	max-width: 100%;
+	margin-bottom: calc(0px - (85px - 50px));
+}
+
+.tops_countdown_promo .row .col-12:first-of-type {
+	padding-top: 85px;
+	padding-bottom: 85px;
+	padding-right: 70px;
 }
 
 @media (max-width: 767.9px) {
