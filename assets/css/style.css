@@ -2663,8 +2663,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .tops_countdown_promo .tops_countdown_number {
 	display: flex;
 	flex-flow: column wrap;
-	width: 70px;
-	height: 70px;
 	background-color: #FFF;
 	border-radius: 5px;
 	align-items: center;
@@ -2677,9 +2675,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .tops_countdown_promo .tops_countdown_colon {
 	display: block;
 	color: white;
-	width: 25px;
-	height: 70px;
-	line-height: 70px;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	font-size: 30px;
@@ -2730,6 +2725,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .tops_countdown_promo .row .col-12:first-of-type {
+	padding-left: 0px;
 	padding-right: 70px;
 	padding-bottom: 85px;
 }
@@ -3349,6 +3345,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		width: 100%;
 		margin-bottom: 12px;
 	}
+
+	.tops_countdown_promo .tops_countdown_colon {
+		width: 20px;
+		height: 50px;
+		line-height: 50px;
+	}
+	
+	.tops_countdown_promo .tops_countdown_number {
+		width: 50px;
+		height: 50px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -3613,5 +3620,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 	.tops_workshops_container .tops_workshops_tables .workshop_table .workshop_table_filters .workshop_table_filters_selectoutter select:last-of-type {
 		margin-right: 0;
+	}
+
+	.tops_countdown_promo .tops_countdown_colon {
+		width: 25px;
+		height: 70px;
+		line-height: 70px;
+	}
+	
+	.tops_countdown_promo .tops_countdown_number {
+		width: 70px;
+		height: 70px;
 	}
 }
