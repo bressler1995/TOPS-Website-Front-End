@@ -1,0 +1,34 @@
+<div id="promo" style="background-image: url('{{ site.baseurl }}/assets/img/promobg.jpg');" class="tops_black_sub tops_overlay_section black_overlay">
+    <div class="the_overlay opacity-75"></div>
+
+    <div class="container tops_container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-7">
+          <h2 class="text-left text-white mb-2">Learn More About Open Science!</h2>
+          <h3 class="text-left text-white mb-3">Complete Open Science 101 before 11:59 p.m. EDT, Sept. 30, and earn your limited edition printed certificate and stickers.</h3>
+          <div id="tops_countdown" class="tops_countdown">
+            <div id="tops_countdown_days">
+                <p>00</p>
+                <p>Days</p>
+            </div>
+            <div id="tops_countdown_hours">
+                <p>00</p>
+                <p>Hrs</p>
+            </div>
+            <div id="tops_countdown_minutes">
+                <p>00</p>
+                <p>Mins</p>
+            </div>
+            <div id="tops_countdown_seconds">
+                <p>00</p>
+                <p>Secs</p>
+            </div>
+          </div>
+          <p>Available only to mailing addresses within the US and NASA non-designated I and II countries. For a list of designated I and II countries, click here. </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5">
+            <img src="{{ site.baseurl }}/assets/img/transparentresources.png">
+        </div>
+      </div>
+    </div>
+</div>
