@@ -2674,6 +2674,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	display: block;
 	width: 100%;
 	text-align: center;
+	margin-bottom: 0;
 }
 
 .tops_countdown_promo .row .col-12:first-of-type {
