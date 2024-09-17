@@ -2663,8 +2663,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .tops_countdown_promo .tops_countdown_number {
 	display: flex;
 	flex-flow: column wrap;
-	width: 75px;
-	height: 75px;
+	width: 70px;
+	height: 70px;
 	background-color: #FFF;
 	border-radius: 5px;
 	align-items: center;
@@ -2678,9 +2678,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	display: block;
 	color: white;
 	width: 25px;
-	height: 75px;
-	line-height: 75px;
+	height: 70px;
+	line-height: 70px;
 	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
 }
 
 .tops_countdown_promo h2 {
@@ -2712,8 +2715,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_countdown_promo .tops_countdown_number p:first-of-type {
 	font-family: 'Roboto', sans-serif;
-	font-size: 40px;
-	line-height: 44px;
+	font-size: 38px;
+	line-height: 42px;
 	font-weight: 900;
 }
 
