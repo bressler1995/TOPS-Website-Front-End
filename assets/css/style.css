@@ -2722,9 +2722,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_countdown_promo .tops_countdown_number p:last-of-type {
 	font-family: 'Nunito', sans-serif;
-	font-size: 18px;
-	line-height: 22px;
+	font-size: 16px;
+	line-height: 18px;
 	font-weight: 400;
+	text-transform: uppercase;
+	color: #666
 }
 
 .tops_countdown_promo .row .col-12:first-of-type {
