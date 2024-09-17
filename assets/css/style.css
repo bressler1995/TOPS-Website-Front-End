@@ -2677,7 +2677,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: white;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
-	font-size: 30px;
 	font-weight: 700;
 }
 
@@ -2710,15 +2709,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .tops_countdown_promo .tops_countdown_number p:first-of-type {
 	font-family: 'Roboto', sans-serif;
-	font-size: 38px;
-	line-height: 42px;
 	font-weight: 900;
 }
 
 .tops_countdown_promo .tops_countdown_number p:last-of-type {
 	font-family: 'Nunito', sans-serif;
-	font-size: 16px;
-	line-height: 18px;
 	font-weight: 400;
 	text-transform: uppercase;
 	color: #666
@@ -3347,14 +3342,25 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	}
 
 	.tops_countdown_promo .tops_countdown_colon {
-		width: 20px;
+		width: 15px;
 		height: 50px;
+		font-size: 25px;
 		line-height: 50px;
 	}
 	
 	.tops_countdown_promo .tops_countdown_number {
 		width: 50px;
 		height: 50px;
+	}
+
+	.tops_countdown_promo .tops_countdown_number p:first-of-type {
+		font-size: 28px;
+		line-height: 32px;
+	}
+	
+	.tops_countdown_promo .tops_countdown_number p:last-of-type {
+		font-size: 14px;
+		line-height: 16px;
 	}
 }
 
@@ -3625,11 +3631,22 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	.tops_countdown_promo .tops_countdown_colon {
 		width: 25px;
 		height: 70px;
+		font-size: 30px;
 		line-height: 70px;
 	}
 	
 	.tops_countdown_promo .tops_countdown_number {
 		width: 70px;
 		height: 70px;
+	}
+
+	.tops_countdown_promo .tops_countdown_number p:first-of-type {
+		font-size: 38px;
+		line-height: 42px;
+	}
+	
+	.tops_countdown_promo .tops_countdown_number p:last-of-type {
+		font-size: 16px;
+		line-height: 18px;
 	}
 }
