@@ -2670,6 +2670,24 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	justify-content: center;
 }
 
+.tops_countdown_promo .tops_countdown_number h2 {
+	display: block;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 48px;
+	line-height: 52px;
+	font-weight: 900;
+}
+
+.tops_countdown_promo .tops_countdown_number h3 {
+	display: block;
+	width: 100%;
+    font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
 .tops_countdown_promo .tops_countdown_number p {
 	display: block;
 	width: 100%;
