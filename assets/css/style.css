@@ -369,7 +369,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .top_bar .tops_language li a.dropdown-item {
-	border-bottom: 1px;
+	border-bottom: 1px solid #CCC;
 }
 
 .top_bar .tops_language li:last-of-type a.dropdown-item {
