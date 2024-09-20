@@ -357,6 +357,26 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     transform: translate(-50%, -50%)
 }
 
+.top_bar .tops_language {
+	display: inline-block;
+    padding: 0;
+    height: 27px;
+    background: transparent;
+    border: 0;
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: 300;
+}
+
+.top_bar .tops_language .tops_language_icon {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: #FFF;
+	color: #0D425F;
+	margin-right: 7px;
+}
+
 .tops_nav .navbar .container-fluid {
   padding-left: 0;
   padding-right: 0;
