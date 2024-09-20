@@ -36,7 +36,19 @@
     <div class="top_bar" id="top_bar">
         <div class="container tops_container">
             <div class="row">
-                <div class="col-6"></div>
+                <div class="col-6">
+                  <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
                 <div class="col-6 social_icons">
                     <div class="sicon_container d-flex flex-row flex-wrap justify-content-end">
                         {% if site.social.linkedin %}
