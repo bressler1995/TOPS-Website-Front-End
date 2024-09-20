@@ -368,6 +368,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 300;
 }
 
+.top_bar .tops_language li a.dropdown-item {
+	border-bottom: 1px;
+}
+
+.top_bar .tops_language li:last-of-type a.dropdown-item {
+	border-bottom: none;
+}
+
+.top_bar .tops_language .dropdown-menu {
+	background-color: #EFF2F1;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+}
+
 .top_bar .tops_language .tops_language_icon {
 	display: inline;
     background-color: #FFF;
