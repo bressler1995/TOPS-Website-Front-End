@@ -573,13 +573,12 @@ document.addEventListener("DOMContentLoaded", function() {
 			date_future = new Date(2024, 8, 30, 23, 59, 59);
 			date_now = new Date();
 			date_future_edt_string = date_future.toLocaleString('en-US', {timeZone: 'America/New_York'});
-			date_future_converted = new Date(date_future_edt_string);
 
-			console.log(date_future_converted);
+			console.log(date_future);
 			console.log(date_now);
 			console.log("");
 
-			seconds = Math.floor((date_future_converted - (date_now))/1000);
+			seconds = Math.floor((date_future - (date_now))/1000);
 			minutes = Math.floor(seconds/60);
 			hours = Math.floor(minutes/60);
 			days = Math.floor(hours/24);
