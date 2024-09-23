@@ -575,7 +575,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			date_future_edt_string = date_future.toLocaleString('en-US', {timeZone: 'America/New_York'});
 			date_future_converted = new Date(date_future_edt_string);
 
-			console.log(date_future);
+			console.log(date_future_converted);
 			console.log(date_now);
 			console.log("");
 
