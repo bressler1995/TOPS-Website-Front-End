@@ -1,6 +1,10 @@
 ---
 layout: default
 title: "Home"
+
+layout: external
+title:  "Home"
+redirectto: "https://example.com"
 ---
 
 <!---FOR EVERYONE-->
