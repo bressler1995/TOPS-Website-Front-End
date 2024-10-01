@@ -59,22 +59,22 @@ footermenu:
 cmodules:
 
 - title: All Modules
-  url: "https://science.nasa.gov/open-science/os101/"
+  url: "https://science.nasa.gov/open-science/tops/os101/"
 
 - title: Ethos Of Open Science
-  url: "https://science.nasa.gov/open-science/os101/#ethos-tools-data"
+  url: "https://science.nasa.gov/open-science/tops/os101/#ethos-tools-data"
 
 - title: Open Tools And Resources
-  url: "https://science.nasa.gov/open-science/os101/#ethos-tools-data"
+  url: "https://science.nasa.gov/open-science/tops/os101/#ethos-tools-data"
 
 - title: Open Data
-  url: "https://science.nasa.gov/open-science/os101/#ethos-tools-data"
+  url: "https://science.nasa.gov/open-science/tops/os101/#ethos-tools-data"
 
 - title: Open Code
-  url: "https://science.nasa.gov/open-science/os101/#code-results"
+  url: "https://science.nasa.gov/open-science/tops/os101/#code-results"
 
 - title: Open Results
-  url: "https://science.nasa.gov/open-science/os101/#code-results"
+  url: "https://science.nasa.gov/open-science/tops/os101/#code-results"
 
 # Top Menu Spanish
 topmenu_es:
@@ -137,19 +137,19 @@ footermenu_es:
 cmodules_es:
 
 - title: Todos Los Módulos
-  url: "https://science.nasa.gov/open-science/os101/"
+  url: "https://science.nasa.gov/open-science/tops/os101/"
 
 - title: El Ethos de la Ciencia Abierta
-  url: "https://science.nasa.gov/open-science/os101/#ethos-tools-data"
+  url: "https://science.nasa.gov/open-science/tops/os101/#ethos-tools-data"
 
 - title: Herramientas y recursos abiertos
-  url: "https://science.nasa.gov/open-science/os101/#ethos-tools-data"
+  url: "https://science.nasa.gov/open-science/tops/os101/#ethos-tools-data"
 
 - title: Datos Abiertos
-  url: "https://science.nasa.gov/open-science/os101/#ethos-tools-data"
+  url: "https://science.nasa.gov/open-science/tops/os101/#ethos-tools-data"
 
 - title: Código Abierto
-  url: "https://science.nasa.gov/open-science/os101/#code-results"
+  url: "https://science.nasa.gov/open-science/tops/os101/#code-results"
 
 - title: Resultados abiertos
-  url: "https://science.nasa.gov/open-science/os101/#code-results"
+  url: "https://science.nasa.gov/open-science/tops/os101/#code-results"
