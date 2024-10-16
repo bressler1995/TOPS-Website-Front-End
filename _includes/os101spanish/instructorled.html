@@ -81,7 +81,7 @@
                       <thead><tr><th>Date</th><th>Time</th><th>Event Type</th><th>Topic</th><th>Instructor</th><th>Registration Type</th><th>Register</th></tr></thead>
                       <tbody>
                         {% for row in site.data.virtual %}
-                          {% if row.instructor contains "Metadocencia" %}
+                          {% if row.instructor contains "Metadocencia Team" %}
                           <tr>
                           <td>{{ row.date }}</td>
                           <td>{{ row.time }}</td>
@@ -231,7 +231,7 @@
                           <thead><tr><th>Date</th><th>Time</th><th>Event Type</th><th>Location</th><th>Topic</th><th>Instructor</th><th>Registration Type</th></tr></thead>
                           <tbody>
                             {% for row in site.data.past %}
-                              {% if row.instructor contains "Metadocencia" %}
+                              {% if row.instructor contains "Metadocencia Team" %}
                               <tr>
                               <td>{{ row.date }}</td>
                               <td>{{ row.time }}</td>
