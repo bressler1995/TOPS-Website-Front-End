@@ -9,3 +9,4 @@ overlay: "opacity-70"
 {% include os101spanish/learn.html %}
 {% include os101spanish/foreveryone.html %}
 {% include os101spanish/how.html %}
+{% include os101spanish/instructorled.html %}
