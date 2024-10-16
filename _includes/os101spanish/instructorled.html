@@ -93,7 +93,7 @@
                           <td>{{ row.instructor }}</td>
                           <td>
                               {% if row.regtype %}
-                                  {{ row.regtype }}
+                                Exteneral (Metadocencia)
                               {% else %}
                                   Other
                               {% endif %}
@@ -136,7 +136,7 @@
                                   {% endif %}
                                 {% endif %}
                             
-                                <a class="{% if registeronclick == "yes" %}tops_workshop_link{% endif %}" href="{{ registercalculate }}" target="{{ registernewwin }}" {% if registeronclick == "yes" %}data-regtitle="{{ registertitle }}" data-regdesc="{{ registerdesc }}" data-reglink="{{ registerlink }}"{% endif %}>{{ row.register }}</a>
+                                <a class="{% if registeronclick == "yes" %}tops_workshop_link{% endif %}" href="{{ registercalculate }}" target="{{ registernewwin }}" {% if registeronclick == "yes" %}data-regtitle="{{ registertitle }}" data-regdesc="{{ registerdesc }}" data-reglink="{{ registerlink }}"{% endif %}>Regístrate Ahora</a>
                             {% else %}
                               {{ row.register }}
                             {% endif %}
