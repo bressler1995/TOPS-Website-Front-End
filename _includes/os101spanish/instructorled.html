@@ -83,7 +83,7 @@
                     <table>
                       <thead><tr><th>Dato</th><th>Tiempo</th><th>Tipo de Evento</th><th>Tema</th><th>Instructor</th><th>Tipo de Registro</th><th>Enlace de Registro</th></tr></thead>
                       <tbody>
-                        {% for row in site.data.virtual %}
+                        {% for row in site.data.es.virtual %}
                           {% if row.instructor contains "Metadocencia Team" %}
                           <tr>
                           <td>{{ row.date }}</td>
@@ -92,11 +92,11 @@
                           <td>{{ row.topic }}</td>
                           <td>{{ row.instructor }}</td>
                           <td>
-                              {% if row.regtype %}
-                                Exteneral (Metadocencia)
-                              {% else %}
-                                  Other
-                              {% endif %}
+                            {% if row.regtype %}
+                              {{ row.regtype }}
+                            {% else %}
+                              Other
+                            {% endif %}
                           </td>
                           <td>
                             {% if row.register_link %}
@@ -136,7 +136,7 @@
                                   {% endif %}
                                 {% endif %}
                             
-                                <a class="{% if registeronclick == "yes" %}tops_workshop_link{% endif %}" href="{{ registercalculate }}" target="{{ registernewwin }}" {% if registeronclick == "yes" %}data-regtitle="{{ registertitle }}" data-regdesc="{{ registerdesc }}" data-reglink="{{ registerlink }}"{% endif %}>Regístrate Ahora</a>
+                                <a class="{% if registeronclick == "yes" %}tops_workshop_link{% endif %}" href="{{ registercalculate }}" target="{{ registernewwin }}" {% if registeronclick == "yes" %}data-regtitle="{{ registertitle }}" data-regdesc="{{ registerdesc }}" data-reglink="{{ registerlink }}"{% endif %}>{{ row.register }}</a>
                             {% else %}
                               {{ row.register }}
                             {% endif %}
@@ -233,7 +233,7 @@
                       <table>
                           <thead><tr><th>Dato</th><th>Tiempo</th><th>Tipo de Evento</th><th>Ubicacion</th><th>Tema</th><th>Instructor</th><th>Tipo de Registro</th></tr></thead>
                           <tbody>
-                            {% for row in site.data.past %}
+                            {% for row in site.data.es.past %}
                               {% if row.instructor contains "Metadocencia Team" %}
                               <tr>
                               <td>{{ row.date }}</td>
