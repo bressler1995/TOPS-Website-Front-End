@@ -83,7 +83,7 @@
                     <table>
                       <thead><tr><th>Dato</th><th>Tiempo</th><th>Tipo de Evento</th><th>Tema</th><th>Instructor</th><th>Tipo de Registro</th><th>Enlace de Registro</th></tr></thead>
                       <tbody>
-                        {% for row in site.data.es.virtual %}
+                        {% for row in site.data.virtuales %}
                           {% if row.instructor contains "Metadocencia Team" %}
                           <tr>
                           <td>{{ row.date }}</td>
@@ -233,7 +233,7 @@
                       <table>
                           <thead><tr><th>Dato</th><th>Tiempo</th><th>Tipo de Evento</th><th>Ubicacion</th><th>Tema</th><th>Instructor</th><th>Tipo de Registro</th></tr></thead>
                           <tbody>
-                            {% for row in site.data.es.past %}
+                            {% for row in site.data.pastes %}
                               {% if row.instructor contains "Metadocencia Team" %}
                               <tr>
                               <td>{{ row.date }}</td>
