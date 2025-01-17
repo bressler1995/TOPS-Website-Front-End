@@ -73,7 +73,7 @@
                       <thead><tr><th>Dato</th><th>Tiempo</th><th>Tipo de Evento</th><th>Tema</th><th>Instructor</th><th>Tipo de Registro</th><th>Enlace de Registro</th></tr></thead>
                       <tbody>
                         {% for row in site.data.es.virtual %}
-                          {% if row.instructor contains "Metadocencia Team" %}
+                          {% if row.instructor contains "Equipo de Metadocencia" %}
                           <tr>
                           <td>{{ row.date }}</td>
                           <td>{{ row.time }}</td>
@@ -268,7 +268,7 @@
                           <thead><tr><th>Dato</th><th>Tiempo</th><th>Tipo de Evento</th><th>Ubicacion</th><th>Tema</th><th>Instructor</th><th>Tipo de Registro</th></tr></thead>
                           <tbody>
                             {% for row in site.data.es.past %}
-                              {% if row.instructor contains "Metadocencia Team" %}
+                              {% if row.instructor contains "Equipo de Metadocencia" %}
                               <tr>
                               <td>{{ row.date }}</td>
                               <td>{{ row.time }}</td>
